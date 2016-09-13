@@ -245,7 +245,15 @@ img {
 .simple-menu .menu-item-wrapp span {
   color: #d6cbcb;
   font-size: 14px;
-  margin-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.bottom-slidebar .simple-menu {
+  height: calc(100% - 56px) !important;
 }
 .tabslist {
   background: #463e3e;
@@ -452,7 +460,11 @@ img {
 .tabsicon,
 .back,
 .close,
-.close-notification {
+.close-notification,
+.copy,
+.cut,
+.delete,
+.download {
   display: block;
   width: 48px !important;
   height: 48px !important;
@@ -493,9 +505,542 @@ img {
   background: url("img/close.png") no-repeat center;
   background-size: 17px !important;
 }
+.copy {
+  background: url("img/explorer/copy.png") no-repeat center;
+  background-size: 17px !important;
+}
+.cut {
+  background: url("img/explorer/cut.png") no-repeat center;
+  background-size: 17px !important;
+}
+.delete {
+  background: url("img/explorer/delete.png") no-repeat center;
+  background-size: 17px !important;
+/* overwrite */
+  background-color: transparent !important;
+}
+.download {
+  background: url("img/explorer/download.png") no-repeat center;
+  background-size: 17px !important;
+}
 .close-notification {
   background: url("img/close.png") no-repeat center;
   background-size: 17px !important;
+}
+.left-arrow {
+  background: url("img/explorer/arrow-left.png") no-repeat center;
+  background-size: 14px !important;
+}
+.right-arrow {
+  background: url("img/explorer/arrow-right.png") no-repeat center;
+  background-size: 14px !important;
+}
+.replace-wrapper button {
+  width: 100% !important;
+  height: 100% !important;
+  color: #d6cbcb;
+  min-width: auto !important;
+  text-transform: initial;
+}
+.replace-wrapper input {
+  margin-left: 12px;
+}
+.case .icon {
+  background: url("img/explorer/match-case.png") no-repeat center;
+  background-size: 16px !important;
+}
+.regex .icon {
+  background: url("img/explorer/regex.png") no-repeat center;
+  background-size: 16px !important;
+}
+.case .toggle.active,
+.regex .toggle.active {
+  background: url("img/explorer/check.png") no-repeat center;
+  background-size: 22px !important;
+}
+.simple-menu .menu-item-wrapp .menu-item-wrap-head:before {
+  content: ' ';
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: relative;
+}
+.find .menu-item-wrap-head:before {
+  background: url("img/explorer/find.png") no-repeat center;
+  background-size: 16px !important;
+}
+.replace .menu-item-wrap-head:before {
+  background: url("img/explorer/replace.png") no-repeat center;
+  background-size: 16px !important;
+}
+.undo .menu-item-wrap-head:before {
+  background: url("img/explorer/undo.png") no-repeat center;
+  background-size: 16px !important;
+}
+.undo_selection .menu-item-wrap-head:before {
+  background: url("img/explorer/undo-selection.png") no-repeat center;
+  background-size: 16px !important;
+}
+.redo .menu-item-wrap-head:before {
+  background: url("img/explorer/redo.png") no-repeat center;
+  background-size: 16px !important;
+}
+.beautify .menu-item-wrap-head:before {
+  background: url("img/explorer/beautify.png") no-repeat center;
+  background-size: 16px !important;
+}
+.indentLeft .menu-item-wrap-head:before {
+  background: url("img/explorer/indentLeft.png") no-repeat center;
+  background-size: 16px !important;
+}
+.indentRight .menu-item-wrap-head:before {
+  background: url("img/explorer/indentRight.png") no-repeat center;
+  background-size: 16px !important;
+}
+.goto_line .menu-item-wrap-head:before {
+  background: url("img/explorer/goto-line.png") no-repeat center;
+  background-size: 16px !important;
+}
+.refresh .menu-item-wrap-head:before {
+  background: url("img/explorer/refresh.png") no-repeat center;
+  background-size: 16px !important;
+}
+.reopen_with_encoding .menu-item-wrap-head:before {
+  background: url("img/explorer/reopen_with_encoding.png") no-repeat center;
+  background-size: 16px !important;
+}
+.save_with_encoding .menu-item-wrap-head:before {
+  background: url("img/explorer/save_with_encoding.png") no-repeat center;
+  background-size: 16px !important;
+}
+.save .menu-item-wrap-head:before {
+  background: url("img/explorer/save.png") no-repeat center;
+  background-size: 16px !important;
+}
+.save_as .menu-item-wrap-head:before {
+  background: url("img/explorer/save_as.png") no-repeat center;
+  background-size: 16px !important;
+}
+.save_all .menu-item-wrap-head:before {
+  background: url("img/explorer/save_all.png") no-repeat center;
+  background-size: 16px !important;
+}
+.revisions .menu-item-wrap-head:before {
+  background: url("img/explorer/revisions.png") no-repeat center;
+  background-size: 16px !important;
+}
+.share .menu-item-wrap-head:before {
+  background: url("img/explorer/share.png") no-repeat center;
+  background-size: 16px !important;
+}
+.new-connection .menu-item-wrap-head:before {
+  background: url("img/explorer/container.png") no-repeat center;
+  background-size: 16px !important;
+}
+.new-project .menu-item-wrap-head:before {
+  background: url("img/explorer/box.png") no-repeat center;
+  background-size: 16px !important;
+}
+.project-config .menu-item-wrap-head:before,
+.settings .menu-item-wrap-head:before {
+  background: url("img/explorer/settings1.png") no-repeat center;
+  background-size: 16px !important;
+}
+.share-project .menu-item-wrap-head:before {
+  background: url("img/explorer/share-project.png") no-repeat center;
+  background-size: 16px !important;
+}
+.switch-project .menu-item-wrap-head:before {
+  background: url("img/explorer/switch-project.png") no-repeat center;
+  background-size: 16px !important;
+}
+.manage-projects .menu-item-wrap-head:before {
+  background: url("img/explorer/settings.png") no-repeat center;
+  background-size: 16px !important;
+}
+.clone .menu-item-wrap-head:before {
+  background: url("img/explorer/clone.png") no-repeat center;
+  background-size: 16px !important;
+}
+.paste .menu-item-wrap-head:before {
+  background: url("img/explorer/paste.png") no-repeat center;
+  background-size: 16px !important;
+}
+.rename .menu-item-wrap-head:before {
+  background: url("img/explorer/rename.png") no-repeat center;
+  background-size: 16px !important;
+}
+.permissions .menu-item-wrap-head:before {
+  background: url("img/explorer/permissions.png") no-repeat center;
+  background-size: 16px !important;
+}
+.create-file .menu-item-wrap-head:before {
+  background: url("img/explorer/new-file.png") no-repeat center;
+  background-size: 16px !important;
+}
+.create-folder .menu-item-wrap-head:before {
+  background: url("img/explorer/new-folder.png") no-repeat center;
+  background-size: 16px !important;
+}
+.upload .menu-item-wrap-head:before {
+  background: url("img/explorer/upload.png") no-repeat center;
+  background-size: 16px !important;
+}
+.ssh-terminal .menu-item-wrap-head:before {
+  background: url("img/explorer/ssh.png") no-repeat center;
+  background-size: 16px !important;
+}
+.remove .menu-item-wrap-head:before {
+  background: url("img/explorer/delete.png") no-repeat center;
+  background-size: 16px !important;
+}
+.connection.ssh .endor-node-inner-icon {
+  background: url("img/explorer/ssh.png") center no-repeat;
+  background-size: 20px;
+}
+.connection.devbox .endor-node-inner-icon {
+  background: url("img/explorer/container.png") center no-repeat;
+  background-size: 20px;
+}
+.connection.dropbox .endor-node-inner-icon {
+  background: url("img/explorer/dropbox.png") center no-repeat;
+  background-size: 20px;
+}
+.connection.drive .endor-node-inner-icon {
+  background: url("img/explorer/drive.png") center no-repeat;
+  background-size: 20px;
+}
+.connection.ftp .endor-node-inner-icon,
+.connection.sftp .endor-node-inner-icon {
+  background: url("img/explorer/ftp.png") center no-repeat;
+  background-size: 20px;
+}
+.folder .endor-node-inner-icon {
+  background: url("img/explorer/folder.png") center no-repeat;
+  background-size: 20px;
+}
+.file .endor-node-inner-icon {
+  background: url("img/explorer/file.png") center no-repeat;
+  background: url("img/files2x/file-default@2x.png") center no-repeat;
+  background-size: 20px;
+}
+.folder .endor-node-inner-icon {
+  background: url("img/explorer/folder.png") center no-repeat;
+  background-size: 20px;
+}
+.connection .endor-node-inner-icon {
+  background-image: url("img/files2x/service-ftp.png");
+}
+.file.ai .endor-node-inner-icon {
+  background-image: url("img/files2x/file-ai@2x.png");
+}
+.file.app .endor-node-inner-icon {
+  background-image: url("img/files2x/file-app@2x.png");
+}
+.file.arhive .endor-node-inner-icon {
+  background-image: url("img/files2x/file-arhive@2x.png");
+}
+.file.asp .endor-node-inner-icon {
+  background-image: url("img/files2x/file-asp@2x.png");
+}
+.file.audio .endor-node-inner-icon {
+  background-image: url("img/files2x/file-audio@2x.png");
+}
+.file.boxes .endor-node-inner-icon {
+  background-image: url("img/files2x/file-boxes@2x.png");
+}
+.file.c .endor-node-inner-icon {
+  background-image: url("img/files2x/file-c@2x.png");
+}
+.file.cf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-cf@2x.png");
+}
+.file.cfg .endor-node-inner-icon {
+  background-image: url("img/files2x/file-cfg@2x.png");
+}
+.file.code .endor-node-inner-icon {
+  background-image: url("img/files2x/file-code@2x.png");
+}
+.file.css .endor-node-inner-icon {
+  background-image: url("img/files2x/file-css@2x.png");
+}
+.file.csv .endor-node-inner-icon {
+  background-image: url("img/files2x/file-csv@2x.png");
+}
+.file.db .endor-node-inner-icon {
+  background-image: url("img/files2x/file-db@2x.png");
+}
+.file.dmg .endor-node-inner-icon {
+  background-image: url("img/files2x/file-dmg@2x.png");
+}
+.file.docx .endor-node-inner-icon,
+.file.doc .endor-node-inner-icon {
+  background-image: url("img/files2x/file-doc@2x.png");
+}
+.file.dxf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-dxf@2x.png");
+}
+.file.fl .endor-node-inner-icon {
+  background-image: url("img/files2x/file-fl@2x.png");
+}
+.file.githubfile .endor-node-inner-icon {
+  background-image: url("img/files2x/file-githubfile@2x.png");
+}
+.file.githubcommits .endor-node-inner-icon {
+  background-image: url("img/files2x/file-githubcommits@2x.png");
+}
+.file.html .endor-node-inner-icon,
+.file.htm .endor-node-inner-icon,
+.file.xml .endor-node-inner-icon {
+  background-image: url("img/files2x/file-html@2x.png");
+}
+.file.img .endor-node-inner-icon,
+.file.png .endor-node-inner-icon,
+.file.jpg .endor-node-inner-icon,
+.file.gif .endor-node-inner-icon,
+.file.svg .endor-node-inner-icon,
+.file.ico .endor-node-inner-icon {
+  background-image: url("img/files2x/file-image@2x.png");
+}
+.file.indd .endor-node-inner-icon {
+  background-image: url("img/files2x/file-indd@2x.png");
+}
+.file.js .endor-node-inner-icon {
+  background-image: url("img/files2x/file-js@2x.png");
+}
+.file.mdb .endor-node-inner-icon {
+  background-image: url("img/files2x/file-mdb@2x.png");
+}
+.file.mov .endor-node-inner-icon {
+  background-image: url("img/files2x/file-mov@2x.png");
+}
+.file.mpp .endor-node-inner-icon {
+  background-image: url("img/files2x/file-mpp@2x.png");
+}
+.file.msg .endor-node-inner-icon {
+  background-image: url("img/files2x/file-msg@2x.png");
+}
+.file.page .endor-node-inner-icon {
+  background-image: url("img/files2x/file-page@2x.png");
+}
+.file.part .endor-node-inner-icon {
+  background-image: url("img/files2x/file-part@2x.png");
+}
+.file.pdf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-pdf@2x.png");
+}
+.file.pdf1 .endor-node-inner-icon {
+  background-image: url("img/files2x/file-pdf1@2x.png");
+}
+.file.pdf2 .endor-node-inner-icon {
+  background-image: url("img/files2x/file-pdf2@2x.png");
+}
+.file.php .endor-node-inner-icon {
+  background-image: url("img/files2x/file-php@2x.png");
+}
+.file.pptx .endor-node-inner-icon,
+.file.ppt .endor-node-inner-icon {
+  background-image: url("img/files2x/file-ppt1@2x.png");
+}
+.file.psd .endor-node-inner-icon {
+  background-image: url("img/files2x/file-psd@2x.png");
+}
+.file.py .endor-node-inner-icon,
+.file.python .endor-node-inner-icon {
+  background-image: url("img/files2x/file-python@2x.png");
+}
+.file.go .endor-node-inner-icon {
+  background-image: url("img/files2x/file-go@2x.png");
+}
+.file.qxd .endor-node-inner-icon {
+  background-image: url("img/files2x/file-qxd@2x.png");
+}
+.file.repo .endor-node-inner-icon {
+  background-image: url("img/files2x/file-repo@2x.png");
+}
+.file.swf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-swf@2x.png");
+}
+.file.temp .endor-node-inner-icon {
+  background-image: url("img/files2x/file-temp@2x.png");
+}
+.file.torrent .endor-node-inner-icon {
+  background-image: url("img/files2x/file-torrent@2x.png");
+}
+.file.styl .endor-node-inner-icon {
+  background-image: url("img/files2x/file-stylus@2x.png");
+}
+.file.ttf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-font@2x.png");
+}
+.file.txt .endor-node-inner-icon {
+  background-image: url("img/files2x/file-text@2x.png");
+}
+.file.vbs .endor-node-inner-icon {
+  background-image: url("img/files2x/file-vbs@2x.png");
+}
+.file.video .endor-node-inner-icon {
+  background-image: url("img/files2x/file-video@2x.png");
+}
+.file.xlsx .endor-node-inner-icon,
+.file.xls .endor-node-inner-icon {
+  background-image: url("img/files2x/file-xls1@2x.png");
+}
+.folder-ftp .endor-node-inner-icon {
+  background-image: url("img/files2x/folder-ftp@2x.png");
+}
+.folder-link .endor-node-inner-icon {
+  background-image: url("img/files2x/folder-link@2x.png");
+}
+.folder-local .endor-node-inner-icon {
+  background-image: url("img/files2x/folder-local@2x.png");
+}
+.folder-white .endor-node-inner-icon {
+  background-image: url("img/files2x/folder-white@2x.png");
+}
+.less .endor-node-inner-icon {
+  background-image: url("img/files2x/file-less@2x.png");
+}
+.ts .endor-node-inner-icon {
+  background-image: url("img/files2x/file-typescript@2x.png");
+}
+.swift .endor-node-inner-icon {
+  background-image: url("img/files2x/file-swift@2x.png");
+}
+.sql .endor-node-inner-icon {
+  background-image: url("img/files2x/file-sql@2x.png");
+}
+.sass .endor-node-inner-icon {
+  background-image: url("img/files2x/file-sass@2x.png");
+}
+.ruby .endor-node-inner-icon {
+  background-image: url("img/files2x/file-ruby@2x.png");
+}
+.rails .endor-node-inner-icon {
+  background-image: url("img/files2x/file-rails@2x.png");
+}
+.py .endor-node-inner-icon,
+.python .endor-node-inner-icon {
+  background-image: url("img/files2x/file-python@2x.png");
+}
+.go .endor-node-inner-icon {
+  background-image: url("img/files2x/file-go@2x.png");
+}
+.psd .endor-node-inner-icon {
+  background-image: url("img/files2x/file-psd@2x.png");
+}
+.ai .endor-node-inner-icon {
+  background-image: url("img/files2x/file-ai@2x.png");
+}
+.pl .endor-node-inner-icon {
+  background-image: url("img/files2x/file-perl@2x.png");
+}
+.pdf .endor-node-inner-icon {
+  background-image: url("img/files2x/file-pdf@2x.png");
+}
+.npm .endor-node-inner-icon {
+  background-image: url("img/files2x/file-npm@2x.png");
+}
+.coffee .endor-node-inner-icon {
+  background-image: url("img/files2x/file-coffescript@2x.png");
+}
+.lua .endor-node-inner-icon {
+  background-image: url("img/files2x/file-lua@2x.png");
+}
+.docker .endor-node-inner-icon {
+  background-image: url("img/files2x/file-docker@2x.png");
+}
+.java .endor-node-inner-icon {
+  background-image: url("img/files2x/file-java@2x.png");
+}
+.glup .endor-node-inner-icon {
+  background-image: url("img/files2x/file-gulpfile@2x.png");
+}
+.cpp .endor-node-inner-icon {
+  background-image: url("img/files2x/file-cpp@2x.png");
+}
+.as .endor-node-inner-icon {
+  background-image: url("img/files2x/file-actionscript@2x.png");
+}
+.md .endor-node-inner-icon {
+  background-image: url("img/files2x/file-markdown@2x.png");
+}
+.scpt .endor-node-inner-icon,
+.AppleScript .endor-node-inner-icon {
+  background-image: url("img/files2x/file-applescript@2x.png");
+}
+.git .endor-node-inner-icon,
+.gitignore .endor-node-inner-icon,
+.gitmodules .endor-node-inner-icon {
+  background-image: url("img/files2x/file-git@2x.png");
+}
+.gitmodules .endor-node-inner-icon {
+  background-image: url("img/files2x/file-git@2x.png");
+}
+.htaccess .endor-node-inner-icon {
+  background-image: url("img/files2x/file-tcl@2x.png");
+}
+.json .endor-node-inner-icon {
+  background-image: url("img/files2x/file-json@2x.png");
+}
+.ejs .endor-node-inner-icon {
+  background-image: url("img/files2x/file-ejs@2x.png");
+}
+.connection.swift .endor-node-inner-icon {
+  background-image: url("img/files2x/file-swift@2x.png");
+}
+.connection.onedrive .endor-node-inner-icon {
+  background-image: url("img/files2x/onedrive.png");
+}
+.find-wrapper,
+.replace-wrapper {
+  background: #3a3333;
+}
+.find-wrapper .input-wrapper,
+.replace-wrapper .input-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.find-wrapper .input-wrapper input,
+.replace-wrapper .input-wrapper input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  font-size: 18px;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  color: #d6cbcb;
+  background: #3a3333;
+  -webkit-box-shadow: none;
+  outline: none;
+}
+.menu-check-item > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.menu-check-item > div .icon,
+.menu-check-item > div .toggle {
+  width: 48px;
+  height: 48px;
+}
+.menu-check-item > div .label {
+  color: #d6cbcb;
+  flex: 3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 5px;
 }
 .CodeMirror {
   color: #f8f8f2;
@@ -779,6 +1324,137 @@ img {
   z-index: 1000;
   background: #000;
 }
+.viewport-preferences .tr-layout-auto.tr-panel {
+  overflow: auto !important;
+}
+.viewport-preferences {
+  background: #2f2a2a;
+}
+.viewport-preferences ul {
+  background: #463e3e;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 20px;
+/* main row - list item */
+}
+.viewport-preferences ul li {
+  height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 16px;
+  color: #d6cbcb;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(214,203,203,0.12);
+}
+.viewport-preferences ul li:last-child {
+  border-bottom: none;
+}
+.viewport-preferences .main {
+  background: #3a3333;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.groups {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.pref-group {
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.24);
+  background: #463e3e;
+  margin-bottom: 8px;
+}
+.pref-group .group-title {
+  color: #d6cbcb;
+  color: rgba(214,203,203,0.5);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 16px 0 6px 16px;
+}
+.pref-group .pref-item.active {
+  background: #3a3333 !important;
+}
+.pref-group .pref-item:last-child {
+  border-bottom: none;
+}
+.pref-group .pref-item {
+  min-height: 63px;
+  padding: 7px 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6cbcb;
+  border-bottom: 1px solid rgba(214,203,203,0.12);
+}
+.pref-group .pref-item .pref-item-title {
+  font-size: 16px;
+  display: block;
+  font-weight: 300;
+}
+.pref-group .pref-item .pref-item-description {
+  font-size: 12px;
+  margin-top: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.viewport-preferences .main.fileTypes .pref-item {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.viewport-preferences .main.fileTypes .pref-item .pref-item-right div {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.options {
+  background: #463e3e;
+}
+.options div:last-child {
+  border-bottom: none;
+}
+.options div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 16px;
+  border-bottom: 1px solid #d6cbcb;
+  border-bottom: 1px solid rgba(214,203,203,0.12);
+}
 .keyboard-plugin {
   height: 38px;
   width: 100%;
@@ -810,10 +1486,13 @@ img {
 .endor-node-wrap.selected > .endor-node .endor-node-inner,
 .endor-node-wrap.focus > .endor-node > .endor-node-inner > .endor-node-inner-text {
   background: #3a3333 !important;
-  border: none !important;
+/* border: none !important */
 }
 .viewport-slide {
   background-color: initial !important;
+}
+.endor-node-wrap.focus>.endor-node>.endor-node-inner>.endor-node-inner-text {
+  border: 1px dotted transparent !important;
 }
 .tabscontent .tr-layout-auto.tr-panel {
   height: 100%;
@@ -845,11 +1524,18 @@ img {
   width: 100%;
   z-index: 10;
 }
+.header-wrapper,
+.tabs-header-wrapper {
+  overflow: initial !important;
+}
 .fileexplorer-header,
 .tabmanager-header,
 .goto-header,
 .notifications-header,
-.revisions-header {
+.revisions-header,
+.find-wrapper,
+.selection-operation-header,
+.preferences-header {
   position: relative;
   z-index: 1000;
   background-color: #3a3333 !important;
@@ -871,16 +1557,49 @@ img {
 .goto-header .column,
 .notifications-header .column,
 .revisions-header .column,
+.find-wrapper .column,
+.selection-operation-header .column,
+.preferences-header .column,
 .fileexplorer-header .project-name,
 .tabmanager-header .project-name,
 .goto-header .project-name,
 .notifications-header .project-name,
 .revisions-header .project-name,
+.find-wrapper .project-name,
+.selection-operation-header .project-name,
+.preferences-header .project-name,
+.fileexplorer-header .preferences-name,
+.tabmanager-header .preferences-name,
+.goto-header .preferences-name,
+.notifications-header .preferences-name,
+.revisions-header .preferences-name,
+.find-wrapper .preferences-name,
+.selection-operation-header .preferences-name,
+.preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
 .goto-header .tab-name,
 .notifications-header .tab-name,
-.revisions-header .tab-name {
+.revisions-header .tab-name,
+.find-wrapper .tab-name,
+.selection-operation-header .tab-name,
+.preferences-header .tab-name,
+.fileexplorer-header .title,
+.tabmanager-header .title,
+.goto-header .title,
+.notifications-header .title,
+.revisions-header .title,
+.find-wrapper .title,
+.selection-operation-header .title,
+.preferences-header .title,
+.fileexplorer-header .select-counter,
+.tabmanager-header .select-counter,
+.goto-header .select-counter,
+.notifications-header .select-counter,
+.revisions-header .select-counter,
+.find-wrapper .select-counter,
+.selection-operation-header .select-counter,
+.preferences-header .select-counter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -897,11 +1616,41 @@ img {
 .goto-header .project-name,
 .notifications-header .project-name,
 .revisions-header .project-name,
+.find-wrapper .project-name,
+.selection-operation-header .project-name,
+.preferences-header .project-name,
+.fileexplorer-header .preferences-name,
+.tabmanager-header .preferences-name,
+.goto-header .preferences-name,
+.notifications-header .preferences-name,
+.revisions-header .preferences-name,
+.find-wrapper .preferences-name,
+.selection-operation-header .preferences-name,
+.preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
 .goto-header .tab-name,
 .notifications-header .tab-name,
-.revisions-header .tab-name {
+.revisions-header .tab-name,
+.find-wrapper .tab-name,
+.selection-operation-header .tab-name,
+.preferences-header .tab-name,
+.fileexplorer-header .title,
+.tabmanager-header .title,
+.goto-header .title,
+.notifications-header .title,
+.revisions-header .title,
+.find-wrapper .title,
+.selection-operation-header .title,
+.preferences-header .title,
+.fileexplorer-header .select-counter,
+.tabmanager-header .select-counter,
+.goto-header .select-counter,
+.notifications-header .select-counter,
+.revisions-header .select-counter,
+.find-wrapper .select-counter,
+.selection-operation-header .select-counter,
+.preferences-header .select-counter {
   margin-left: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -962,7 +1711,6 @@ img {
   width: 48px !important;
   height: 48px !important;
   border: none !important;
-  background: transparent;
 }
 .fileexplorer .endor-node-inner-menuicon {
   display: block;
@@ -970,35 +1718,6 @@ img {
   height: 48px !important;
   background: url("img/explorer/menu.png") no-repeat center;
   background-size: 17px;
-}
-.connection.ssh .endor-node-inner-icon {
-  background: url("img/explorer/ssh.png") center no-repeat;
-  background-size: 20px;
-}
-.connection.devbox .endor-node-inner-icon {
-  background: url("img/explorer/container.png") center no-repeat;
-  background-size: 20px;
-}
-.connection.dropbox .endor-node-inner-icon {
-  background: url("img/explorer/dropbox.png") center no-repeat;
-  background-size: 20px;
-}
-.connection.drive .endor-node-inner-icon {
-  background: url("img/explorer/drive.png") center no-repeat;
-  background-size: 20px;
-}
-.connection.ftp .endor-node-inner-icon,
-.connection.sftp .endor-node-inner-icon {
-  background: url("img/explorer/ftp.png") center no-repeat;
-  background-size: 20px;
-}
-.folder .endor-node-inner-icon {
-  background: url("img/explorer/folder.png") center no-repeat;
-  background-size: 20px;
-}
-.file .endor-node-inner-icon {
-  background: url("img/explorer/file.png") center no-repeat;
-  background-size: 20px;
 }
 .dialog-overlay {
   position: absolute;

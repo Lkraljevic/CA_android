@@ -52,6 +52,8 @@
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
     <plugin name="ionic-plugin-keyboard"/>
 
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.3" />
+
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />
     <platform name="android">

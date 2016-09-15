@@ -23,8 +23,10 @@
     <preference name="DisallowOverscroll"         value="true" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-minSdkVersion"      value="14" />
-    
-    <preference AndroidLaunchMode="singleTask" />
+
+    <preference name="AndroidLaunchMode"      value="singleInstance" />
+
+    <!-- <preference AndroidLaunchMode="singleTask" /> -->
 
 
     <!-- Define a specific version of PhoneGap to build into your app. -->

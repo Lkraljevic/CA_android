@@ -1,0 +1,227 @@
+/* FILE EXPLORER STYL */
+
+
+/* IMPORTS */
+@import 'explorer/sidePanels'
+@import 'explorer/tabs'
+@import 'explorer/goto'
+@import 'explorer/buttons'
+@import 'explorer/icons'
+@import 'explorer/find'
+@import 'explorer/codemirror'
+@import 'explorer/notifications'
+@import 'explorer/revisions'
+@import 'explorer/preferences'
+@import 'explorer/keyboard'
+
+
+
+
+/* Overwrite =========================== */
+.left-panel.main-slidebar
+	background: color1
+		
+.endor-node-wrap.selected > .endor-node .endor-node-inner,
+.endor-node-wrap.focus > .endor-node > .endor-node-inner > .endor-node-inner-text	
+	background: color1 !important
+	/* border: none !important */
+
+.viewport-slide
+	background-color: initial !important
+
+
+
+/* overwrite blue border for focused line */	
+.endor-node-wrap.focus>.endor-node>.endor-node-inner>.endor-node-inner-text
+	border: 1px dotted transparent !important
+	
+		
+/* Codemirror scroll */
+.tabscontent
+	.tr-layout-auto.tr-panel
+		height: 100%
+
+	/* Codemirror height */
+	.content-el
+		.CodeMirror,
+		.tr-layout-auto.tr-panel
+			height: 100%
+
+
+	
+/* File Explorer fix */
+.workspace-panel
+	.tr-panel > div
+		height: 100%
+
+
+
+/* Find & Replace Overwrite */
+.tabs-content-wrapper .content-el .tr-layout-auto.tr-panel
+	height: 100%
+
+.tabs-content-wrapper.open-find .content-el .tr-layout-auto.tr-panel
+	height: calc(100% - 56px)
+
+
+/* Overwrite for scroll (GoTo & Notifications) */
+.goto-header,
+.notifications-header
+	position: absolute !important
+	width: 100%
+	
+.list-wrapper,
+.notifications-data-list
+	height: calc(100% - 56px) !important
+	top: 56px
+	overflow: auto
+	position: absolute
+	width: 100%
+	z-index: 10
+
+
+/* Header shadow */
+.header-wrapper,
+.tabs-header-wrapper
+	overflow: initial !important
+
+
+
+/* /Overwrite end ======================== */
+
+
+
+
+
+
+
+/* File Explorer & 
+Tabs & 
+Notifications & 
+Revisions &
+Selection title &
+Preferences &
+Find and Replace - Header ======================= */
+.fileexplorer-header,
+.tabmanager-header,
+.goto-header,
+.notifications-header,
+.revisions-header,
+.find-wrapper,
+.selection-operation-header,
+.preferences-header
+	position: relative
+	z-index: 1000
+	background-color: color1 !important
+	background: color1 !important
+	box-shadow(shadowLvl2)
+	height: 56px
+	
+	flexbox()
+	flex-flow: row nowrap
+	align-items: center
+	
+
+	.column,
+	.project-name,
+	.preferences-name,
+	.tab-name,
+	.title,
+	.select-counter
+		flexbox()
+		align-items: center
+		
+		/* header font */
+		color: color4
+		font-size: fontSize4
+		font-weight: 400
+		
+	.project-name,
+	.preferences-name,
+	.tab-name,
+	.title,
+	.select-counter
+		margin-left: 16px
+		ellipsis()
+		display: inline
+		line-height: 56px
+
+	
+
+
+
+/* Notification Bubble Number */
+.notification > div:empty,
+.tabsicon > div:empty
+	display: none
+
+.notification > div
+	position: absolute
+	margin: 8px 0 0 26px
+	width: 14px
+	height: 14px
+	padding: 2px
+	border-radius: 100%
+	background: color6
+	color: color7
+	font-size: fontSize01
+	font-weight: defaultWeight
+	display: flex
+	justify-content: center
+	align-items: center
+
+/* Tab Bubble Number */
+.tabsicon > div
+	width: 100%
+	height: 100%
+	color: color7
+	font-size: fontSize02
+	font-weight: defaultWeight
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+
+
+/* File Explorer - Content ======================= */
+
+.fileexplorer
+	background: color2
+	border-bottom: 1px solid rgba(27, 23, 22, 0.12) !important
+
+
+	/* explorer row */
+	.endor-node-inner-text
+		background: none !important
+		box-sizing()
+		padding-left: 16px
+		
+		span
+			color: color4
+			font-size: fontSize2
+
+	.endor-node-inner-icon
+		display: block
+		width: 48px !important
+		height: 48px !important
+		border: none !important
+
+	.endor-node-inner-menuicon
+		display: block
+		width: 48px !important
+		height: 48px !important
+		background: url('img/explorer/menu.png') no-repeat center
+		background-size: 17px
+		
+
+
+
+
+
+
+
+
+
+
+

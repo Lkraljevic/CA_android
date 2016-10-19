@@ -1,0 +1,132 @@
+/* TABS STYL */
+
+
+/* Header Tabs is handled in "fileExplorer.styl" */
+
+
+
+/* Tabs - List of items ======================= */
+
+.tabslist
+	background: color3
+	overflow: auto !important
+
+.tabslist .body-list-wrap
+	min-height: 10px
+	height: initial
+	background: color3
+	box-shadow(shadowLvl4)
+	padding: 10px 0
+	box-sizing()
+	
+	
+	.tabs-list-title
+		height: 48px
+		padding: 0 16px
+		box-sizing()
+		flexbox()
+		align-items: center
+		font-size: fontSize1
+		color: color4a5
+		
+	/* Tab Row */
+	.tab
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+		height: 58px
+
+		.left-tab-icon,
+		.menu-tab
+			display: block
+			width: 48px !important
+			height: 48px !important
+			
+		.left-tab-icon
+			background: url('img/explorer/file.png') center no-repeat
+			background-size: 20px
+			
+		.menu-tab
+			background: url('img/explorer/menu.png') center no-repeat
+			background-size: 17px
+			
+
+
+
+		/* Tab Middle section */
+		.middle-tab
+			width: calc(100% - 96px) !important
+			height: 100%
+			overflow: hidden
+			flexbox()
+			flex-flow: column nowrap
+			justify-content: center
+			box-sizing()
+			padding-left: 16px
+			
+
+			.middle-tab-top .tab-title,
+			.middle-tab-bottom
+				ellipsis()
+				display: block
+
+			.middle-tab-top
+				font-size: fontSize2
+				margin-bottom: 4px
+				
+			.middle-tab-bottom
+				font-size: fontSize03
+				color: color4a5
+
+
+
+/* Bottom slider ======================= */
+.bottom-slidebar
+	background: color3
+	box-shadow(shadowLvl4top)
+	padding-top: 10px
+	box-sizing()
+
+
+	/* Row */
+		
+	.file-row
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+		height: 58px !important
+		border-bottom: 1px solid color2
+		
+
+		.html,
+		.info
+			display: block
+			width: 48px !important
+			height: 48px !important
+		
+		.html
+			background: url('img/explorer/file.png') center no-repeat
+			background-size: 20px
+
+		.tab-title
+			width: calc(100% - 96px) !important
+			ellipsis()
+			box-sizing()
+			padding-left: 16px
+
+			
+		.info
+			background: url('img/explorer/info.png') center no-repeat
+			background-size: 20px
+		
+
+	/* Bottom slider menu is handled in "sidePanels.styl" */
+
+
+
+
+
+
+
+
+					

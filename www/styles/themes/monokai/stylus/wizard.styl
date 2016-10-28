@@ -65,6 +65,20 @@ input[type="text"]
         width: 48px
         height: 48px
 
+    .wiz-top__back
+        background: url('img/back.png') no-repeat center
+        background-size: 24px !important
+	
+    .wiz-top__close
+        background: url('img/close.png') no-repeat center
+        background-size: 17px !important
+
+    .wiz-top__search
+        background: url('img/explorer/find.png') no-repeat center
+        background-size: 17px !important
+
+
+
     .wiz-top__create,
     .wiz-top__connect,
     .wiz-top__next-txt
@@ -101,6 +115,9 @@ input[type="text"]
             flex-flow: row nowrap
             align-items: center
             overflow: hidden
+
+            &.selected
+                background: color1
             
 
             .wiz-row__icon

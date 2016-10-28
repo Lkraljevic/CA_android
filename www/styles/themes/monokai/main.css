@@ -1761,6 +1761,7 @@ img {
 .revisions-header,
 .find-wrapper,
 .selection-operation-header,
+.saveas-header,
 .preferences-header {
   position: relative;
   z-index: 1000;
@@ -1785,6 +1786,7 @@ img {
 .revisions-header .column,
 .find-wrapper .column,
 .selection-operation-header .column,
+.saveas-header .column,
 .preferences-header .column,
 .fileexplorer-header .project-name,
 .tabmanager-header .project-name,
@@ -1793,6 +1795,7 @@ img {
 .revisions-header .project-name,
 .find-wrapper .project-name,
 .selection-operation-header .project-name,
+.saveas-header .project-name,
 .preferences-header .project-name,
 .fileexplorer-header .preferences-name,
 .tabmanager-header .preferences-name,
@@ -1801,6 +1804,7 @@ img {
 .revisions-header .preferences-name,
 .find-wrapper .preferences-name,
 .selection-operation-header .preferences-name,
+.saveas-header .preferences-name,
 .preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
@@ -1809,6 +1813,7 @@ img {
 .revisions-header .tab-name,
 .find-wrapper .tab-name,
 .selection-operation-header .tab-name,
+.saveas-header .tab-name,
 .preferences-header .tab-name,
 .fileexplorer-header .title,
 .tabmanager-header .title,
@@ -1817,6 +1822,7 @@ img {
 .revisions-header .title,
 .find-wrapper .title,
 .selection-operation-header .title,
+.saveas-header .title,
 .preferences-header .title,
 .fileexplorer-header .select-counter,
 .tabmanager-header .select-counter,
@@ -1825,6 +1831,7 @@ img {
 .revisions-header .select-counter,
 .find-wrapper .select-counter,
 .selection-operation-header .select-counter,
+.saveas-header .select-counter,
 .preferences-header .select-counter {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1844,6 +1851,7 @@ img {
 .revisions-header .project-name,
 .find-wrapper .project-name,
 .selection-operation-header .project-name,
+.saveas-header .project-name,
 .preferences-header .project-name,
 .fileexplorer-header .preferences-name,
 .tabmanager-header .preferences-name,
@@ -1852,6 +1860,7 @@ img {
 .revisions-header .preferences-name,
 .find-wrapper .preferences-name,
 .selection-operation-header .preferences-name,
+.saveas-header .preferences-name,
 .preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
@@ -1860,6 +1869,7 @@ img {
 .revisions-header .tab-name,
 .find-wrapper .tab-name,
 .selection-operation-header .tab-name,
+.saveas-header .tab-name,
 .preferences-header .tab-name,
 .fileexplorer-header .title,
 .tabmanager-header .title,
@@ -1868,6 +1878,7 @@ img {
 .revisions-header .title,
 .find-wrapper .title,
 .selection-operation-header .title,
+.saveas-header .title,
 .preferences-header .title,
 .fileexplorer-header .select-counter,
 .tabmanager-header .select-counter,
@@ -1876,6 +1887,7 @@ img {
 .revisions-header .select-counter,
 .find-wrapper .select-counter,
 .selection-operation-header .select-counter,
+.saveas-header .select-counter,
 .preferences-header .select-counter {
   margin-left: 16px;
   text-overflow: ellipsis;

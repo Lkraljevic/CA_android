@@ -59,7 +59,7 @@
     <plugin name="ionic-plugin-keyboard"/>
 
     <plugin name="cordova-plugin-background-mode" spec="0.6.4" source="npm" />
-    <!--<plugin name="com.badrit.backbutton" spec="0.1.0" source="pgb" /> -->
+    <plugin name="com.badrit.backbutton" spec="0.1.0" source="pgb" />
 
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />

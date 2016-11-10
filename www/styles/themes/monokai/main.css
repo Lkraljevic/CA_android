@@ -2310,12 +2310,12 @@ input[type="text"] {
 }
 .wizard-wrap.all .wiz-row-list,
 .wizard-wrap.container .wiz-row-list,
-.wizard-wrap.github2 .wiz-row-list {
+.wizard-wrap.step2 .wiz-row-list {
   padding: 0;
 }
 .wizard-wrap.all .wiz-row,
 .wizard-wrap.container .wiz-row,
-.wizard-wrap.github2 .wiz-row {
+.wizard-wrap.step2 .wiz-row {
   border-bottom: 1px solid #3a3333;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2324,7 +2324,7 @@ input[type="text"] {
 .wizard-wrap.container .wiz-bot {
   height: calc(100% - 120px);
 }
-.wizard-wrap.github2 .wiz-bot {
+.wizard-wrap.step2 .wiz-bot {
   height: calc(100% - 184px);
 }
 .wizard-wrap.sftp.public .wiz-bot {

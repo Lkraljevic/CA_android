@@ -1,0 +1,63 @@
+/* SAVE AS STYL ======================================= */
+
+/* overwrite height */ 
+.saveas-wrapper > .tr-layout-auto.tr-panel
+    height: 100%
+
+
+
+/* Save As Header is handled in "fileExplorer.styl" */
+
+
+/* Save As - Body ======================= */
+.saveas-wrapper .body-wrapper
+    height: calc(100% - 56px)
+    background: #2f2a2a
+
+/* Save As Content */
+.saveas-wrapper .body-wrapper .saveas-content
+    height: calc(100% - 56px)
+
+    .destination-wrap
+
+        label
+            display: block
+            box-sizing()
+            padding: 0 16px
+            ellipsis()
+
+        .destination
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+            height: 56px
+                
+            .destination-icon
+                flexbox()
+                justify-content: center
+                align-items: center
+                width: 48px
+                height: 48px
+                flex-grow: 0
+                flex-shrink: 0
+
+            .destination-desc
+                flexbox()
+                align-items: center
+                box-sizing()
+                padding: 0 16px
+                ellipsis()
+                width: 100%
+                height: 56px
+
+    
+    
+/* Save As buttons */
+.saveas-wrapper .body-wrapper .saveas-buttons
+
+    button
+        background: #2f2a2a
+        height: 56px
+
+
+

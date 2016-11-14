@@ -4,9 +4,22 @@
 .saveas-wrapper > .tr-layout-auto.tr-panel
     height: 100%
 
+/* overwrite for SaveAs Destination - explorer height */
+.saveas-wrapper .body-wrapper > .tr-layout-auto.tr-panel
+    height: calc(100% - 56px)
+
+    .fileexplorer
+        height: 100%
+
+/* /overwrite for SaveAs Destination - explorer height */
+
+
+
 
 
 /* Save As Header is handled in "fileExplorer.styl" */
+
+/* Buttons are handled in "explorer/buttons.styl" */
 
 
 /* Save As - Body ======================= */
@@ -14,7 +27,9 @@
     height: calc(100% - 56px)
     background: #2f2a2a
 
-/* Save As Content */
+
+
+/* Save As Content ======================= */
 .saveas-wrapper .body-wrapper .saveas-content
     height: calc(100% - 56px)
 
@@ -25,12 +40,15 @@
             box-sizing()
             padding: 0 16px
             ellipsis()
+            margin: 10px 0 5px 0
 
         .destination
             flexbox()
             flex-flow: row nowrap
             align-items: center
             height: 56px
+            border-top: 1px solid #423d3d
+            border-bottom: 1px solid #423d3d
                 
             .destination-icon
                 flexbox()
@@ -54,10 +72,15 @@
     
 /* Save As buttons */
 .saveas-wrapper .body-wrapper .saveas-buttons
+    height: 56px
+
 
     button
         background: #2f2a2a
-        height: 56px
+        height: 56px !important
+        font-size: 12px
+        box-sizing()
+        padding: 0 16px
 
 
 

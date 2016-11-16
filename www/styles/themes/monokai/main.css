@@ -431,6 +431,61 @@ img {
 .oauth .github {
   background: url("img/oauth/github-inactive@2x.png");
 }
+.child-nodes-none > div.endor-node-wrap {
+  display: none;
+}
+.child-nodes-none > div.endor-node-child-nodes-overlay,
+.child-nodes-none > div.empty-node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2f2a2a;
+}
+.child-nodes-none > div.endor-node-child-nodes-overlay {
+  z-index: 20;
+}
+.child-nodes-none > div.endor-node-child-nodes-overlay .overlay-msg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+.child-nodes-none > div.endor-node-child-nodes-overlay .overlay-msg:before {
+  display: block;
+  position: absolute;
+  content: '';
+  background: #f00;
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 50%;
+  margin-left: -25px;
+}
+.child-nodes-none > div.empty-node,
+.empty-node {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.child-nodes-none > div.empty-node .empty-msg,
+.empty-node .empty-msg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
 .left-side-panel.left-slidebar,
 .right-side-panel.right-slidebar {
   -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
@@ -523,11 +578,11 @@ img {
 }
 .tabslist .body-list-wrap .tab .left-tab-icon {
   background: url("img/explorer/file.png") center no-repeat;
-  background-size: 20px;
+  background-size: 24px;
 }
 .tabslist .body-list-wrap .tab .menu-tab {
-  background: url("img/explorer/menu.png") center no-repeat;
-  background-size: 17px;
+  background: url("img/explorer/dots-vertical.png") center no-repeat;
+  background-size: 24px;
 }
 .tabslist .body-list-wrap .tab .middle-tab {
   width: calc(100% - 96px) !important;
@@ -555,6 +610,9 @@ img {
 .tabslist .body-list-wrap .tab .middle-tab .middle-tab-top {
   font-size: 16px;
   margin-bottom: 4px;
+}
+.tabslist .body-list-wrap .tab .middle-tab .middle-tab-top .tab-title {
+  font-size: 16px;
 }
 .tabslist .body-list-wrap .tab .middle-tab .middle-tab-bottom {
   font-size: 12px;
@@ -593,7 +651,7 @@ img {
 }
 .bottom-slidebar .file-row .html {
   background: url("img/explorer/file.png") center no-repeat;
-  background-size: 20px;
+  background-size: 24px;
 }
 .bottom-slidebar .file-row .tab-title {
   display: -webkit-box;
@@ -613,7 +671,7 @@ img {
 }
 .bottom-slidebar .file-row .info {
   background: url("img/explorer/info.png") center no-repeat;
-  background-size: 20px;
+  background-size: 28px;
 }
 .goto-wrapper {
   background: #3a3333;
@@ -697,32 +755,32 @@ img {
   flex: 0 0 48px;
 }
 .menu-side {
-  background: url("img/explorer/menu-side.png") no-repeat center;
-  background-size: 17px;
+  background: url("img/explorer/menu.png") no-repeat center;
+  background-size: 24px;
 }
 .gotoanything {
   background: url("img/explorer/goto-anything.png") no-repeat center;
-  background-size: 17px;
+  background-size: 24px;
 }
 .editor {
   background: url("img/explorer/editor.png") no-repeat center;
-  background-size: 17px;
+  background-size: 24px;
 }
 .notification {
   background: url("img/explorer/notification.png") no-repeat center;
-  background-size: 17px;
+  background-size: 24px;
 }
 .menu {
-  background: url("img/explorer/menu.png") no-repeat center;
-  background-size: 17px;
+  background: url("img/explorer/dots-vertical.png") no-repeat center;
+  background-size: 24px;
 }
 .filemenu {
-  background: url("img/explorer/file-menu.png") no-repeat center;
-  background-size: 17px;
+  background: url("img/explorer/dots-horizontal.png") no-repeat center;
+  background-size: 24px;
 }
 .tabsicon {
   background: url("img/explorer/tabs.png") no-repeat center;
-  background-size: 17px;
+  background-size: 24px;
 }
 .back {
   background: url("img/back.png") no-repeat center;
@@ -730,33 +788,33 @@ img {
 }
 .close {
   background: url("img/close.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .copy {
   background: url("img/explorer/copy.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .cut {
   background: url("img/explorer/cut.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .delete {
   background: url("img/explorer/delete.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 /* overwrite */
   background-color: transparent !important;
 }
 .download {
   background: url("img/explorer/download.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .add-button {
   background: url("img/explorer/new-folder.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .close-notification {
   background: url("img/close.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .left-arrow {
   background: url("img/explorer/arrow-left.png") no-repeat center;
@@ -778,16 +836,16 @@ img {
 }
 .case .icon {
   background: url("img/explorer/match-case.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .regex .icon {
   background: url("img/explorer/regex.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .case .toggle.active,
 .regex .toggle.active {
   background: url("img/explorer/check.png") no-repeat center;
-  background-size: 22px !important;
+  background-size: 24px !important;
 }
 .simple-menu .menu-item-wrapp .menu-item-wrap-head:before {
   content: ' ';
@@ -799,169 +857,166 @@ img {
 }
 .find .menu-item-wrap-head:before {
   background: url("img/explorer/find.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .replace .menu-item-wrap-head:before {
   background: url("img/explorer/replace.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .undo .menu-item-wrap-head:before {
   background: url("img/explorer/undo.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .undo_selection .menu-item-wrap-head:before {
   background: url("img/explorer/undo-selection.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .redo .menu-item-wrap-head:before {
   background: url("img/explorer/redo.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .beautify .menu-item-wrap-head:before {
   background: url("img/explorer/beautify.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .indentLeft .menu-item-wrap-head:before {
-  background: url("img/explorer/indentLeft.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/indent-left.png") no-repeat center;
+  background-size: 24px !important;
 }
 .indentRight .menu-item-wrap-head:before {
-  background: url("img/explorer/indentRight.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/indent-right.png") no-repeat center;
+  background-size: 24px !important;
 }
 .goto_line .menu-item-wrap-head:before {
   background: url("img/explorer/goto-line.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .refresh .menu-item-wrap-head:before {
   background: url("img/explorer/refresh.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .reopen_with_encoding .menu-item-wrap-head:before {
   background: url("img/explorer/reopen_with_encoding.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .save_with_encoding .menu-item-wrap-head:before {
   background: url("img/explorer/save_with_encoding.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .save .menu-item-wrap-head:before {
   background: url("img/explorer/save.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .save_as .menu-item-wrap-head:before {
-  background: url("img/explorer/save_as.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/save-as.png") no-repeat center;
+  background-size: 24px !important;
 }
 .save_all .menu-item-wrap-head:before {
-  background: url("img/explorer/save_all.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/save-all.png") no-repeat center;
+  background-size: 24px !important;
 }
 .revisions .menu-item-wrap-head:before {
   background: url("img/explorer/revisions.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .share .menu-item-wrap-head:before {
   background: url("img/explorer/share.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .new-connection .menu-item-wrap-head:before {
   background: url("img/explorer/container.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .new-project .menu-item-wrap-head:before {
-  background: url("img/explorer/box.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/project.png") no-repeat center;
+  background-size: 24px !important;
 }
 .project-config .menu-item-wrap-head:before,
 .settings .menu-item-wrap-head:before {
-  background: url("img/explorer/settings1.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/config.png") no-repeat center;
+  background-size: 24px !important;
 }
 .share-project .menu-item-wrap-head:before {
-  background: url("img/explorer/share-project.png") no-repeat center;
-  background-size: 16px !important;
+  background: url("img/explorer/share.png") no-repeat center;
+  background-size: 24px !important;
 }
 .switch-project .menu-item-wrap-head:before {
   background: url("img/explorer/switch-project.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .manage-projects .menu-item-wrap-head:before {
   background: url("img/explorer/settings.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .clone .menu-item-wrap-head:before {
   background: url("img/explorer/clone.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .paste .menu-item-wrap-head:before {
   background: url("img/explorer/paste.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .rename .menu-item-wrap-head:before {
   background: url("img/explorer/rename.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .permissions .menu-item-wrap-head:before {
   background: url("img/explorer/permissions.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .create-file .menu-item-wrap-head:before {
   background: url("img/explorer/new-file.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .create-folder .menu-item-wrap-head:before {
   background: url("img/explorer/new-folder.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .upload .menu-item-wrap-head:before {
   background: url("img/explorer/upload.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .ssh-terminal .menu-item-wrap-head:before {
   background: url("img/explorer/ssh.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
 }
 .remove .menu-item-wrap-head:before {
   background: url("img/explorer/delete.png") no-repeat center;
-  background-size: 16px !important;
+  background-size: 24px !important;
+}
+.destroy .menu-item-wrap-head:before {
+  background: url("img/explorer/destory.png") no-repeat center;
+  background-size: 24px !important;
 }
 .connection.ssh .endor-node-inner-icon {
   background: url("img/explorer/ssh.png") center no-repeat;
-  background-size: 20px;
+  background-size: 30px;
 }
 .connection.devbox .endor-node-inner-icon {
   background: url("img/explorer/container.png") center no-repeat;
-  background-size: 20px;
+  background-size: 30px;
 }
 .connection.dropbox .endor-node-inner-icon {
   background: url("img/explorer/dropbox.png") center no-repeat;
-  background-size: 20px;
+  background-size: 30px;
 }
 .connection.drive .endor-node-inner-icon {
   background: url("img/explorer/drive.png") center no-repeat;
-  background-size: 20px;
+  background-size: 30px;
 }
 .connection.ftp .endor-node-inner-icon,
 .connection.sftp .endor-node-inner-icon {
   background: url("img/explorer/ftp.png") center no-repeat;
-  background-size: 20px;
+  background-size: 30px;
 }
 .folder .endor-node-inner-icon {
   background: url("img/explorer/folder.png") center no-repeat;
-  background-size: 20px;
+  background-size: 24px;
 }
 .file .endor-node-inner-icon {
   background: url("img/explorer/file.png") center no-repeat;
   background: url("img/files2x/file-default@2x.png") center no-repeat;
-  background-size: 20px;
-}
-.folder .endor-node-inner-icon {
-  background: url("img/explorer/folder.png") center no-repeat;
-  background-size: 20px;
-}
-.connection .endor-node-inner-icon {
-  background-image: url("img/files2x/service-ftp.png");
+  background-size: 24px;
 }
 .file.ai .endor-node-inner-icon {
   background-image: url("img/files2x/file-ai@2x.png");
@@ -1123,12 +1178,6 @@ img {
 }
 .folder-link .endor-node-inner-icon {
   background-image: url("img/files2x/folder-link@2x.png");
-}
-.folder-local .endor-node-inner-icon {
-  background-image: url("img/files2x/folder-local@2x.png");
-}
-.folder-white .endor-node-inner-icon {
-  background-image: url("img/files2x/folder-white@2x.png");
 }
 .less .endor-node-inner-icon {
   background-image: url("img/files2x/file-less@2x.png");
@@ -1844,73 +1893,6 @@ img {
 .tabs-header-wrapper {
   overflow: initial !important;
 }
-.child-nodes-none > div.endor-node-wrap {
-  display: none;
-}
-.child-nodes-none > div.endor-node-child-nodes-overlay,
-.child-nodes-none > div.empty-node {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2f2a2a;
-}
-.child-nodes-none > div.endor-node-child-nodes-overlay {
-  z-index: 20;
-}
-.child-nodes-none > div.endor-node-child-nodes-overlay .overlay-msg {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 150px;
-}
-.child-nodes-none > div.endor-node-child-nodes-overlay .overlay-msg:before {
-  display: block;
-  position: absolute;
-  content: '';
-  background: #f00;
-  width: 50px;
-  height: 50px;
-  top: 50px;
-  left: 50%;
-  margin-left: -25px;
-}
-.child-nodes-none > div.empty-node,
-.empty-node {
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-.child-nodes-none > div.empty-node .empty-msg,
-.empty-node .empty-msg {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 150px;
-}
-.child-nodes-none > div.empty-node .overlay-msg:before,
-.empty-node .overlay-msg:before {
-  display: block;
-  position: absolute;
-  content: '';
-  background: #f00;
-  width: 50px;
-  height: 50px;
-  top: 50px;
-  left: 50%;
-  margin-left: -25px;
-}
 .fileexplorer-header,
 .tabmanager-header,
 .goto-header,
@@ -2009,7 +1991,8 @@ img {
   color: #d6cbcb;
   font-size: 20px;
   font-weight: 400;
-  flex: 2 2 100%;
+  width: 100%;
+  flex-grow: 2;
 }
 .fileexplorer-header .project-name,
 .tabmanager-header .project-name,
@@ -2115,6 +2098,9 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .fileexplorer .endor-node-inner-text span {
   color: #d6cbcb;
@@ -2130,8 +2116,8 @@ img {
   display: block;
   width: 48px !important;
   height: 48px !important;
-  background: url("img/explorer/menu.png") no-repeat center;
-  background-size: 17px;
+  background: url("img/explorer/dots-vertical.png") no-repeat center;
+  background-size: 24px;
 }
 .dialog-overlay {
   position: absolute;
@@ -2286,11 +2272,11 @@ input[type="text"] {
 }
 .wizard-wrap .wiz-top .wiz-top__close {
   background: url("img/close.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .wizard-wrap .wiz-top .wiz-top__search {
   background: url("img/explorer/find.png") no-repeat center;
-  background-size: 17px !important;
+  background-size: 24px !important;
 }
 .wizard-wrap .wiz-top .wiz-top__create,
 .wizard-wrap .wiz-top .wiz-top__connect,

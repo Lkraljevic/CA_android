@@ -2,6 +2,7 @@
 
 
 /* IMPORTS */
+@import 'explorer/loaders'
 @import 'explorer/sidePanels'
 @import 'explorer/tabs'
 @import 'explorer/goto'
@@ -92,68 +93,7 @@
 	overflow: initial !important
 
 
-/* Folder Loading/Empty Screen =============== */
-/* Hides all elements inside */
-.child-nodes-none > div.endor-node-wrap
-	display: none
 
-.child-nodes-none > div.endor-node-child-nodes-overlay,
-.child-nodes-none > div.empty-node
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	background: #2f2a2a
-
-/* Loading screen */
-.child-nodes-none > div.endor-node-child-nodes-overlay
-	z-index: 20
-
-	.overlay-msg
-		flexbox()
-		justify-content: center
-		width: 100%
-		height: 100%
-		margin-top: 150px
-
-	.overlay-msg:before
-		display: block
-		position: absolute
-		content: ''
-		background: red
-		width: 50px
-		height: 50px
-		top: 50px
-		left: 50%
-		margin-left: -25px
-
-/* Empty Folder screen */	
-.child-nodes-none > div.empty-node,
-.empty-node
-	width: 100%
-	height: 100%
-	z-index: 10
-
-	.empty-msg
-		flexbox()
-		justify-content: center
-		width: 100%
-		height: 100%
-		margin-top: 150px
-
-	.overlay-msg:before
-		display: block
-		position: absolute
-		content: ''
-		background: red
-		width: 50px
-		height: 50px
-		top: 50px
-		left: 50%
-		margin-left: -25px
-
-/* /Folder Loading/Empty Screen =============== */
 
 
 /* /Overwrite end ======================== */
@@ -206,7 +146,8 @@ Save As - Header ======================= */
 		color: color4
 		font-size: fontSize4
 		font-weight: 400
-		flex: 2 2 100%
+		width: 100%
+		flex-grow: 2
 		
 	.project-name,
 	.preferences-name,
@@ -269,6 +210,7 @@ Save As - Header ======================= */
 		background: none !important
 		box-sizing()
 		padding-left: 16px
+		ellipsis()
 		
 		span
 			color: color4
@@ -284,8 +226,8 @@ Save As - Header ======================= */
 		display: block
 		width: 48px !important
 		height: 48px !important
-		background: url('img/explorer/menu.png') no-repeat center
-		background-size: 17px
+		background: url('img/explorer/dots-vertical.png') no-repeat center
+		background-size: 24px
 		
 
 

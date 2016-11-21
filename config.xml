@@ -56,6 +56,7 @@
     <plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-screen-orientation"  source="npm"/>
+    <plugin name="cordova-plugin-apprate"  source="npm"/>
     <plugin name="ionic-plugin-keyboard"/>
 
     <plugin name="cordova-plugin-background-mode" spec="0.6.4" source="npm" />

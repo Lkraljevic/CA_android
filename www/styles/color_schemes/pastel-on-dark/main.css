@@ -1,0 +1,53 @@
+/**
+ * Pastel On Dark theme ported from ACE editor
+ * @license MIT
+ * @copyright AtomicPages LLC 2014
+ * @author Dennis Thompson, AtomicPages LLC
+ * @version 1.1
+ * @source https://github.com/atomicpages/codemirror-pastel-on-dark-theme
+ */
+
+.region-center .CodeMirror.CodeMirror {
+  background: #2c2827;
+  color: #8F938F;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.region-center .CodeMirror div.CodeMirror-selected { background: rgba(221,240,255,0.2); }
+.region-center .CodeMirror .CodeMirror-line::selection, .region-center .CodeMirror .CodeMirror-line > span::selection, .region-center .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(221,240,255,0.2); }
+.region-center .CodeMirror .CodeMirror-line::-moz-selection, .region-center .CodeMirror .CodeMirror-line > span::-moz-selection, .region-center .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(221,240,255,0.2); }
+
+.region-center .CodeMirror .CodeMirror-gutters {
+  background: #34302f;
+  border-right: 0px;
+  padding: 0 3px;
+}
+.region-center .CodeMirror .CodeMirror-guttermarker { color: white; }
+.region-center .CodeMirror .CodeMirror-guttermarker-subtle { color: #8F938F; }
+.region-center .CodeMirror .CodeMirror-linenumber { color: #8F938F; }
+.region-center .CodeMirror .CodeMirror-cursor { border-left: 1px solid #A7A7A7; }
+.region-center .CodeMirror span.cm-comment { color: #A6C6FF; }
+.region-center .CodeMirror span.cm-atom { color: #DE8E30; }
+.region-center .CodeMirror span.cm-number { color: #CCCCCC; }
+.region-center .CodeMirror span.cm-property { color: #8F938F; }
+.region-center .CodeMirror span.cm-attribute { color: #a6e22e; }
+.region-center .CodeMirror span.cm-keyword { color: #AEB2F8; }
+.region-center .CodeMirror span.cm-string { color: #66A968; }
+.region-center .CodeMirror span.cm-variable { color: #AEB2F8; }
+.region-center .CodeMirror span.cm-variable-2 { color: #BEBF55; }
+.region-center .CodeMirror span.cm-variable-3 { color: #DE8E30; }
+.region-center .CodeMirror span.cm-def { color: #757aD8; }
+.region-center .CodeMirror span.cm-bracket { color: #f8f8f2; }
+.region-center .CodeMirror span.cm-tag { color: #C1C144; }
+.region-center .CodeMirror span.cm-link { color: #ae81ff; }
+.region-center .CodeMirror span.cm-qualifier,.region-center .CodeMirror span.cm-builtin { color: #C1C144; }
+.region-center .CodeMirror span.cm-error {
+  background: #757aD8;
+  color: #f8f8f0;
+}
+.region-center .CodeMirror .CodeMirror-activeline-background { background: rgba(255, 255, 255, 0.031); }
+.region-center .CodeMirror .CodeMirror-matchingbracket {
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #8F938F !important;
+  margin: -1px -1px 0 -1px;
+}

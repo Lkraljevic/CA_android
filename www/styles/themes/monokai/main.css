@@ -891,16 +891,17 @@ img {
   background: url("img/explorer/goto-line.png") no-repeat center;
   background-size: 24px !important;
 }
-.refresh .menu-item-wrap-head:before {
-  background: url("img/explorer/refresh.png") no-repeat center;
+.refresh .menu-item-wrap-head:before,
+.box-restart .menu-item-wrap-head:before {
+  background: url("img/explorer/reload.png") no-repeat center;
   background-size: 24px !important;
 }
 .reopen_with_encoding .menu-item-wrap-head:before {
-  background: url("img/explorer/reopen_with_encoding.png") no-repeat center;
+  background: url("img/explorer/reopen-encoding.png") no-repeat center;
   background-size: 24px !important;
 }
 .save_with_encoding .menu-item-wrap-head:before {
-  background: url("img/explorer/save_with_encoding.png") no-repeat center;
+  background: url("img/explorer/save-encoding.png") no-repeat center;
   background-size: 24px !important;
 }
 .save .menu-item-wrap-head:before {
@@ -923,6 +924,10 @@ img {
   background: url("img/explorer/share.png") no-repeat center;
   background-size: 24px !important;
 }
+.mode .menu-item-wrap-head:before {
+  background: url("img/explorer/file.png") no-repeat center;
+  background-size: 24px !important;
+}
 .new-connection .menu-item-wrap-head:before {
   background: url("img/explorer/container.png") no-repeat center;
   background-size: 24px !important;
@@ -932,7 +937,8 @@ img {
   background-size: 24px !important;
 }
 .project-config .menu-item-wrap-head:before,
-.settings .menu-item-wrap-head:before {
+.settings .menu-item-wrap-head:before,
+.box-config .menu-item-wrap-head:before {
   background: url("img/explorer/config.png") no-repeat center;
   background-size: 24px !important;
 }
@@ -988,6 +994,32 @@ img {
   background: url("img/explorer/destory.png") no-repeat center;
   background-size: 24px !important;
 }
+.box-turnon .menu-item-wrap-head:before,
+.box-turnoff .menu-item-wrap-head:before {
+  background: url("img/explorer/turn-off.png") no-repeat center;
+  background-size: 24px !important;
+}
+.box-custom-stack .menu-item-wrap-head:before {
+  background: url("img/explorer/custom-stack.png") no-repeat center;
+  background-size: 24px !important;
+}
+.box-info .menu-item-wrap-head:before {
+  background: url("img/explorer/info.png") no-repeat center;
+  background-size: 24px !important;
+}
+.box-run .menu-item-wrap-head:before {
+  background: url("img/explorer/run.png") no-repeat center;
+  background-size: 24px !important;
+}
+.box-stop .menu-item-wrap-head:before {
+  background: url("img/explorer/stop.png") no-repeat center;
+  background-size: 24px !important;
+}
+.enable-always-on .menu-item-wrap-head:before,
+.disable-always-on .menu-item-wrap-head:before {
+  background: url("img/explorer/always-on.png") no-repeat center;
+  background-size: 24px !important;
+}
 .connection.ssh .endor-node-inner-icon {
   background: url("img/explorer/ssh.png") center no-repeat;
   background-size: 30px;
@@ -998,16 +1030,20 @@ img {
 }
 .connection.dropbox .endor-node-inner-icon {
   background: url("img/explorer/dropbox.png") center no-repeat;
-  background-size: 30px;
+  background-size: 28px;
 }
-.connection.drive .endor-node-inner-icon {
+.connection.gdrive .endor-node-inner-icon {
   background: url("img/explorer/drive.png") center no-repeat;
-  background-size: 30px;
+  background-size: 28px;
+}
+.connection.s3 .endor-node-inner-icon {
+  background: url("img/explorer/amazons3.png") center no-repeat;
+  background-size: 26px;
 }
 .connection.ftp .endor-node-inner-icon,
 .connection.sftp .endor-node-inner-icon {
   background: url("img/explorer/ftp.png") center no-repeat;
-  background-size: 30px;
+  background-size: 24px;
 }
 .folder .endor-node-inner-icon {
   background: url("img/explorer/folder.png") center no-repeat;
@@ -1963,6 +1999,15 @@ img {
 .selection-operation-header .title,
 .saveas-header .title,
 .preferences-header .title,
+.fileexplorer-header .notifications-title,
+.tabmanager-header .notifications-title,
+.goto-header .notifications-title,
+.notifications-header .notifications-title,
+.revisions-header .notifications-title,
+.find-wrapper .notifications-title,
+.selection-operation-header .notifications-title,
+.saveas-header .notifications-title,
+.preferences-header .notifications-title,
 .fileexplorer-header .saveas-title,
 .tabmanager-header .saveas-title,
 .goto-header .saveas-title,
@@ -2030,6 +2075,15 @@ img {
 .selection-operation-header .title,
 .saveas-header .title,
 .preferences-header .title,
+.fileexplorer-header .notifications-title,
+.tabmanager-header .notifications-title,
+.goto-header .notifications-title,
+.notifications-header .notifications-title,
+.revisions-header .notifications-title,
+.find-wrapper .notifications-title,
+.selection-operation-header .notifications-title,
+.saveas-header .notifications-title,
+.preferences-header .notifications-title,
 .fileexplorer-header .saveas-title,
 .tabmanager-header .saveas-title,
 .goto-header .saveas-title,

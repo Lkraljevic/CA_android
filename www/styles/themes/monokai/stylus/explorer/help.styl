@@ -1,0 +1,69 @@
+/* HELP STYL ======================================== */
+
+
+
+/* HELP ======================================== */
+.help-wrap
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    flexbox()
+    flex-flow: column nowrap
+    background: #3a3333
+
+    .help-top,
+    .help-bot
+        display: block
+        width: 100%
+
+/* HELP TOP ========== */
+.help-wrap .help-top
+    height: 56px
+    flexbox()
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    position: relative
+    z-index: 1000
+    background: #3a3333
+    box-shadow(shadowLvl2)
+
+    .help-top__desc
+        flexbox()
+        align-items: center
+        height: 100%
+        font-size: 18px
+        font-weight: 400
+        padding-left: 16px
+        box-sizing()
+        flex: 1
+
+    /* Icons, Buttons */
+    .help-top__back
+        flexbox()
+        justify-content: center
+        align-items: center
+        width: 48px
+        height: 48px
+
+    .help-top__back
+        background: url('img/back.png') no-repeat center
+        background-size: 24px !important
+
+
+/* HELP BOTTOM ========== */
+.markdown-body
+    background: #1f1b1b
+    color: #333;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    padding: 30px;
+    box-sizing()
+
+   

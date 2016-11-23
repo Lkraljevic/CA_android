@@ -1,0 +1,225 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+
+
+/* Resets */
+a
+    text-decoration: none
+
+/* INPUT SEARCH */
+input[type="text"]
+    background: transparent
+    outline: none
+    border: none
+
+
+/* PROFILE ======================================== */
+.profile-wrap
+    position: relative
+    width: 100%
+    height: 100%
+    flexbox()
+    flex-flow: column nowrap
+    background: #3a3333
+    overflow: auto
+
+    .profile-top,
+    .profile-bot
+        width: 100%
+
+    /* Profile Row */
+    .profile-row
+        width: 100%
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        overflow: hidden
+        box-sizing()
+        padding: 0 16px
+
+        .profile-row__desc
+            flexbox()
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: flex-start
+            min-height: 56px
+            flex: 1
+
+
+/* PROFILE TOP ========== */
+.profile-wrap .profile-top
+    flexbox()
+    flex-flow: column nowrap
+    position: relative
+    z-index: 1000
+    background: #1b1716
+    box-shadow(shadowLvl2)
+
+
+    /* PROFILE IMAGE BLOCK */
+    .profile-image
+        flexbox()
+        justify-content: center
+        align-items: center
+        width: 100px
+        height: 100px
+        font-size: 18px
+        font-weight: 400
+        box-sizing()
+        border-radius: 100%
+        background: #d6cbcb
+        margin-top: 30px
+        
+        .profile-image__center
+            flexbox()
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: center
+
+            .profile-image__center--prim
+                color: #7f3f98
+                font-size: 20px
+                font-weight: 600
+            
+            .profile-image__center--sec
+                color: #393939
+                font-size: 9px
+                text-transform: uppercase
+
+
+    /* Profile Details Block */
+    .profile-details
+        width: 100%
+        flexbox()
+        flex-flow: column nowrap
+        margin: 20px 0
+
+        .profile-details__username,
+        .profile-details__email
+            ellipsis()
+
+        .profile-details__username
+            text-transform: capitalize
+            margin-bottom: 3px
+        
+        .profile-details__email
+            text-transform: lowercase
+
+    
+
+    /* PROFILE DASHBOARD BLOCK */
+    /* Button */
+    .profile-button
+        flexbox()
+        justify-content: center
+        align-items: center
+        width: auto
+        min-width: 64px
+        height: 36px
+        border: none
+        border-radius(3px)
+        outline: none
+        text-transform: uppercase
+        background: #7f3f98
+        font-size: 14px
+        box-sizing()
+        padding: 0 16px
+    
+    
+    .profile-steps
+        width: 100%
+        flexbox()
+        flex-flow: column nowrap
+        margin: 15px 0
+        font-size: 12px
+
+        .profile-steps__top
+            color: #717171
+            margin-bottom: 5px
+
+        .profile-steps__bot
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+
+            .profile-steps__sec--icon
+                flexbox()
+                flex-shrink: 0
+                width: 16px
+                height: 16px
+                background: red
+
+            .profile-steps__sec--text
+                margin-left: 5px
+
+
+    /* PROFILE UPGARDE BLOCK */
+    .upgrade-wrap
+        border-top: 1px solid #463e3e
+
+        .upgrade-row
+            flexbox()
+            flex-flow: column nowrap
+            width: 100%
+            margin-top: 20px
+
+            /* Top */
+            .upgrade-row__top
+                padding: 5px 0
+
+                .upgrade-row__top--bar
+                    width: 100%
+                    height: 5px
+                    background: #222
+
+            /* Bot */
+            .upgrade-row__bot
+                width: 100%
+                flexbox()
+                flex-flow: row nowrap
+                justify-content: space-between
+                align-items: center
+                font-size: 12px
+
+                .upgrade-row__bot--left.yellow
+                    color: #fef177
+                .upgrade-row__bot--left.red
+                    color: #e53934
+
+                .upgrade-row__bot--right
+                    color: #717171
+        
+        .upgrade-message
+            margin: 20px 0 12px 0
+        
+        .manage-txt
+            font-size: 12px
+            color: #717171
+            box-sizing()
+            padding: 12px 0
+
+
+
+
+
+/* PROFILE BOTTOM ========== */
+.profile-wrap .profile-bot
+    position: relative
+    
+
+    .profile-list
+        width: 100%
+        background: #463e3e
+        box-shadow(shadowLvl2)
+        box-sizing()
+
+                
+
+
+
+
+
+
+
+
+
+

@@ -25,7 +25,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 16px 10px 16px;
+/* padding: 0 16px 10px 16px */
+  padding-bottom: 10px;
 /* Error message */
 }
 .mui-input .error-msg {
@@ -145,13 +146,14 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 16px;
+/* padding: 0 16px */
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 .select-wrap .select {
   display: -webkit-box;
@@ -174,7 +176,8 @@
 .select-wrap .select-list {
   position: absolute;
   background: #000;
-  width: calc(100% - 32px);
+/* width: calc(100% - 32px) */
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2129,6 +2132,153 @@ input[type="text"] {
   box-sizing: border-box;
   padding: 0 16px;
 }
+.share-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #463e3e;
+/* Done button */
+}
+.share-wrap .share-header__done {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+input {
+  margin-top: 0;
+/* Header Tabs is handled in "fileExplorer.styl" */
+}
+.share-bot {
+  height: calc(100% - 56px);
+  flex-flow: column nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.share-row .checkbox {
+  padding: 0;
+  margin-top: 10px;
+}
+.share-link .share-link__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.share-link .share-link__button .share-link__button--icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("img/explorer/sharelink.png") no-repeat center;
+  background-size: 20px;
+}
+.invite-people {
+  margin-top: 20px;
+/* Share List */
+}
+.invite-people .share-list:empty {
+  display: none;
+  margin-top: 0;
+}
+.invite-people .share-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+.invite-people .share-list .share-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  background: #3a3333;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 6px 5px 10px;
+  margin: 0 5px 5px 0;
+}
+.invite-people .share-list .share-list-item .share-list-item__text {
+  font-size: 11px;
+}
+.invite-people .share-list .share-list-item .share-list-item__icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  background: url("img/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.mui-input2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.mui-input2 label {
+  color: #d6cbcb;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+.mui-input2 input {
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.mui-input2 .bar {
+  width: 100%;
+  height: 1px;
+  background: #d6cbcb;
+}
 .keyboard-plugin {
   height: 38px;
   width: 100%;
@@ -2295,6 +2445,7 @@ input[type="text"] {
 .find-wrapper,
 .selection-operation-header,
 .saveas-header,
+.share-header,
 .preferences-header {
   position: relative;
   z-index: 1000;
@@ -2320,6 +2471,7 @@ input[type="text"] {
 .find-wrapper .column,
 .selection-operation-header .column,
 .saveas-header .column,
+.share-header .column,
 .preferences-header .column,
 .fileexplorer-header .project-name,
 .tabmanager-header .project-name,
@@ -2329,6 +2481,7 @@ input[type="text"] {
 .find-wrapper .project-name,
 .selection-operation-header .project-name,
 .saveas-header .project-name,
+.share-header .project-name,
 .preferences-header .project-name,
 .fileexplorer-header .preferences-name,
 .tabmanager-header .preferences-name,
@@ -2338,6 +2491,7 @@ input[type="text"] {
 .find-wrapper .preferences-name,
 .selection-operation-header .preferences-name,
 .saveas-header .preferences-name,
+.share-header .preferences-name,
 .preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
@@ -2347,6 +2501,7 @@ input[type="text"] {
 .find-wrapper .tab-name,
 .selection-operation-header .tab-name,
 .saveas-header .tab-name,
+.share-header .tab-name,
 .preferences-header .tab-name,
 .fileexplorer-header .title,
 .tabmanager-header .title,
@@ -2356,6 +2511,7 @@ input[type="text"] {
 .find-wrapper .title,
 .selection-operation-header .title,
 .saveas-header .title,
+.share-header .title,
 .preferences-header .title,
 .fileexplorer-header .notifications-title,
 .tabmanager-header .notifications-title,
@@ -2365,6 +2521,7 @@ input[type="text"] {
 .find-wrapper .notifications-title,
 .selection-operation-header .notifications-title,
 .saveas-header .notifications-title,
+.share-header .notifications-title,
 .preferences-header .notifications-title,
 .fileexplorer-header .saveas-title,
 .tabmanager-header .saveas-title,
@@ -2374,7 +2531,18 @@ input[type="text"] {
 .find-wrapper .saveas-title,
 .selection-operation-header .saveas-title,
 .saveas-header .saveas-title,
+.share-header .saveas-title,
 .preferences-header .saveas-title,
+.fileexplorer-header .share-title,
+.tabmanager-header .share-title,
+.goto-header .share-title,
+.notifications-header .share-title,
+.revisions-header .share-title,
+.find-wrapper .share-title,
+.selection-operation-header .share-title,
+.saveas-header .share-title,
+.share-header .share-title,
+.preferences-header .share-title,
 .fileexplorer-header .select-counter,
 .tabmanager-header .select-counter,
 .goto-header .select-counter,
@@ -2383,6 +2551,7 @@ input[type="text"] {
 .find-wrapper .select-counter,
 .selection-operation-header .select-counter,
 .saveas-header .select-counter,
+.share-header .select-counter,
 .preferences-header .select-counter {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2405,6 +2574,7 @@ input[type="text"] {
 .find-wrapper .project-name,
 .selection-operation-header .project-name,
 .saveas-header .project-name,
+.share-header .project-name,
 .preferences-header .project-name,
 .fileexplorer-header .preferences-name,
 .tabmanager-header .preferences-name,
@@ -2414,6 +2584,7 @@ input[type="text"] {
 .find-wrapper .preferences-name,
 .selection-operation-header .preferences-name,
 .saveas-header .preferences-name,
+.share-header .preferences-name,
 .preferences-header .preferences-name,
 .fileexplorer-header .tab-name,
 .tabmanager-header .tab-name,
@@ -2423,6 +2594,7 @@ input[type="text"] {
 .find-wrapper .tab-name,
 .selection-operation-header .tab-name,
 .saveas-header .tab-name,
+.share-header .tab-name,
 .preferences-header .tab-name,
 .fileexplorer-header .title,
 .tabmanager-header .title,
@@ -2432,6 +2604,7 @@ input[type="text"] {
 .find-wrapper .title,
 .selection-operation-header .title,
 .saveas-header .title,
+.share-header .title,
 .preferences-header .title,
 .fileexplorer-header .notifications-title,
 .tabmanager-header .notifications-title,
@@ -2441,6 +2614,7 @@ input[type="text"] {
 .find-wrapper .notifications-title,
 .selection-operation-header .notifications-title,
 .saveas-header .notifications-title,
+.share-header .notifications-title,
 .preferences-header .notifications-title,
 .fileexplorer-header .saveas-title,
 .tabmanager-header .saveas-title,
@@ -2450,7 +2624,18 @@ input[type="text"] {
 .find-wrapper .saveas-title,
 .selection-operation-header .saveas-title,
 .saveas-header .saveas-title,
+.share-header .saveas-title,
 .preferences-header .saveas-title,
+.fileexplorer-header .share-title,
+.tabmanager-header .share-title,
+.goto-header .share-title,
+.notifications-header .share-title,
+.revisions-header .share-title,
+.find-wrapper .share-title,
+.selection-operation-header .share-title,
+.saveas-header .share-title,
+.share-header .share-title,
+.preferences-header .share-title,
 .fileexplorer-header .select-counter,
 .tabmanager-header .select-counter,
 .goto-header .select-counter,
@@ -2459,6 +2644,7 @@ input[type="text"] {
 .find-wrapper .select-counter,
 .selection-operation-header .select-counter,
 .saveas-header .select-counter,
+.share-header .select-counter,
 .preferences-header .select-counter {
   margin-left: 16px;
   text-overflow: ellipsis;
@@ -2538,8 +2724,6 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   z-index: 100;
-}
-.dialog-overlay {
   background: rgba(0,0,0,0.4);
   display: -webkit-box;
   display: -webkit-flex;
@@ -2723,7 +2907,8 @@ input[type="text"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-bottom: 20px;
+/* padding-bottom: 20px */
+  padding: 0 16px 20px 16px;
 /* Wizard Row */
 }
 .wizard-wrap .wiz-bot .wiz-row-list .wiz-row {
@@ -2736,7 +2921,7 @@ input[type="text"] {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  overflow: hidden;
+/* overflow: hidden */
 }
 .wizard-wrap .wiz-bot .wiz-row-list .wiz-row.selected {
   background: #3a3333;

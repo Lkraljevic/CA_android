@@ -15,6 +15,7 @@
 @import 'explorer/revisions'
 @import 'explorer/preferences'
 @import 'explorer/saveAs'
+@import 'explorer/share'
 @import 'explorer/keyboard'
 @import 'explorer/help'
 
@@ -94,10 +95,6 @@
 .tabs-header-wrapper
 	overflow: initial !important
 
-
-
-
-
 /* /Overwrite end ======================== */
 
 
@@ -113,7 +110,8 @@ Revisions &
 Selection title &
 Preferences &
 Find and Replace &
-Save As - Header ======================= */
+Save As &
+Share - Header ======================= */
 .fileexplorer-header,
 .tabmanager-header,
 .goto-header,
@@ -122,6 +120,7 @@ Save As - Header ======================= */
 .find-wrapper,
 .selection-operation-header,
 .saveas-header,
+.share-header,
 .preferences-header
 	position: relative
 	z-index: 1000
@@ -142,6 +141,7 @@ Save As - Header ======================= */
 	.title,
 	.notifications-title
 	.saveas-title,
+	.share-title,
 	.select-counter
 		flexbox()
 		align-items: center
@@ -158,6 +158,7 @@ Save As - Header ======================= */
 	.title,
 	.notifications-title,
 	.saveas-title,
+	.share-title,
 	.select-counter
 		margin-left: 16px
 		ellipsis()

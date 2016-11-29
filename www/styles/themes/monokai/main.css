@@ -2279,6 +2279,102 @@ input {
   height: 1px;
   background: #d6cbcb;
 }
+.info-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #3a3333;
+}
+.info-wrap .info-top,
+.info-wrap .info-bot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.info-wrap .info-top {
+  height: 35%;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 0 10px 0;
+}
+.info-wrap .info-top .info-top-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+.info-wrap .info-top .info-top-row .info-top-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: relative;
+  flex: 0 0 48px;
+  background: url("img/files2x/file-html@2x.png") no-repeat center;
+  background-size: 30px;
+}
+.info-wrap .info-top .info-top-row .info-top-name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.info-wrap .info-bot {
+  height: 65%;
+  overflow: auto;
+  background: #463e3e;
+}
+.info-wrap .info-bot .file-info {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.info-wrap .info-bot .file-info .file-info-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 15px;
+}
+.info-wrap .info-bot .file-info .file-info-row .file-info-left {
+  width: 100px;
+}
+.info-wrap .info-bot .file-info .file-info-row .file-info-right {
+  width: calc(100% - 100px);
+}
+.path-arrow {
+  width: 10px;
+  height: 10px;
+  background: url("img/explorer/arrow-path.png") no-repeat center;
+  background-size: 10px;
+  display: inline-block;
+}
 .keyboard-plugin {
   height: 38px;
   width: 100%;

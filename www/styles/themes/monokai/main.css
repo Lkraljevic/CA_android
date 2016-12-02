@@ -42,9 +42,9 @@
 .mui-input .group {
   position: relative;
   width: 100%;
-/* LABEL ======================================= */
+/* LABEL ========== */
 /* active state */
-/* BOTTOM BARS ================================= */
+/* BOTTOM BARS ========== */
 /* active state */
 }
 .mui-input .group input {
@@ -103,6 +103,36 @@
 .mui-input .group input:focus ~ .bar:before,
 .mui-input .group input:focus ~ .bar:after {
   width: 50%;
+}
+.mui-input2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.mui-input2 label {
+  color: #d6cbcb;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+.mui-input2 input {
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.mui-input2 .bar {
+  width: 100%;
+  height: 1px;
+  background: #d6cbcb;
 }
 .mui-textarea {
   display: -webkit-box;
@@ -201,7 +231,7 @@
   padding: 16px;
   font-size: 14px;
 }
-.checkbox {
+.checkbox-row {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,7 +246,7 @@
   box-sizing: border-box;
   padding: 0 16px;
 }
-.checkbox .checkbox__box {
+.checkbox-row .checkbox__box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -225,9 +255,45 @@
   justify-content: center;
   align-items: center;
 }
-.checkbox .checkbox__span {
+.checkbox-row .checkbox__span {
   margin-left: 10px;
   font-size: 12px;
+}
+input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox {
+  width: 20px;
+  position: relative;
+}
+.checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #d6cbcb;
+}
+.checkbox label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("img/explorer/check.png") no-repeat center;
+  background-size: 20px;
+  top: 0;
+  left: 0;
+}
+.checkbox label:hover::after {
+  opacity: 0.3;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
 }
 .login-body button {
   display: block;
@@ -2248,36 +2314,6 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 14px;
-}
-.mui-input2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.mui-input2 label {
-  color: #d6cbcb;
-  font-size: 11px;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-}
-.mui-input2 input {
-  font-size: 14px;
-  padding: 10px 10px 10px 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-.mui-input2 .bar {
-  width: 100%;
-  height: 1px;
-  background: #d6cbcb;
 }
 .info-wrap {
   position: absolute;

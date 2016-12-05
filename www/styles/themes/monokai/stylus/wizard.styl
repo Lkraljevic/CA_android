@@ -6,8 +6,13 @@
 a
     text-decoration: none
 
+/* overwrite because original css was to specific */
+.wiz-row.selected
+    background: color1
+
 /* INPUT SEARCH */
-input[type="text"]
+input[type="text"],
+input[type="password"]
     background: transparent
     outline: none
     border: none
@@ -210,7 +215,8 @@ input[type="text"]
         font-size: 12px
 
     /* Public Key link */
-    .publickey-bar__link
+    .publickey-bar__link,
+    .public-key-link
         width: 100%
 
         a
@@ -221,7 +227,6 @@ input[type="text"]
             padding: 10px 16px
             box-sizing()
 
-       
 
 
 

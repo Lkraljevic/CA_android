@@ -15,7 +15,7 @@
 
 
 
-/* FORM ======================================= */
+/* MUI INPUT 1 ======================================= */
 .mui-input
 	flexbox()
 	justify-content: flex-end
@@ -29,14 +29,16 @@
 
 	
 	/* Error message */
-	.error-msg
+	.error-msg,
+	.error
 		position: relative
 		width: 100%
 		color: lightRed
 		font-size: 12px
 		margin-top: 4px
 	
-	.error-msg:empty
+	.error-msg:empty,
+	.error:empty
 		visibility: hidden
 
 	
@@ -61,7 +63,7 @@
 
 
 
-		/* LABEL ======================================= */
+		/* LABEL ========== */
 		label 
 			font-size: 14px
 			font-weight: normal
@@ -84,7 +86,7 @@
 			
 
 
-		/* BOTTOM BARS ================================= */
+		/* BOTTOM BARS ========== */
 		.bar
 			position: relative
 			display: block
@@ -107,12 +109,41 @@
 			right: 50% 
 				
 
-
-
 		/* active state */
 		input:focus ~ .bar:before,
 		input:focus ~ .bar:after
 			width: 50%
+
+
+
+/* MUI INPUT 2 ======================================= */
+.mui-input2
+	flexbox()
+	flex-flow: column nowrap
+
+	label
+		color: color4
+		font-size: 11px
+		font-weight: 300
+		letter-spacing: 0.2px
+
+	input
+		font-size: 14px
+		padding: 10px 10px 10px 5px
+		box-sizing()
+		display: block
+		width: 100%
+		border: none
+		border-bottom: 1px solid color13
+
+	.bar
+		width: 100%
+		height: 1px
+		background: color4
+
+
+
+
 
 
 
@@ -150,98 +181,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* FORM ======================================= 
-.group-wrap
-	flexbox()
-	justify-content: center
-	align-items: center
-	flex-flow: column wrap
-
-	.group
-		position: relative 
-		width: 100%
-
-		input
-			font-size: 18px
-			padding: 10px 10px 10px 5px
-			box-sizing()
-			display: block
-			width: 100%
-			border: none
-			border-bottom: 1px solid inputBorderColor
-
-		input:focus
-			outline: none
-			background:  transparent
-			
-*/
-
-
-		/* LABEL ======================================= 
-		label
-			color: inputLabelColor 
-			font-size: 18px
-			font-weight: normal
-			position: absolute
-			pointer-events: none
-			left: 5px
-			top: 10px
-			transition: 0.2s ease all 
-
-*/
-
-		/* active state 
-		input:focus ~ label,
-		input:valid ~ label
-			top: -20px
-			font-size: 14px
-			color: inputLabelColor
-			
-*/
-
-		/* BOTTOM BARS ================================= 
-		.bar
-			position: relative
-			display: block
-			width: 100%
-
-		.bar:before,
-		.bar:after
-			content: ''
-			height: 2px 
-			width: 0
-			bottom: 1px 
-			position: absolute
-			background: inputBorderColorActive
-			transition: 0.2s ease all 
-
-		.bar:before
-			left: 50%
-
-		.bar:after
-			right: 50% 
-				
-*/
-
-
-		/* active state 
-		input:focus ~ .bar:before,
-		input:focus ~ .bar:after
-			width: 50%
-
-*/
 
 
 

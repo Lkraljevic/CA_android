@@ -3523,7 +3523,7 @@ input {
 /* Input overwrite */
 /* Dialog Header */
 /* Dialog Content */
-/* Dialog Content */
+/* Dialog Footer */
 }
 .dialog-overlay .dialog-wrapper input {
   margin-top: 25px;
@@ -3549,6 +3549,9 @@ input {
 .dialog-overlay .dialog-wrapper .dialog-content {
   padding: 0 24px;
   margin-top: 20px;
+}
+.dialog-overlay .dialog-wrapper .dialog-content > div {
+  width: 100%;
 }
 .dialog-overlay .dialog-wrapper .dialog-footer {
   height: 52px;
@@ -3926,6 +3929,21 @@ input[type="password"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wizard-wrap .connection .connection__account .connection__account--icon i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px !important;
+}
+.wizard-wrap .connection .connection__account .connection__account--icon i.dropbox-icon {
+  background: url("img/wizard/dropbox.png") no-repeat center;
+}
+.wizard-wrap .connection .connection__account .connection__account--icon i.gdrive-icon {
+  background: url("img/wizard/drive.png") no-repeat center;
+}
+.wizard-wrap .connection .connection__account .connection__account--icon i.onedrive-icon {
+  background: url("img/wizard/onedrive.png") no-repeat center;
 }
 .wizard-wrap .connection .connection__account .connection__account--txt {
   text-transform: uppercase;

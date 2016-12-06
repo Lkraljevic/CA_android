@@ -279,7 +279,7 @@ input[type="password"]
 
 
 
-/* WIZARD DIGITAL OCEAN ======================================== */
+/* WIZARD 3RD PARTY SERVICES ======================================== */
 .wizard-wrap .connection
     flexbox()
     flex-flow: column nowrap
@@ -306,6 +306,21 @@ input[type="password"]
             flexbox()
             justify-content: center
             align-items: center
+
+            i
+                display: block
+                width: 40px
+                height: 40px
+                background-size: 40px !important
+            
+            i.dropbox-icon
+                background: url(img/wizard/dropbox.png) no-repeat center
+
+            i.gdrive-icon
+                background: url(img/wizard/drive.png) no-repeat center
+
+            i.onedrive-icon
+                background: url(img/wizard/onedrive.png) no-repeat center
         
         .connection__account--txt
             text-transform: uppercase

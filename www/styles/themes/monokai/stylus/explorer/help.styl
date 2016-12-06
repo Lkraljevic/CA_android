@@ -68,6 +68,10 @@
 
 
 /* HELP BOTTOM ========== */
+.help-wrap.form .help-bot
+    box-sizing()
+    padding: 0 16px
+
 .help-wrap .help-bot
     height: calc(100% - 56px)
     overflow: auto
@@ -83,11 +87,9 @@
             flex-flow: row nowrap
             align-items: center
             overflow: hidden
-            border-bottom: 1px solid #3a3333
+            border-bottom: 1px solid color1
             box-sizing()
 
-            .border
-                border-bottom: 1px solid #282323
 
         .help-row.link .help-row__desc
             /* color: #735a82 */
@@ -102,7 +104,8 @@
             height: 100%
             flex: 1
 
-
+.group.border
+    border-bottom: 1px solid color11
 
 
 

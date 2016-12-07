@@ -211,42 +211,56 @@
 
 
 /* Connections */
-.connection.ssh .endor-node-inner-icon
+.connection.ssh .endor-node-inner-icon,
+.filetype.connection.ssh
 	background: url('img/explorer/ssh.png') center no-repeat
 	background-size: 30px
 
-.connection.devbox .endor-node-inner-icon
+.connection.devbox .endor-node-inner-icon,
+.filetype.connection.devbox
 	background: url('img/explorer/container.png') center no-repeat
 	background-size: 30px
 
-.connection.dropbox .endor-node-inner-icon
+.connection.dropbox .endor-node-inner-icon,
+.filetype.connection.dropbox
 	background: url('img/explorer/dropbox.png') center no-repeat
 	background-size: 28px
 
-.connection.gdrive .endor-node-inner-icon
+.connection.gdrive .endor-node-inner-icon,
+.filetype.connection.gdrive
 	background: url('img/explorer/drive.png') center no-repeat
 	background-size: 28px
 
-.connection.s3 .endor-node-inner-icon
+.connection.s3 .endor-node-inner-icon,
+.filetype.connection.s3
 	background: url('img/explorer/amazons3.png') center no-repeat
 	background-size: 26px
 
 .connection.ftp .endor-node-inner-icon,
-.connection.sftp .endor-node-inner-icon
+.connection.sftp .endor-node-inner-icon,
+.filetype.connection.ftp,
+.filetype.connection.sftp
 	background: url('img/explorer/ftp.png') center no-repeat
 	background-size: 24px
+
+.connection.onedrive .endor-node-inner-icon,
+.filetype.connection.onedrive
+	background: url("img/files2x/onedrive.png") no-repeat center
+
 
 
 
 /* Folders and Files */
-.folder .endor-node-inner-icon
+.folder .endor-node-inner-icon,
+.filetype.folder
 	background: url('img/explorer/folder.png') center no-repeat
-	background-size: 24px
+	background-size: 24px !important
 
-.file .endor-node-inner-icon
+.file .endor-node-inner-icon,
+.filetype.file
 	background: url('img/explorer/file.png') center no-repeat
 	background: url("img/files2x/file-default@2x.png") center no-repeat
-	background-size: 24px
+	background-size: 24px !important
 
 
 
@@ -254,325 +268,476 @@
 /* File Types */
 
 // .connection .endor-node-inner-icon
-// 	background-image: url("img/files2x/service-ftp.png")
+// 	background: url("img/files2x/service-ftp.png") no-repeat center
   
-.file.ai .endor-node-inner-icon
-	background-image: url("img/files2x/file-ai@2x.png")
+.file.ai .endor-node-inner-icon,
+.file.ai.info-top-icon,
+.filetype.file.ai
+	background: url("img/files2x/file-ai@2x.png") no-repeat center
   
-.file.app .endor-node-inner-icon
-	background-image: url("img/files2x/file-app@2x.png")
+.file.app .endor-node-inner-icon,
+.file.app.info-top-icon,
+.filetype.file.app
+	background: url("img/files2x/file-app@2x.png") no-repeat center
   
-.file.arhive .endor-node-inner-icon
-	background-image: url("img/files2x/file-arhive@2x.png")
+.file.arhive .endor-node-inner-icon,
+.file.arhive.info-top-icon,
+.filetype.file.arhive
+	background: url("img/files2x/file-arhive@2x.png") no-repeat center
   
-.file.asp .endor-node-inner-icon
-	background-image: url("img/files2x/file-asp@2x.png")
+.file.asp .endor-node-inner-icon,
+.file.asp.info-top-icon,
+.filetype.file.asp
+	background: url("img/files2x/file-asp@2x.png") no-repeat center
   
-.file.audio .endor-node-inner-icon
-	background-image: url("img/files2x/file-audio@2x.png")
+.file.audio .endor-node-inner-icon,
+.file.audio.info-top-icon,
+.filetype.file.audio
+	background: url("img/files2x/file-audio@2x.png") no-repeat center
   
-.file.boxes .endor-node-inner-icon
-	background-image: url("img/files2x/file-boxes@2x.png")
+.file.boxes .endor-node-inner-icon,
+.file.boxes.info-top-icon,
+.filetype.file.boxes
+	background: url("img/files2x/file-boxes@2x.png") no-repeat center
   
-.file.c .endor-node-inner-icon
-	background-image: url("img/files2x/file-c@2x.png")
+.file.c .endor-node-inner-icon,
+.file.c.info-top-icon,
+.filetype.file.c
+	background: url("img/files2x/file-c@2x.png") no-repeat center
   
-.file.cf .endor-node-inner-icon
-	background-image: url("img/files2x/file-cf@2x.png")
+.file.cf .endor-node-inner-icon,
+.file.cf.info-top-icon,
+.filetype.file.cf
+	background: url("img/files2x/file-cf@2x.png") no-repeat center
   
-.file.cfg .endor-node-inner-icon
-	background-image: url("img/files2x/file-cfg@2x.png")
+.file.cfg .endor-node-inner-icon,
+.file.cfg.info-top-icon,
+.filetype.file.cfg
+	background: url("img/files2x/file-cfg@2x.png") no-repeat center
   
-.file.code .endor-node-inner-icon
-	background-image: url("img/files2x/file-code@2x.png")
+.file.code .endor-node-inner-icon,
+.file.code.info-top-icon,
+.filetype.file.code
+	background: url("img/files2x/file-code@2x.png") no-repeat center
   
-.file.css .endor-node-inner-icon
-	background-image: url("img/files2x/file-css@2x.png")
+.file.css .endor-node-inner-icon,
+.file.css.info-top-icon,
+.filetype.file.css
+	background: url("img/files2x/file-css@2x.png") no-repeat center
   
-.file.csv .endor-node-inner-icon
-	background-image: url("img/files2x/file-csv@2x.png")
+.file.csv .endor-node-inner-icon,
+.file.csv.info-top-icon,
+.filetype.file.csv
+	background: url("img/files2x/file-csv@2x.png") no-repeat center
   
-.file.db .endor-node-inner-icon
-	background-image: url("img/files2x/file-db@2x.png")
+.file.db .endor-node-inner-icon,
+.file.db.info-top-icon,
+.filetype.file.db
+	background: url("img/files2x/file-db@2x.png") no-repeat center
   
-.file.dmg .endor-node-inner-icon
-	background-image: url("img/files2x/file-dmg@2x.png")
+.file.dmg .endor-node-inner-icon,
+.file.dmg.info-top-icon,
+.filetype.file.dmg
+	background: url("img/files2x/file-dmg@2x.png") no-repeat center
   
 .file.docx .endor-node-inner-icon,
-.file.doc .endor-node-inner-icon
-	background-image: url("img/files2x/file-doc@2x.png")
+.file.doc .endor-node-inner-icon,
+.file.docx.info-top-icon,
+.file.doc.info-top-icon,
+.filetype.file.docx,
+.filetype.file.doc
+	background: url("img/files2x/file-doc@2x.png") no-repeat center
   
-.file.dxf .endor-node-inner-icon
-	background-image: url("img/files2x/file-dxf@2x.png")
+.file.dxf .endor-node-inner-icon,
+.file.dxf.info-top-icon,
+.filetype.file.dxf
+	background: url("img/files2x/file-dxf@2x.png") no-repeat center
   
-.file.fl .endor-node-inner-icon
-	background-image: url("img/files2x/file-fl@2x.png")
+.file.fl .endor-node-inner-icon,
+.file.fl.info-top-icon,
+.filetype.file.fl
+	background: url("img/files2x/file-fl@2x.png") no-repeat center
   
-.file.githubfile .endor-node-inner-icon
-	background-image: url("img/files2x/file-githubfile@2x.png")
+.file.githubfile .endor-node-inner-icon,
+.file.githubfile.info-top-icon,
+.filetype.file.githubfile
+	background: url("img/files2x/file-githubfile@2x.png") no-repeat center
   
-.file.githubcommits .endor-node-inner-icon
-	background-image: url("img/files2x/file-githubcommits@2x.png")
+.file.githubcommits .endor-node-inner-icon,
+.file.githubcommits.info-top-icon,
+.filetype.file.githubcommits
+	background: url("img/files2x/file-githubcommits@2x.png") no-repeat center
   
 .file.html .endor-node-inner-icon,
 .file.htm .endor-node-inner-icon,
-.file.xml .endor-node-inner-icon
-	background-image: url("img/files2x/file-html@2x.png")
+.file.xml .endor-node-inner-icon,
+.file.html.info-top-icon,
+.file.htm.info-top-icon,
+.file.xml.info-top-icon,
+.filetype.file.html,
+.filetype.file.htm,
+.filetype.file.xml
+	background: url("img/files2x/file-html@2x.png") no-repeat center
   
 .file.img .endor-node-inner-icon,
 .file.png .endor-node-inner-icon,
 .file.jpg .endor-node-inner-icon,
 .file.gif .endor-node-inner-icon,
 .file.svg .endor-node-inner-icon,
-.file.ico .endor-node-inner-icon
-	background-image: url("img/files2x/file-image@2x.png")
+.file.ico .endor-node-inner-icon,
+.file.img.info-top-icon,
+.file.png.info-top-icon,
+.file.jpg.info-top-icon,
+.file.gif.info-top-icon,
+.file.svg.info-top-icon,
+.file.ico.info-top-icon,
+.filetype.file.img,
+.filetype.file.png,
+.filetype.file.jpg,
+.filetype.file.gif,
+.filetype.file.svg,
+.filetype.file.ico
+	background: url("img/files2x/file-image@2x.png") no-repeat center
   
-.file.indd .endor-node-inner-icon
-	background-image: url("img/files2x/file-indd@2x.png")
+.file.indd .endor-node-inner-icon,
+.file.indd.info-top-icon,
+.filetype.file.indd
+	background: url("img/files2x/file-indd@2x.png") no-repeat center
   
-.file.js .endor-node-inner-icon
-	background-image: url("img/files2x/file-js@2x.png")
+.file.js .endor-node-inner-icon,
+.file.js.info-top-icon,
+.filetype.file.js
+	background: url("img/files2x/file-js@2x.png") no-repeat center
   
-.file.mdb .endor-node-inner-icon
-	background-image: url("img/files2x/file-mdb@2x.png")
+.file.mdb .endor-node-inner-icon,
+.file.mdb.info-top-icon,
+.filetype.file.mdb
+	background: url("img/files2x/file-mdb@2x.png") no-repeat center
   
-.file.mov .endor-node-inner-icon
-	background-image: url("img/files2x/file-mov@2x.png")
+.file.mov .endor-node-inner-icon,
+.file.mov.info-top-icon,
+.filetype.file.mov
+	background: url("img/files2x/file-mov@2x.png") no-repeat center
   
-.file.mpp .endor-node-inner-icon
-	background-image: url("img/files2x/file-mpp@2x.png")
+.file.mpp .endor-node-inner-icon,
+.file.mpp.info-top-icon,
+.filetype.file.mpp
+	background: url("img/files2x/file-mpp@2x.png") no-repeat center
   
-.file.msg .endor-node-inner-icon
-	background-image: url("img/files2x/file-msg@2x.png")
+.file.msg .endor-node-inner-icon,
+.file.msg.info-top-icon,
+.filetype.file.msg
+	background: url("img/files2x/file-msg@2x.png") no-repeat center
   
-.file.page .endor-node-inner-icon
-	background-image: url("img/files2x/file-page@2x.png")
+.file.page .endor-node-inner-icon,
+.file.page.info-top-icon,
+.filetype.file.page
+	background: url("img/files2x/file-page@2x.png") no-repeat center
   
-.file.part .endor-node-inner-icon
-	background-image: url("img/files2x/file-part@2x.png")
+.file.part .endor-node-inner-icon,
+.file.part.info-top-icon,
+.filetype.file.part
+	background: url("img/files2x/file-part@2x.png") no-repeat center
   
-.file.pdf .endor-node-inner-icon
-	background-image: url("img/files2x/file-pdf@2x.png")
+.file.pdf .endor-node-inner-icon,
+.file.pdf.info-top-icon,
+.filetype.file.pdf
+	background: url("img/files2x/file-pdf@2x.png") no-repeat center
   
-.file.pdf1 .endor-node-inner-icon
-	background-image: url("img/files2x/file-pdf1@2x.png")
+.file.pdf1 .endor-node-inner-icon,
+.file.pdf1.info-top-icon,
+.filetype.file.pdf1
+	background: url("img/files2x/file-pdf1@2x.png") no-repeat center
   
-.file.pdf2 .endor-node-inner-icon
-	background-image: url("img/files2x/file-pdf2@2x.png")
+.file.pdf2 .endor-node-inner-icon,
+.file.pdf2.info-top-icon,
+.filetype.file.pdf2
+	background: url("img/files2x/file-pdf2@2x.png") no-repeat center
   
-.file.php .endor-node-inner-icon
-	background-image: url("img/files2x/file-php@2x.png")
+.file.php .endor-node-inner-icon,
+.file.php.info-top-icon,
+.filetype.file.php
+	background: url("img/files2x/file-php@2x.png") no-repeat center
   
 .file.pptx .endor-node-inner-icon,
-.file.ppt .endor-node-inner-icon
-	background-image: url("img/files2x/file-ppt1@2x.png")
+.file.ppt .endor-node-inner-icon,
+.file.pptx.info-top-icon,
+.file.ppt.info-top-icon,
+.filetype.file.pptx,
+.filetype.file.ppt
+	background: url("img/files2x/file-ppt1@2x.png") no-repeat center
   
-.file.psd .endor-node-inner-icon
-	background-image: url("img/files2x/file-psd@2x.png")
+.file.psd .endor-node-inner-icon,
+.file.psd.info-top-icon,
+.filetype.file.psd
+	background: url("img/files2x/file-psd@2x.png") no-repeat center
   
 .file.py .endor-node-inner-icon,
-.file.python .endor-node-inner-icon
-	background-image: url("img/files2x/file-python@2x.png")
+.file.python .endor-node-inner-icon,
+.file.py.info-top-icon,
+.file.python.info-top-icon,
+.filetype.file.py,
+.filetype.file.python
+	background: url("img/files2x/file-python@2x.png") no-repeat center
   
-.file.go .endor-node-inner-icon
-	background-image: url("img/files2x/file-go@2x.png")
+.file.go .endor-node-inner-icon,
+.file.go.info-top-icon,
+.filetype.file.go
+	background: url("img/files2x/file-go@2x.png") no-repeat center
   
-.file.qxd .endor-node-inner-icon
-	background-image: url("img/files2x/file-qxd@2x.png")
+.file.qxd .endor-node-inner-icon,
+.file.qxd.info-top-icon,
+.filetype.file.qxd
+	background: url("img/files2x/file-qxd@2x.png") no-repeat center
   
-.file.repo .endor-node-inner-icon
-	background-image: url("img/files2x/file-repo@2x.png")
+.file.repo .endor-node-inner-icon,
+.file.repo.info-top-icon,
+.filetype.file.repo
+	background: url("img/files2x/file-repo@2x.png") no-repeat center
   
-.file.swf .endor-node-inner-icon
-	background-image: url("img/files2x/file-swf@2x.png")
+.file.swf .endor-node-inner-icon,
+.file.swf.info-top-icon,
+.filetype.file.swf
+	background: url("img/files2x/file-swf@2x.png") no-repeat center
   
-.file.temp .endor-node-inner-icon
-	background-image: url("img/files2x/file-temp@2x.png")
+.file.temp .endor-node-inner-icon,
+.file.temp.info-top-icon,
+.filetype.file.temp
+	background: url("img/files2x/file-temp@2x.png") no-repeat center
   
-.file.torrent .endor-node-inner-icon
-	background-image: url("img/files2x/file-torrent@2x.png")
+.file.torrent .endor-node-inner-icon,
+.file.torrent.info-top-icon,
+.filetype.file.torrent
+	background: url("img/files2x/file-torrent@2x.png") no-repeat center
   
-.file.styl .endor-node-inner-icon
-	background-image: url("img/files2x/file-stylus@2x.png")
+.file.styl .endor-node-inner-icon,
+.file.styl.info-top-icon,
+.filetype.file.styl
+	background: url("img/files2x/file-stylus@2x.png") no-repeat center
   
-.file.ttf .endor-node-inner-icon
-	background-image: url("img/files2x/file-font@2x.png")
+.file.ttf .endor-node-inner-icon,
+.file.ttf.info-top-icon,
+.filetype.file.ttf
+	background: url("img/files2x/file-font@2x.png") no-repeat center
   
-.file.txt .endor-node-inner-icon
-	background-image: url("img/files2x/file-text@2x.png")
+.file.txt .endor-node-inner-icon,
+.file.txt.info-top-icon,
+.filetype.file.txt
+	background: url("img/files2x/file-text@2x.png") no-repeat center
   
-.file.vbs .endor-node-inner-icon
-	background-image: url("img/files2x/file-vbs@2x.png")
+.file.vbs .endor-node-inner-icon,
+.file.vbs.info-top-icon,
+.filetype.file.vbs
+	background: url("img/files2x/file-vbs@2x.png") no-repeat center
   
-.file.video .endor-node-inner-icon
-	background-image: url("img/files2x/file-video@2x.png")
+.file.video .endor-node-inner-icon,
+.file.video.info-top-icon,
+.filetype.file.video
+	background: url("img/files2x/file-video@2x.png") no-repeat center
   
 .file.xlsx .endor-node-inner-icon,
-.file.xls .endor-node-inner-icon
-	background-image: url("img/files2x/file-xls1@2x.png")
+.file.xls .endor-node-inner-icon,
+.file.xlsx.info-top-icon,
+.file.xls.info-top-icon,
+.filetype.file.xlsx,
+.filetype.file.xls
+	background: url("img/files2x/file-xls1@2x.png") no-repeat center
   
-.folder-ftp .endor-node-inner-icon
-	background-image: url("img/files2x/folder-ftp@2x.png")
+.folder-ftp .endor-node-inner-icon,
+.folder-ftp.info-top-icon,
+.filetype.file.folder-ftp
+	background: url("img/files2x/folder-ftp@2x.png") no-repeat center
   
-.folder-link .endor-node-inner-icon
-	background-image: url("img/files2x/folder-link@2x.png")
+.folder-link .endor-node-inner-icon,
+.folder-link.info-top-icon,
+.filetype.file.folder-link
+	background: url("img/files2x/folder-link@2x.png") no-repeat center
   
-// .folder-local .endor-node-inner-icon
-// 	background-image: url("img/files2x/folder-local@2x.png")
+
+
+/* ============================================ */
+
+
+
+.file.less .endor-node-inner-icon,
+.file.less.info-top-icon,
+.filetype.file.less
+	background: url("img/files2x/file-less@2x.png") no-repeat center
   
-// .folder-white .endor-node-inner-icon
-// 	background-image: url("img/files2x/folder-white@2x.png")
+.file.ts .endor-node-inner-icon,
+.file.ts.info-top-icon,
+.filetype.file.ts
+	background: url("img/files2x/file-typescript@2x.png") no-repeat center
   
-.less .endor-node-inner-icon
-	background-image: url("img/files2x/file-less@2x.png")
+.file.swift .endor-node-inner-icon,
+.file.swift.info-top-icon,
+.filetype.file.swift
+	background: url("img/files2x/file-swift@2x.png") no-repeat center
   
-.ts .endor-node-inner-icon
-	background-image: url("img/files2x/file-typescript@2x.png")
+.file.sql .endor-node-inner-icon,
+.file.sql.info-top-icon,
+.filetype.file.sql
+	background: url("img/files2x/file-sql@2x.png") no-repeat center
   
-.swift .endor-node-inner-icon
-	background-image: url("img/files2x/file-swift@2x.png")
+.file.sass .endor-node-inner-icon,
+.file.sass.info-top-icon,
+.filetype.file.sass
+	background: url("img/files2x/file-sass@2x.png") no-repeat center
   
-.sql .endor-node-inner-icon
-	background-image: url("img/files2x/file-sql@2x.png")
+.file.ruby .endor-node-inner-icon,
+.file.ruby.info-top-icon,
+.filetype.file.ruby
+	background: url("img/files2x/file-ruby@2x.png") no-repeat center
   
-.sass .endor-node-inner-icon
-	background-image: url("img/files2x/file-sass@2x.png")
+.file.rails .endor-node-inner-icon,
+.file.rails.info-top-icon,
+.filetype.file.rails
+	background: url("img/files2x/file-rails@2x.png") no-repeat center
+
+.file.pl .endor-node-inner-icon,
+.file.pl.info-top-icon,
+.filetype.file.pl
+	background: url("img/files2x/file-perl@2x.png") no-repeat center
+
+.file.npm .endor-node-inner-icon,
+.file.npm.info-top-icon,
+.filetype.file.npm
+	background: url("img/files2x/file-npm@2x.png") no-repeat center
   
-.ruby .endor-node-inner-icon
-	background-image: url("img/files2x/file-ruby@2x.png")
+.file.coffee .endor-node-inner-icon,
+.file.coffee.info-top-icon,
+.filetype.file.coffee
+	background: url("img/files2x/file-coffescript@2x.png") no-repeat center
   
-.rails .endor-node-inner-icon
-	background-image: url("img/files2x/file-rails@2x.png")
+.file.lua .endor-node-inner-icon,
+.file.lua.info-top-icon,
+.filetype.file.lua
+	background: url("img/files2x/file-lua@2x.png") no-repeat center
   
-.py .endor-node-inner-icon,
-.python .endor-node-inner-icon
-	background-image: url("img/files2x/file-python@2x.png")
+.file.docker .endor-node-inner-icon,
+.file.docker.info-top-icon,
+.filetype.file.docker
+	background: url("img/files2x/file-docker@2x.png") no-repeat center
   
-.go .endor-node-inner-icon
-	background-image: url("img/files2x/file-go@2x.png")
+.file.java .endor-node-inner-icon,
+.file.java.info-top-icon,
+.filetype.file.java
+	background: url("img/files2x/file-java@2x.png") no-repeat center
   
-.psd .endor-node-inner-icon
-	background-image: url("img/files2x/file-psd@2x.png")
+.file.glup .endor-node-inner-icon,
+.file.glup.info-top-icon,
+.filetype.file.glup
+	background: url("img/files2x/file-gulpfile@2x.png") no-repeat center
   
-.ai .endor-node-inner-icon
-	background-image: url("img/files2x/file-ai@2x.png")
+.file.cpp .endor-node-inner-icon,
+.file.cpp.info-top-icon,
+.filetype.file.cpp
+	background: url("img/files2x/file-cpp@2x.png") no-repeat center
   
-.pl .endor-node-inner-icon
-	background-image: url("img/files2x/file-perl@2x.png")
+.file.as .endor-node-inner-icon,
+.file.as.info-top-icon,
+.filetype.file.as
+	background: url("img/files2x/file-actionscript@2x.png") no-repeat center
   
-.pdf .endor-node-inner-icon
-	background-image: url("img/files2x/file-pdf@2x.png")
+.file.md .endor-node-inner-icon,
+.file.md.info-top-icon,
+.filetype.file.md
+	background: url("img/files2x/file-markdown@2x.png") no-repeat center
   
-.npm .endor-node-inner-icon
-	background-image: url("img/files2x/file-npm@2x.png")
+.file.scpt .endor-node-inner-icon,
+.file.AppleScript .endor-node-inner-icon,
+.file.scpt.info-top-icon,
+.file.AppleScript.info-top-icon,
+.filetype.file.scpt,
+.filetype.file.AppleScript
+	background: url("img/files2x/file-applescript@2x.png") no-repeat center
   
-.coffee .endor-node-inner-icon
-	background-image: url("img/files2x/file-coffescript@2x.png")
+.file.git .endor-node-inner-icon,
+.file.gitignore .endor-node-inner-icon,
+.file.gitmodules .endor-node-inner-icon,
+.file.git.info-top-icon,
+.file.gitignore.info-top-icon,
+.file.gitmodules.info-top-icon,
+.filetype.file.git,
+.filetype.file.gitignore,
+.filetype.file.gitmodules
+	background: url("img/files2x/file-git@2x.png") no-repeat center
   
-.lua .endor-node-inner-icon
-	background-image: url("img/files2x/file-lua@2x.png")
+.file.htaccess .endor-node-inner-icon,
+.file.htaccess.info-top-icon,
+.filetype.file.htaccess
+	background: url("img/files2x/file-tcl@2x.png") no-repeat center
   
-.docker .endor-node-inner-icon
-	background-image: url("img/files2x/file-docker@2x.png")
+.file.json .endor-node-inner-icon,
+.file.json.info-top-icon,
+.filetype.file.json
+	background: url("img/files2x/file-json@2x.png") no-repeat center
   
-.java .endor-node-inner-icon
-	background-image: url("img/files2x/file-java@2x.png")
-  
-.glup .endor-node-inner-icon
-	background-image: url("img/files2x/file-gulpfile@2x.png")
-  
-.cpp .endor-node-inner-icon
-	background-image: url("img/files2x/file-cpp@2x.png")
-  
-.as .endor-node-inner-icon
-	background-image: url("img/files2x/file-actionscript@2x.png")
-  
-.md .endor-node-inner-icon
-	background-image: url("img/files2x/file-markdown@2x.png")
-  
-.scpt .endor-node-inner-icon,
-.AppleScript .endor-node-inner-icon
-	background-image: url("img/files2x/file-applescript@2x.png")
-  
-.git .endor-node-inner-icon,
-.gitignore .endor-node-inner-icon,
-.gitmodules .endor-node-inner-icon
-	background-image: url("img/files2x/file-git@2x.png")
-  
-.gitmodules .endor-node-inner-icon
-	background-image: url("img/files2x/file-git@2x.png")
-  
-.htaccess .endor-node-inner-icon
-	background-image: url("img/files2x/file-tcl@2x.png")
-  
-.json .endor-node-inner-icon
-	background-image: url("img/files2x/file-json@2x.png")
-  
-.ejs .endor-node-inner-icon
-	background-image: url("img/files2x/file-ejs@2x.png")
+.file.ejs .endor-node-inner-icon,
+.file.ejs.info-top-icon,
+.filetype.file.ejs
+	background: url("img/files2x/file-ejs@2x.png") no-repeat center
   
 
 
 
 
- /* Connection icons - currnetly don't know if we need this */
+/* Connection icons - currnetly don't know if we need this */
 
 /*
 .connection.bitbucket .endor-node-inner-icon
-	background-image: url("img/files/service-bitbucket1.png")
+	background: url("img/files/service-bitbucket1.png") no-repeat center
   
 .connection.box .endor-node-inner-icon
-	background-image: url("img/files/service-box1.png")
+	background: url("img/files/service-box1.png") no-repeat center
   
 .connection.cloud .endor-node-inner-icon
-	background-image: url("img/files/service-cloud21.png")
+	background: url("img/files/service-cloud21.png") no-repeat center
   
 .connection.devbox .endor-node-inner-icon
-	background-image: url("img/files/service-container.png")
+	background: url("img/files/service-container.png") no-repeat center
   
 .connection.devbox.alwayson .endor-node-inner-icon
-	background-image: url("img/context/always-on.png")
+	background: url("img/context/always-on.png") no-repeat center
   
 .connection.gdrive .endor-node-inner-icon
-	background-image: url("img/files/service-gdrive1.png")
+	background: url("img/files/service-gdrive1.png") no-repeat center
   
 .connection.dropbox .endor-node-inner-icon
-	background-image: url("img/files/service-dropbox1.png")
+	background: url("img/files/service-dropbox1.png") no-repeat center
 
 .connection.ftp .endor-node-inner-icon
-	background-image: url("img/files/service-ftp1.png")
+	background: url("img/files/service-ftp1.png") no-repeat center
   
 .connection.github .endor-node-inner-icon
-	background-image: url("img/files/service-github1.png")
+	background: url("img/files/service-github1.png") no-repeat center
   
 .connection.s3 .endor-node-inner-icon
-	background-image: url("img/files/service-s31.png")
+	background: url("img/files/service-s31.png") no-repeat center
   
 .connection.sandbox .endor-node-inner-icon
-	background-image: url("img/files/service-sandbox1.png")
+	background: url("img/files/service-sandbox1.png") no-repeat center
   
 .connection.server .endor-node-inner-icon
-	background-image: url("img/files/service-server1.png")
+	background: url("img/files/service-server1.png") no-repeat center
   
 .connection.servers .endor-node-inner-icon
-	background-image: url("img/files/service-servers1.png")
+	background: url("img/files/service-servers1.png") no-repeat center
   
 .connection.ssh-terminal .endor-node-inner-icon
-	background-image: url("img/files/service-ssh-terminal1.png")
+	background: url("img/files/service-ssh-terminal1.png") no-repeat center
   
 .connection.ssh .endor-node-inner-icon
-	background-image: url("img/files/ssh1.png")
+	background: url("img/files/ssh1.png") no-repeat center
   
 .connection.ssh.digitalocean .endor-node-inner-icon
-	background-image: url("img/files/digitalocean.png")
+	background: url("img/files/digitalocean.png") no-repeat center
 	
+.connection.swift .endor-node-inner-icon
+	background: url("img/files2x/file-swift@2x.png") no-repeat center
+  
 */
   
-.connection.swift .endor-node-inner-icon
-	background-image: url("img/files2x/file-swift@2x.png")
-  
-.connection.onedrive .endor-node-inner-icon
-	background-image: url("img/files2x/onedrive.png")
   
 
 

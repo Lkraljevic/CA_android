@@ -9,7 +9,7 @@
 		color: color4
 		
 
-/* Left and Right Sidebar navigation */
+/* Left and Right Sidebar navigation ======================= */
 .simple-menu
 	background-color: color3
 	overflow-y: auto
@@ -26,11 +26,63 @@
 			flexbox()
 			align-items: center
 				
-				
+
+
+
+/* Bottom slider ======================= */
+.bottom-slidebar
+	background: color3
+	box-shadow(shadowLvl4top)
+	box-sizing()
+
+
+	/* Row */
+		
+	.file-row
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+		height: 58px !important
+		border-bottom: 1px solid color2
+		box-sizing()
+		
+
+		.filetype,
+		.info
+			display: block
+			width: 48px !important
+			height: 48px !important
+
+		/* Bottom Slidebar Icons are heandled in icons.styl */
+
+
+		.tab-title
+			flexbox()
+			align-items: center
+			width: calc(100% - 96px) !important
+			ellipsis()
+			box-sizing()
+			padding-left: 16px
+
+			
+		.info
+			background: url('img/explorer/info.png') center no-repeat
+			background-size: 28px
+		
+
+
+
 /* Bottom Sidebar navigation */	
 .bottom-slidebar
 	.simple-menu
 		height: calc(100% - 56px) !important
 
+		/* Overwrite for close icon TABS/Bottom slidebar */
+		.close.menu-item-wrapp
+			background: none !important
+
 	.simple-menu2
 		height: 100% !important
+
+
+

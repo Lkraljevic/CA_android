@@ -760,7 +760,7 @@ margin: auto,
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  height: 58px !important;
+  height: 56px !important;
   border-bottom: 1px solid #2f2a2a;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

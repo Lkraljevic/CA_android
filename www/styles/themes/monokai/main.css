@@ -3055,6 +3055,9 @@ input {
 .group.border {
   border-bottom: 1px solid #222;
 }
+.md-view {
+  overflow: auto !important;
+}
 .markdown-body {
   background: #1b1716;
   overflow: hidden;
@@ -3671,8 +3674,8 @@ input {
 .selection-operation-header,
 .find-wrapper,
 .replace-wrapper {
-  position: absolute;
-  z-index: 1010;
+  position: absolute !important;
+  z-index: 1010 !important;
   background-color: #3a3333 !important;
   background: #3a3333 !important;
   width: 100%;
@@ -3701,6 +3704,7 @@ input {
 .goto-header,
 .notifications-header,
 .revisions-header,
+.selection-operation-header,
 .saveas-header,
 .share-header,
 .preferences-header {
@@ -3725,6 +3729,7 @@ input {
 .goto-header .column,
 .notifications-header .column,
 .revisions-header .column,
+.selection-operation-header .column,
 .saveas-header .column,
 .share-header .column,
 .preferences-header .column,
@@ -3733,6 +3738,7 @@ input {
 .goto-header .project-name,
 .notifications-header .project-name,
 .revisions-header .project-name,
+.selection-operation-header .project-name,
 .saveas-header .project-name,
 .share-header .project-name,
 .preferences-header .project-name,
@@ -3741,6 +3747,7 @@ input {
 .goto-header .preferences-name,
 .notifications-header .preferences-name,
 .revisions-header .preferences-name,
+.selection-operation-header .preferences-name,
 .saveas-header .preferences-name,
 .share-header .preferences-name,
 .preferences-header .preferences-name,
@@ -3749,6 +3756,7 @@ input {
 .goto-header .tab-name,
 .notifications-header .tab-name,
 .revisions-header .tab-name,
+.selection-operation-header .tab-name,
 .saveas-header .tab-name,
 .share-header .tab-name,
 .preferences-header .tab-name,
@@ -3757,6 +3765,7 @@ input {
 .goto-header .title,
 .notifications-header .title,
 .revisions-header .title,
+.selection-operation-header .title,
 .saveas-header .title,
 .share-header .title,
 .preferences-header .title,
@@ -3765,6 +3774,7 @@ input {
 .goto-header .notifications-title,
 .notifications-header .notifications-title,
 .revisions-header .notifications-title,
+.selection-operation-header .notifications-title,
 .saveas-header .notifications-title,
 .share-header .notifications-title,
 .preferences-header .notifications-title,
@@ -3773,6 +3783,7 @@ input {
 .goto-header .saveas-title,
 .notifications-header .saveas-title,
 .revisions-header .saveas-title,
+.selection-operation-header .saveas-title,
 .saveas-header .saveas-title,
 .share-header .saveas-title,
 .preferences-header .saveas-title,
@@ -3781,6 +3792,7 @@ input {
 .goto-header .share-title,
 .notifications-header .share-title,
 .revisions-header .share-title,
+.selection-operation-header .share-title,
 .saveas-header .share-title,
 .share-header .share-title,
 .preferences-header .share-title,
@@ -3789,6 +3801,7 @@ input {
 .goto-header .select-counter,
 .notifications-header .select-counter,
 .revisions-header .select-counter,
+.selection-operation-header .select-counter,
 .saveas-header .select-counter,
 .share-header .select-counter,
 .preferences-header .select-counter {
@@ -3810,6 +3823,7 @@ input {
 .goto-header .project-name,
 .notifications-header .project-name,
 .revisions-header .project-name,
+.selection-operation-header .project-name,
 .saveas-header .project-name,
 .share-header .project-name,
 .preferences-header .project-name,
@@ -3818,6 +3832,7 @@ input {
 .goto-header .preferences-name,
 .notifications-header .preferences-name,
 .revisions-header .preferences-name,
+.selection-operation-header .preferences-name,
 .saveas-header .preferences-name,
 .share-header .preferences-name,
 .preferences-header .preferences-name,
@@ -3826,6 +3841,7 @@ input {
 .goto-header .tab-name,
 .notifications-header .tab-name,
 .revisions-header .tab-name,
+.selection-operation-header .tab-name,
 .saveas-header .tab-name,
 .share-header .tab-name,
 .preferences-header .tab-name,
@@ -3834,6 +3850,7 @@ input {
 .goto-header .title,
 .notifications-header .title,
 .revisions-header .title,
+.selection-operation-header .title,
 .saveas-header .title,
 .share-header .title,
 .preferences-header .title,
@@ -3842,6 +3859,7 @@ input {
 .goto-header .notifications-title,
 .notifications-header .notifications-title,
 .revisions-header .notifications-title,
+.selection-operation-header .notifications-title,
 .saveas-header .notifications-title,
 .share-header .notifications-title,
 .preferences-header .notifications-title,
@@ -3850,6 +3868,7 @@ input {
 .goto-header .saveas-title,
 .notifications-header .saveas-title,
 .revisions-header .saveas-title,
+.selection-operation-header .saveas-title,
 .saveas-header .saveas-title,
 .share-header .saveas-title,
 .preferences-header .saveas-title,
@@ -3858,6 +3877,7 @@ input {
 .goto-header .share-title,
 .notifications-header .share-title,
 .revisions-header .share-title,
+.selection-operation-header .share-title,
 .saveas-header .share-title,
 .share-header .share-title,
 .preferences-header .share-title,
@@ -3866,6 +3886,7 @@ input {
 .goto-header .select-counter,
 .notifications-header .select-counter,
 .revisions-header .select-counter,
+.selection-operation-header .select-counter,
 .saveas-header .select-counter,
 .share-header .select-counter,
 .preferences-header .select-counter {

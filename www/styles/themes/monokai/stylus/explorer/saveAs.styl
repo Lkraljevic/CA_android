@@ -11,7 +11,13 @@
     .fileexplorer
         height: 100%
 
-/* /overwrite for SaveAs Destination - explorer height */
+/* Input padding overwrite */
+.saveas-wrapper .saveas-content .mui-input
+    box-sizing()
+    padding-left: 16px
+    padding-right: 16px
+
+/* /overwrite */
 
 
 
@@ -58,6 +64,13 @@
                 height: 48px
                 flex-grow: 0
                 flex-shrink: 0
+                background-size: 24px !important
+
+                &.arrow-right
+                    background: url(img/explorer/arrow-right.png) no-repeat center
+
+                &.arrow-right
+                    background: url(img/explorer/arrow-right.png) no-repeat center
 
             .destination-desc
                 flexbox()

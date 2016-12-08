@@ -700,6 +700,24 @@ margin: auto,
   background-color: #1b1716;
   color: #d6cbcb;
 }
+.right-slidebar .filemenu-header {
+  background: #1b1716;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.right-slidebar .filemenu-header .file-title {
+  color: #fff;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.right-slidebar .filemenu-header .file-path {
+  color: rgba(214,203,203,0.5);
+  font-size: 12px;
+}
 .simple-menu {
   background-color: #463e3e;
   overflow-y: auto;
@@ -1539,42 +1557,51 @@ input[type="text"] {
   background-size: 24px !important;
 }
 .connection.ssh .endor-node-inner-icon,
+.destination-icon.ssh,
 .filetype.connection.ssh {
   background: url("img/explorer/ssh.png") center no-repeat;
   background-size: 30px;
 }
 .connection.devbox .endor-node-inner-icon,
+.destination-icon.devbox,
 .filetype.connection.devbox {
   background: url("img/explorer/container.png") center no-repeat;
   background-size: 30px;
 }
 .connection.dropbox .endor-node-inner-icon,
+.destination-icon.dropbox,
 .filetype.connection.dropbox {
   background: url("img/explorer/dropbox.png") center no-repeat;
   background-size: 28px;
 }
 .connection.gdrive .endor-node-inner-icon,
+.destination-icon.gdrive,
 .filetype.connection.gdrive {
   background: url("img/explorer/drive.png") center no-repeat;
   background-size: 28px;
 }
 .connection.s3 .endor-node-inner-icon,
+.destination-icon.s3,
 .filetype.connection.s3 {
   background: url("img/explorer/amazons3.png") center no-repeat;
   background-size: 26px;
 }
 .connection.ftp .endor-node-inner-icon,
 .connection.sftp .endor-node-inner-icon,
+.destination-icon.ftp,
+.destination-icon.sftp,
 .filetype.connection.ftp,
 .filetype.connection.sftp {
   background: url("img/explorer/ftp.png") center no-repeat;
   background-size: 24px;
 }
 .connection.onedrive .endor-node-inner-icon,
+.destination-icon.onedrive,
 .filetype.connection.onedrive {
   background: url("img/files2x/onedrive.png") no-repeat center;
 }
 .folder .endor-node-inner-icon,
+.destination-icon.folder,
 .filetype.folder {
   background: url("img/explorer/folder.png") center no-repeat;
   background-size: 24px !important;
@@ -2462,6 +2489,13 @@ input[type="text"] {
 .saveas-wrapper .body-wrapper > .tr-layout-auto.tr-panel .fileexplorer {
   height: 100%;
 }
+.saveas-wrapper .saveas-content .mui-input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .saveas-wrapper .body-wrapper {
   height: calc(100% - 56px);
   background: #2f2a2a;
@@ -2504,6 +2538,13 @@ input[type="text"] {
   height: 48px;
   flex-grow: 0;
   flex-shrink: 0;
+  background-size: 24px !important;
+}
+.saveas-wrapper .body-wrapper .saveas-content .destination-wrap .destination .destination-icon.arrow-right {
+  background: url("img/explorer/arrow-right.png") no-repeat center;
+}
+.saveas-wrapper .body-wrapper .saveas-content .destination-wrap .destination .destination-icon.arrow-right {
+  background: url("img/explorer/arrow-right.png") no-repeat center;
 }
 .saveas-wrapper .body-wrapper .saveas-content .destination-wrap .destination .destination-desc {
   display: -webkit-box;
@@ -3642,6 +3683,15 @@ input {
 .selection-operation-header,
 .find-wrapper {
   top: 0;
+}
+.selection-operation-header .column,
+.find-wrapper .column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
 }
 .replace-wrapper {
   bottom: 0;

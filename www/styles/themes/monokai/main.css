@@ -510,6 +510,91 @@ img {
 .oauth .github {
   background: url("img/oauth/github-inactive@2x.png");
 }
+.hide {
+  display: none !important;
+}
+.fade-out {
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+  opacity: 0 !important;
+}
+.fade-in {
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+  opacity: 1 !important;
+}
+.loading-screen-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+/* CA Logo */
+}
+.loading-screen-wrap .loading-logo {
+  width: 100%;
+  max-width: 260px;
+  position: absolute;
+  opacity: 1;
+}
+.loading-screen-wrap .loading-logo img {
+  width: 100%;
+}
+.loading-screen-wrap .loading-ring {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+}
+.loading-ring-loader {
+  position: relative;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+}
+.loading-ring-loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #7e3f98;
+}
 .child-nodes-none > div.endor-node-wrap {
   display: none;
 }
@@ -565,6 +650,7 @@ img {
   height: 100%;
   margin-top: 50px;
 }
+<<<<<<< HEAD
 .hide,
 display: none !important,
 .fade-out,
@@ -613,6 +699,8 @@ margin: auto,
   stroke-linecap: round;
   stroke: #7e3f98;
 }
+=======
+>>>>>>> 5b3ce6d6354345561c37eebe8d13df358fb8ae16
 @-moz-keyframes rotate {
   100% {
     transform: rotate(360deg);

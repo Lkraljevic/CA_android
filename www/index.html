@@ -56,8 +56,10 @@
   <!-- /Loading Screen Wrap -->
 
   <script type="text/javascript">
+  console.log('body-script loaded');
   document.addEventListener('deviceready', function() {
-    screen.lockOrientation(screen.lockOrientation('portrait'));
+    console.log('deviceready');
+    screen.lockOrientation('portrait');
   }, false);
   </script>
 

@@ -26,6 +26,7 @@
 
     <preference name="AndroidLaunchMode"      value="standard" />
     <preference name="BackgroundColor" value="#222"/>
+    <preference name="Orientation" value="portrait" />
 
     <!-- <preference AndroidLaunchMode="singleTask" /> -->
 

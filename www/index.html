@@ -11,6 +11,171 @@
   <script type="text/javascript" src="bcsocket.js"></script>
   <script type="text/javascript" src="jslights.js"></script>
 
+  <style type="text/css">
+  .hide {
+    display: none !important;
+  }
+  .fade-out {
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -moz-transition: opacity 1.2s ease-in-out;
+    -ms-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    opacity: 0 !important;
+  }
+  .fade-in {
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -moz-transition: opacity 1.2s ease-in-out;
+    -ms-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    opacity: 1 !important;
+  }
+  .loading-screen-wrap {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    /* CA Logo */
+  }
+  .loading-screen-wrap .loading-logo {
+    width: 100%;
+    max-width: 260px;
+    position: absolute;
+    opacity: 1;
+  }
+  .loading-screen-wrap .loading-logo img {
+    width: 100%;
+  }
+  .loading-screen-wrap .loading-ring {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+  }
+  .loading-ring-loader {
+    position: relative;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+  }
+  .loading-ring-loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  .circular {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+    stroke: #7e3f98;
+  }
+  @-moz-keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  @-o-keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  </style>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/themes/monokai/main.css">
 
@@ -54,14 +219,6 @@
     </div>
   </div>
   <!-- /Loading Screen Wrap -->
-
-  <script type="text/javascript">
-  console.log('body-script loaded');
-  document.addEventListener('deviceready', function() {
-    console.log('deviceready');
-    screen.lockOrientation('portrait');
-  }, false);
-  </script>
 
 </body>
 

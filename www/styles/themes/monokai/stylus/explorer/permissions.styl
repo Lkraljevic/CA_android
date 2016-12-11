@@ -74,14 +74,22 @@
 .permissions-wrap .permissions-bot
     height: calc(100% - 56px)
     overflow: auto
-    box-sizing()
-    padding: 16px
 
+    .numeric-value
+        box-sizing()
+        padding: 0 16px
 
+        /* input overwrite */
+        .mui-input .group input
+            font-size: 30px
+
+        .mui-input .group label
+            font-size: 20px
+            top: 20px
 
     .permissions-table
         margin-top: 10px
-        
+
         table
             width: 100%
 

@@ -179,6 +179,66 @@
 
 
 
+
+/* Permission Rights (Bottom Slidebar) ============================= */
+.share-bottom-sheet
+	flexbox()
+	flex-flow: column nowrap
+	width: 100%
+	height: 100%
+	box-sizing()
+	overflow: auto
+
+
+	.share-user-email
+		font-size: 16px
+		font-weight: 300
+		color: color4a5
+		height: 40px
+		flexbox()
+		ellipsis()
+		align-items: center
+		margin-bottom: 10px
+
+	.menu-row
+		flexbox()
+		flex-flow: column nowrap
+		box-sizing()
+		padding: 0 16px
+
+		.share-permission
+			flexbox()
+			flex-flow: row nowrap
+			align-items: center
+			height: 30px
+			margin-bottom: 5px
+			
+
+			.label
+				font-size: 14px
+				color: color4
+				width: calc(100% - 34px)
+				ellipsis()
+
+			.toggle
+				flexbox()
+				width: 24px
+				height: 24px
+				margin-left: 10px
+
+				&.active
+					background: url(img/explorer/check.png) no-repeat center
+					background-size: 24px
+
+				/* Permission Rights buttons are handled in "buttons.styl" */
+
+
+
+
+
+
+
+
 /* Padding for main content */
 .screen-padding
 	box-sizing()

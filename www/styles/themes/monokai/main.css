@@ -1404,6 +1404,10 @@ input[type="text"] {
   background: url("img/explorer/edit.png") no-repeat center;
   background-size: 18px;
 }
+.btn-edit i.eye {
+  background: url("img/explorer/can-view.png") no-repeat center;
+  background-size: 18px;
+}
 .btn-edit i.caret-down {
   background: url("img/explorer/caret-down.png") no-repeat center;
   background-size: 16px;
@@ -2979,6 +2983,82 @@ input {
   display: flex;
   width: 36px;
   margin-left: 10px;
+}
+.share-bottom-sheet {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.share-bottom-sheet .share-user-email {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(214,203,203,0.5);
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.share-bottom-sheet .menu-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+.share-bottom-sheet .menu-row .share-permission {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.share-bottom-sheet .menu-row .share-permission .label {
+  font-size: 14px;
+  color: #d6cbcb;
+  width: calc(100% - 34px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.share-bottom-sheet .menu-row .share-permission .toggle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+/* Permission Rights buttons are handled in "buttons.styl" */
+}
+.share-bottom-sheet .menu-row .share-permission .toggle.active {
+  background: url("img/explorer/check.png") no-repeat center;
+  background-size: 24px;
 }
 .screen-padding {
   -webkit-box-sizing: border-box;

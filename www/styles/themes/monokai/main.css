@@ -2622,6 +2622,7 @@ input[type="text"] {
   box-sizing: border-box;
   padding: 0 16px;
 /* input overwrite */
+/* /input overwrite */
 }
 .permissions-wrap .permissions-bot .numeric-value .mui-input .group input {
   font-size: 30px;
@@ -2630,15 +2631,43 @@ input[type="text"] {
   font-size: 20px;
   top: 20px;
 }
+.permissions-wrap .permissions-bot .numeric-value .mui-input .group input:focus ~ label,
+.permissions-wrap .permissions-bot .numeric-value .mui-input .group input:valid ~ label {
+  top: -10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
 .permissions-wrap .permissions-bot .permissions-table {
   margin-top: 10px;
 }
 .permissions-wrap .permissions-bot .permissions-table table {
   width: 100%;
+  border-collapse: collapse;
+/* overvrite checkbox row */
+/* /overvrite checkbox row */
 }
 .permissions-wrap .permissions-bot .permissions-table table td {
   text-align: center;
-  height: 30px;
+  height: 42px;
+  border-top: 1px solid rgba(214,203,203,0.12);
+  border-bottom: 1px solid rgba(214,203,203,0.12);
+  border-right: 1px solid rgba(214,203,203,0.12);
+}
+.permissions-wrap .permissions-bot .permissions-table table td:last-child {
+  border-right: none;
+}
+.permissions-wrap .permissions-bot .permissions-table table td:first-child {
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+.permissions-wrap .permissions-bot .permissions-table table .checkbox-row {
+  padding: 0;
+  justify-content: center;
 }
 .saveas-wrapper > .tr-layout-auto.tr-panel {
   height: 100%;

@@ -347,6 +347,9 @@ img {
   border: none;
 }
 /* import all screens */
+.login-viewport {
+  background: #fff;
+}
 .login-header,
 .info-header {
   background-color: #7e3f98;
@@ -605,9 +608,11 @@ img {
 }
 .loading-screen-wrap .loading-logo {
   width: 100%;
+  width: 100vw;
   max-width: 260px;
   position: absolute;
   opacity: 1;
+  margin: 0 auto;
 }
 .loading-screen-wrap .loading-logo img {
   width: 100%;

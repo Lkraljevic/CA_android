@@ -570,6 +570,23 @@ img {
   height: 100%;
   margin-top: 50px;
 }
+.loader,
+flexbox(),
+flex-flow: column nowrap,
+justify-content: flex-start,
+align-items: center,
+width: 100%,
+height: 100%,
+.loader__icon,
+display: block,
+width: 70px,
+height: 70px,
+position: relative,
+margin-top: 20%,
+.loader__text,
+width: 80%,
+text-align: center,
+margin-top: 50px,
 .hide {
   display: none !important;
 }

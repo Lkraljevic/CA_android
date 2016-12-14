@@ -2,9 +2,12 @@
 
 
 /* Folder Loading/Empty Screen ============================== */
+
 /* Hides all elements inside */
 .child-nodes-none > div.endor-node-wrap
 	display: none
+
+
 
 .child-nodes-none > div.endor-node-child-nodes-overlay,
 .child-nodes-none > div.empty-node
@@ -54,31 +57,30 @@
 
 /* Folder/File Loader NEW ======================================== */
 .loader
-    flexbox()
-    flex-flow: column nowrap
-    justify-content: flex-start
-    align-items: center
-    width: 100%
-    height: 100%
+	flexbox()
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	height: 100%
 	position: absolute
 	top: 0
 	left: 0
 	right: 0
 	bottom: 0
 	background: color2
+	
+	.loader__icon
+		display: block
+		width: 70px
+		height: 70px
+		position: relative
+		margin-top: 20%
 
-
-    .loader__icon
-        display: block
-        width: 70px
-        height: 70px
-        position: relative
-        margin-top: 20%
-
-    .loader__text
-        width: 80%
-        text-align: center
-        margin-top: 50px
+	.loader__text
+		width: 80%
+		text-align: center
+		margin-top: 50px
 
 /* /Folder/File Loader NEW ======================================== */
 

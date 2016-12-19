@@ -176,6 +176,7 @@
   border-bottom: 1px solid #ccc;
   min-height: 100px;
   text-decoration: none;
+  margin-top: 5px;
 }
 .select-wrap {
   width: 100%;

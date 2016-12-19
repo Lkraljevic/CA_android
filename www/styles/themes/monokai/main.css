@@ -451,9 +451,31 @@ img {
   line-height: 36px;
   margin-left: 16px;
   font-size: 12px;
+/* Dropdown list/box */
 }
 .login-body .dropdown-wrap .main-label {
   color: #7e3f98;
+}
+.login-body .dropdown-wrap .content-wrap {
+  width: 180px;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  border: none;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.login-body .dropdown-wrap .content-wrap .option {
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  color: #313131;
+  font-size: 13px;
 }
 .login-body .pass-msg {
   line-height: 26px;
@@ -898,7 +920,6 @@ input[type="text"] {
 .profile-wrap {
   position: relative;
   width: 100%;
-  height: 100% !important;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

@@ -643,7 +643,29 @@ img {
   -o-transition: opacity 1.2s ease-in-out;
   opacity: 1 !important;
 }
-.loading-screen-wrap {
+.loading-screen-wrap,
+.loading-screen-wrap .loading-logo-wrap,
+.loading-screen-wrap .loading-ring-wrap,
+position: absolute,
+top: 0,
+bottom: 0,
+left: 0,
+right: 0,
+width: 100%,
+height: 100%,
+flexbox(),
+justify-content: center,
+align-items: center,
+background: color11,
+opacity: 1,
+z-index: 1,
+opacity: 0,
+z-index: 2,
+.loading-screen-wrap .loading-logo,
+max-width: 260px,
+position: relative,
+img,
+.loading-screen-wrap .loading-ring {
   z-index: 3;
   position: absolute;
   top: 0;
@@ -662,7 +684,29 @@ img {
   background: #222;
 /* CA Logo */
 }
-.loading-screen-wrap .loading-logo {
+.loading-screen-wrap .loading-logo,
+.loading-screen-wrap .loading-logo-wrap .loading-logo,
+.loading-screen-wrap .loading-ring-wrap .loading-logo,
+position: absolute .loading-logo,
+top: 0 .loading-logo,
+bottom: 0 .loading-logo,
+left: 0 .loading-logo,
+right: 0 .loading-logo,
+width: 100% .loading-logo,
+height: 100% .loading-logo,
+flexbox() .loading-logo,
+justify-content: center .loading-logo,
+align-items: center .loading-logo,
+background: color11 .loading-logo,
+opacity: 1 .loading-logo,
+z-index: 1 .loading-logo,
+opacity: 0 .loading-logo,
+z-index: 2 .loading-logo,
+.loading-screen-wrap .loading-logo .loading-logo,
+max-width: 260px .loading-logo,
+position: relative .loading-logo,
+img .loading-logo,
+.loading-screen-wrap .loading-ring .loading-logo {
   width: 100%;
   width: 100vw;
   max-width: 260px;
@@ -670,10 +714,54 @@ img {
   opacity: 1;
   margin: 0 auto;
 }
-.loading-screen-wrap .loading-logo img {
+.loading-screen-wrap .loading-logo img,
+.loading-screen-wrap .loading-logo-wrap .loading-logo img,
+.loading-screen-wrap .loading-ring-wrap .loading-logo img,
+position: absolute .loading-logo img,
+top: 0 .loading-logo img,
+bottom: 0 .loading-logo img,
+left: 0 .loading-logo img,
+right: 0 .loading-logo img,
+width: 100% .loading-logo img,
+height: 100% .loading-logo img,
+flexbox() .loading-logo img,
+justify-content: center .loading-logo img,
+align-items: center .loading-logo img,
+background: color11 .loading-logo img,
+opacity: 1 .loading-logo img,
+z-index: 1 .loading-logo img,
+opacity: 0 .loading-logo img,
+z-index: 2 .loading-logo img,
+.loading-screen-wrap .loading-logo .loading-logo img,
+max-width: 260px .loading-logo img,
+position: relative .loading-logo img,
+img .loading-logo img,
+.loading-screen-wrap .loading-ring .loading-logo img {
   width: 100%;
 }
-.loading-screen-wrap .loading-ring {
+.loading-screen-wrap .loading-ring,
+.loading-screen-wrap .loading-logo-wrap .loading-ring,
+.loading-screen-wrap .loading-ring-wrap .loading-ring,
+position: absolute .loading-ring,
+top: 0 .loading-ring,
+bottom: 0 .loading-ring,
+left: 0 .loading-ring,
+right: 0 .loading-ring,
+width: 100% .loading-ring,
+height: 100% .loading-ring,
+flexbox() .loading-ring,
+justify-content: center .loading-ring,
+align-items: center .loading-ring,
+background: color11 .loading-ring,
+opacity: 1 .loading-ring,
+z-index: 1 .loading-ring,
+opacity: 0 .loading-ring,
+z-index: 2 .loading-ring,
+.loading-screen-wrap .loading-logo .loading-ring,
+max-width: 260px .loading-ring,
+position: relative .loading-ring,
+img .loading-ring,
+.loading-screen-wrap .loading-ring .loading-ring {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -693,7 +781,6 @@ img {
 .loading-ring-loader:before {
   content: '';
   display: block;
-  padding-top: 100%;
 }
 .circular {
   animation: rotate 2s linear infinite;
@@ -701,7 +788,7 @@ img {
 height: 100%,
 transform-origin: center center,
 width: 100%,
-position: absolute,
+position: relative,
 top: 0,
 bottom: 0,
 left: 0,

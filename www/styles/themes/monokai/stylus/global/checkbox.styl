@@ -2,61 +2,61 @@
 
 
 .checkbox-row
-    width: 100%
-    flexbox()
-    flex-flow: row nowrap
-    justify-content: flex-start
-    align-items: center
-    box-sizing()
-    padding: 0 16px
+	width: 100%
+	flexbox()
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: center
+	box-sizing()
+	padding: 0 16px
 
-    .checkbox__box
-        flexbox()
-        justify-content: center
-        align-items: center
-    
-    .checkbox__span
-        margin-left: 10px
-        font-size: 12px
+	.checkbox__box
+		flexbox()
+		justify-content: center
+		align-items: center
+	
+	.checkbox__span
+		margin-left: 10px
+		font-size: 12px
 
 
 
 /* CHECKBOX REPLACEMENT ======================== */
 input[type=checkbox]
-    visibility: hidden
+	visibility: hidden
 
 
 /* CHECKBOX */
 .checkbox
-    width: 16px
-    position: relative
+	width: 16px
+	position: relative
 
 
-    label
-        cursor: pointer
-        position: absolute
-        width: 12px
-        height: 12px
-        top: 0
-        left: 0
-        border-radius: 2px
-        border: 2px solid color4
+	label
+		cursor: pointer
+		position: absolute
+		width: 12px
+		height: 12px
+		top: 0
+		left: 0
+		border-radius: 2px
+		border: 2px solid color4
 
-    label:after
-        opacity: 0
-        content: ''
-        position: absolute
-        width: 16px
-        height: 16px
-        background: url(img/explorer/check-box.png) no-repeat center
-        background-size: 22px
-        top: -2px
-        left: -2px
+	label:after
+		opacity: 0
+		content: ''
+		position: absolute
+		width: 16px
+		height: 16px
+		background: url(img/explorer/check-box.png) no-repeat center
+		background-size: 22px
+		top: -2px
+		left: -2px
 
-    /*
-    label:hover::after
-        opacity: 0.3
-    */
+	/*
+	label:hover::after
+		opacity: 0.3
+	*/
 
-    input[type=checkbox]:checked + label:after
-        opacity: 1
+	input[type=checkbox]:checked + label:after
+		opacity: 1

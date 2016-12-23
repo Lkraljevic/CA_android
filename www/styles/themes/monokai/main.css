@@ -541,6 +541,98 @@ img {
 .oauth .github {
   background: url("img/oauth/github-inactive@2x.png");
 }
+.fade-out {
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+  opacity: 0 !important;
+}
+.fade-in {
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+  opacity: 1 !important;
+}
+.loading-screen-wrap,
+.loading-screen-wrap .loading-logo-wrap,
+.loading-screen-wrap .loading-ring-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.loading-screen-wrap {
+  background: #222;
+}
+.loading-screen-wrap .loading-logo-wrap {
+  opacity: 1;
+  z-index: 110;
+}
+.loading-screen-wrap .loading-ring-wrap {
+  opacity: 0;
+  z-index: 120;
+}
+.loading-screen-wrap .loading-logo {
+  width: 100%;
+  max-width: 260px;
+  position: relative;
+}
+.loading-screen-wrap .loading-logo img {
+  width: 100%;
+}
+.loading-screen-wrap .loading-ring {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.loading-ring-loader {
+  position: relative;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+}
+.loading-ring-loader:before {
+  content: '';
+  display: block;
+}
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+  stroke: #7e3f98;
+}
 .child-nodes-none > div.endor-node-wrap {
   display: none;
 }
@@ -625,96 +717,6 @@ img {
   width: 80%;
   text-align: center;
   margin-top: 50px;
-}
-.fade-out {
-  -webkit-transition: opacity 1.2s ease-in-out;
-  -moz-transition: opacity 1.2s ease-in-out;
-  -ms-transition: opacity 1.2s ease-in-out;
-  -o-transition: opacity 1.2s ease-in-out;
-  opacity: 0 !important;
-}
-.fade-in {
-  -webkit-transition: opacity 1.2s ease-in-out;
-  -moz-transition: opacity 1.2s ease-in-out;
-  -ms-transition: opacity 1.2s ease-in-out;
-  -o-transition: opacity 1.2s ease-in-out;
-  opacity: 1 !important;
-}
-.loading-screen-wrap,
-.loading-screen-wrap .loading-logo-wrap,
-.loading-screen-wrap .loading-ring-wrap {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loading-screen-wrap {
-  background: #222;
-}
-.loading-screen-wrap .loading-logo-wrap {
-  opacity: 1;
-  z-index: 1;
-}
-.loading-screen-wrap .loading-ring-wrap {
-  opacity: 0;
-  z-index: 2;
-}
-.loading-screen-wrap .loading-logo {
-  width: 100%;
-  max-width: 260px;
-  position: relative;
-}
-.loading-screen-wrap .loading-logo img {
-  width: 100%;
-}
-.loading-screen-wrap .loading-ring {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.loading-ring-loader {
-  position: relative;
-  margin: 0 auto;
-  width: 70px;
-  height: 70px;
-}
-.loading-ring-loader:before {
-  content: '';
-  display: block;
-}
-.circular {
-  animation: rotate 2s linear infinite;
-  height: 100%;
-  transform-origin: center center;
-  width: 100%;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  animation: dash 1.5s ease-in-out infinite;
-  stroke-linecap: round;
-  stroke: #7e3f98;
 }
 @-moz-keyframes rotate {
   100% {

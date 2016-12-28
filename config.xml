@@ -28,6 +28,8 @@
     <preference name="BackgroundColor" value="#222"/>
     <preference name="Orientation" value="portrait" />
 
+    <preference name="SplashScreen" value="screen"/>
+
     <!-- <preference AndroidLaunchMode="singleTask" /> -->
 
 

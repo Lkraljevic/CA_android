@@ -1,7 +1,7 @@
 {
   "name": "mobile",
-  "version": "1.0.0",
-  "description": "This is bundled version of CA mobile app",
+  "version": "0.1",
+  "description": "Codeanywhere Mobile Beta",
   "main": "index.js",
   "scripts": {
     "stylus": "stylus -w www/styles/themes/monokai/stylus/main.styl -o www/styles/themes/monokai/main.css",

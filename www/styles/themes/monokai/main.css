@@ -2664,6 +2664,9 @@ input[type="text"] {
   border-bottom: 1px solid #d6cbcb;
   border-bottom: 1px solid rgba(214,203,203,0.12);
 }
+.pref-group .pref-item .pref-item-right {
+  text-align: right;
+}
 .pref-group .pref-item .pref-item-title {
   font-size: 16px;
   display: block;
@@ -2707,6 +2710,9 @@ input[type="text"] {
   padding: 0 16px;
   border-bottom: 1px solid #d6cbcb;
   border-bottom: 1px solid rgba(214,203,203,0.12);
+}
+.snippets-info {
+  margin: 20px 16px;
 }
 .permissions-wrapper {
   position: absolute;

@@ -64,7 +64,8 @@
 
     <plugin name="cordova-plugin-background-mode" spec="0.6.4" source="npm" />
     <!--<plugin name="com.badrit.backbutton" spec="0.1.0" source="pgb" /> -->
-    <plugin name="cordova-plugin-sms" source="npm" />
+    <!-- User permission problem -->
+    <!-- <plugin name="cordova-plugin-sms" source="npm" /> -->
     
 
     <!-- Define app icon and splashscreen for each platform. -->

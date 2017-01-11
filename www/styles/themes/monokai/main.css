@@ -2908,6 +2908,9 @@ input[type="text"] {
 .snippets-info {
   margin: 20px 16px;
 }
+.snippets-info a {
+  color: #7e3f98;
+}
 .permissions-wrapper {
   position: absolute;
   top: 0;

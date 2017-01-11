@@ -1351,6 +1351,7 @@ input[type="text"] {
 .editor,
 .notification,
 .menu,
+.save,
 .filemenu,
 .tabsicon,
 .back,
@@ -1696,7 +1697,8 @@ input[type="text"] {
 .connection.ssh .endor-node-inner-icon,
 .destination-icon.ssh,
 .filetype.connection.ssh,
-.left-tab-icon.connection.ssh {
+.left-tab-icon.connection.ssh,
+.left-tab-icon.connection.ssh-terminal {
   background: url("img/explorer/ssh.png") center no-repeat;
   background-size: 30px;
 }

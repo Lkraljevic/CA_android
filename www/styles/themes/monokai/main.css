@@ -908,6 +908,9 @@ img {
 .bottom-slidebar .simple-menu2 {
   height: 100% !important;
 }
+.bottom-slidebar.project-menu .simple-menu {
+  height: 100% !important;
+}
 @import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
 a {
   text-decoration: none;

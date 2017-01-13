@@ -822,6 +822,7 @@ img {
 .right-side-panel .filemenu-header .file-path {
   color: rgba(214,203,203,0.5);
   font-size: 12px;
+  word-wrap: break-word;
 }
 .simple-menu {
   background-color: #463e3e;

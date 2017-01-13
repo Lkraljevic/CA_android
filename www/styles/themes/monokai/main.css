@@ -2768,6 +2768,23 @@ input[type="text"] {
   z-index: 1000;
   background: #000;
 }
+.insert.CodeMirror-linebackground,
+.delete.CodeMirror-linebackground {
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+.insert.CodeMirror-linebackground {
+  background-color: #1b251e !important;
+}
+.delete.CodeMirror-linebackground {
+  background-color: #2b1717 !important;
+}
+.CodeMirror-merge-collapsed-widget {
+  background: none !important;
+  border: none !important;
+  color: #fff !important;
+}
 .viewport-preferences .tr-layout-auto.tr-panel {
   overflow: auto !important;
 }

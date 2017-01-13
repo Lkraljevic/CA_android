@@ -1237,7 +1237,8 @@ input[type="text"] {
 /* Tab Middle section */
 }
 .tabslist .body-list-wrap .tab .left-tab-icon,
-.tabslist .body-list-wrap .tab .menu-tab {
+.tabslist .body-list-wrap .tab .menu-tab,
+.tabslist .body-list-wrap .tab .close-tab {
   display: block;
   width: 48px !important;
   height: 48px !important;
@@ -1247,6 +1248,10 @@ input[type="text"] {
 }
 .tabslist .body-list-wrap .tab .menu-tab {
   background: url("img/explorer/dots-vertical.png") center no-repeat;
+  background-size: 24px;
+}
+.tabslist .body-list-wrap .tab .close-tab {
+  background: url("img/close.png") center no-repeat;
   background-size: 24px;
 }
 .tabslist .body-list-wrap .tab .middle-tab {
@@ -1352,6 +1357,7 @@ input[type="text"] {
 .editor,
 .notification,
 .menu,
+.menuicon,
 .save,
 .filemenu,
 .tabsicon,
@@ -1384,7 +1390,8 @@ input[type="text"] {
   background: url("img/explorer/notification.png") no-repeat center;
   background-size: 24px;
 }
-.menu {
+.menu,
+.menuicon {
   background: url("img/explorer/dots-vertical.png") no-repeat center;
   background-size: 24px;
 }
@@ -1699,7 +1706,8 @@ input[type="text"] {
 .destination-icon.ssh,
 .filetype.connection.ssh,
 .left-tab-icon.connection.ssh,
-.left-tab-icon.connection.ssh-terminal {
+.left-tab-icon.connection.ssh-terminal,
+.left-tab-icon.ssh-terminal {
   background: url("img/explorer/ssh.png") center no-repeat;
   background-size: 30px;
 }

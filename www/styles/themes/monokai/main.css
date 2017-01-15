@@ -1368,7 +1368,9 @@ input[type="text"] {
 .cut,
 .delete,
 .download,
-.add-button {
+.add-button,
+.preview,
+.run {
   display: block;
   width: 48px !important;
   height: 48px !important;
@@ -1438,6 +1440,14 @@ input[type="text"] {
 }
 .add-button {
   background: url("img/explorer/new-folder.png") no-repeat center;
+  background-size: 24px !important;
+}
+.preview {
+  background: url("img/explorer/file-preview.png") no-repeat center;
+  background-size: 24px !important;
+}
+.run {
+  background: url("img/explorer/run.png") no-repeat center;
   background-size: 24px !important;
 }
 .close-notification {
@@ -2783,10 +2793,17 @@ input[type="text"] {
   width: auto !important;
   height: auto !important;
 }
-.insert.CodeMirror-linebackground {
+.CodeMirror-gutter-background.delete,
+.CodeMirror-gutter-wrapper.delete {
+  background: none !important;
+  height: auto !important;
+}
+.insert.CodeMirror-linebackground,
+.CodeMirror-gutter-background.insert {
   background-color: #1b251e !important;
 }
-.delete.CodeMirror-linebackground {
+.delete.CodeMirror-linebackground,
+.CodeMirror-gutter-background.delete {
   background-color: #2b1717 !important;
 }
 .CodeMirror-merge-collapsed-widget {

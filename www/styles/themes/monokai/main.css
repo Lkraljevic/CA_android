@@ -2794,16 +2794,30 @@ input[type="text"] {
   height: auto !important;
 }
 .CodeMirror-gutter-background.delete,
+<<<<<<< HEAD
+=======
+.CodeMirror-gutter-background.insert,
+.cm-delete,
+.cm-insert,
+>>>>>>> origin/master
 .CodeMirror-gutter-wrapper.delete {
   background: none !important;
   height: auto !important;
 }
 .insert.CodeMirror-linebackground,
+<<<<<<< HEAD
 .CodeMirror-gutter-background.insert {
   background-color: #1b251e !important;
 }
 .delete.CodeMirror-linebackground,
 .CodeMirror-gutter-background.delete {
+=======
+.cm-insert {
+  background-color: #1b251e !important;
+}
+.delete.CodeMirror-linebackground,
+.cm-delete {
+>>>>>>> origin/master
   background-color: #2b1717 !important;
 }
 .CodeMirror-merge-collapsed-widget {

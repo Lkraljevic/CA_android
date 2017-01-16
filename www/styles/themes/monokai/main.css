@@ -2787,23 +2787,12 @@ input[type="text"] {
   z-index: 1000;
   background: #000;
 }
-.insert.CodeMirror-linebackground,
-.delete.CodeMirror-linebackground {
-  background: none !important;
-  width: auto !important;
-  height: auto !important;
-}
-.CodeMirror-gutter-background.delete,
-.CodeMirror-gutter-wrapper.delete {
-  background: none !important;
-  height: auto !important;
-}
-.insert.CodeMirror-linebackground,
-.CodeMirror-gutter-background.insert {
+.CodeMirror-linebackground.cm-insert,
+.CodeMirror-gutter-background.cm-insert {
   background-color: #1b251e !important;
 }
-.delete.CodeMirror-linebackground,
-.CodeMirror-gutter-background.delete {
+.CodeMirror-linebackground.cm-delete,
+.CodeMirror-gutter-background.cm-delete {
   background-color: #2b1717 !important;
 }
 .CodeMirror-merge-collapsed-widget {

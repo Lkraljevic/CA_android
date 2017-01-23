@@ -101,10 +101,70 @@ ellipsis()
 
 
 
-/* NOVO NESTO ======================== */
+/* Animation Rotate ======================== */
 
 
+@-webkit-keyframes webkit-rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to { 
+		-webkit-transform: rotate(360deg);
+	}
+}
 
+@-moz-keyframes moz-rotate {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to { 
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes ms-rotate {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to { 
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes o-rotate {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to { 
+		-o-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to { 
+		transform: rotate(360deg);
+	}
+}
+
+a-rotate(value)
+	-webkit-animation: webkit-rotate value infinite
+	-webkit-animation-play-state: running
+	-webkit-animation-timing-function: linear
+	-moz-animation: moz-rotate value infinite
+	-moz-animation-play-state: running
+	-moz-animation-timing-function: linear
+	-ms-animation: ms-rotate value infinite
+	-ms-animation-play-state: running
+	-ms-animation-timing-function: linear
+	-o-animation: o-rotate value infinite
+	-o-animation-play-state: running
+	-o-animation-timing-function: linear
+	animation: rotate value infinite
+	animation-play-state: running
+	animation-timing-function: linear
 
 
 

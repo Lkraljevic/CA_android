@@ -1,5 +1,69 @@
 /* MAIN STYL ======================================= */
 /* import all global styl */
+@-webkit-keyframes webkit-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes moz-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes ms-rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes o-rotate {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .response-text:empty {
   visibility: hidden;
 }
@@ -2455,6 +2519,37 @@ input[type="text"] {
 .wiz-row__icon.ubuntu {
   background: url("img/wizard/digitalocean/ubuntu.png") no-repeat center;
 }
+.notification-item .icon {
+  background-size: 24px;
+}
+.notification-item.ca .icon {
+  background: url("img/notifications/ca-logo-mini.png") no-repeat center;
+}
+.notification-item.finish .icon {
+  background: url("img/notifications/yes.png") no-repeat center;
+}
+.notification-item.fail .icon {
+  background: url("img/notifications/no.png") no-repeat center;
+}
+.notification-item.in-progress .icon {
+  background: url("img/notifications/loader56@28.png") no-repeat center;
+  background-size: 24px;
+  -webkit-animation: webkit-rotate 1s infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: moz-rotate 1s infinite;
+  -moz-animation-play-state: running;
+  -moz-animation-timing-function: linear;
+  -ms-animation: ms-rotate 1s infinite;
+  -ms-animation-play-state: running;
+  -ms-animation-timing-function: linear;
+  -o-animation: o-rotate 1s infinite;
+  -o-animation-play-state: running;
+  -o-animation-timing-function: linear;
+  animation: rotate 1s infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
 .find-wrapper,
 .replace-wrapper {
   background: #3a3333;
@@ -4586,6 +4681,18 @@ input[type="text"] {
   white-space: nowrap;
   display: inline;
   line-height: 56px;
+}
+.fileexplorer-header .project-name,
+.tabmanager-header .project-name,
+.goto-header .project-name,
+.notifications-header .project-name,
+.revisions-header .project-name,
+.selection-operation-header .project-name,
+.saveas-header .project-name,
+.share-header .project-name,
+.preferences-header .project-name {
+  height: auto !important;
+  line-height: normal !important;
 }
 .notification > div:empty,
 .tabsicon > div:empty {

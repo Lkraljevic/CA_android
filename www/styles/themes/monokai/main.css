@@ -137,7 +137,11 @@
   pointer-events: none;
   left: 5px;
   top: 10px;
-  transition: 0.2s ease all;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .mui-input .group input:focus ~ label,
 .mui-input .group input:valid ~ label {
@@ -160,7 +164,11 @@
   bottom: 0;
   position: absolute;
   background: #7e3f98;
-  transition: 0.2s ease all;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .mui-input .group .bar:before {
   left: 50%;
@@ -295,6 +303,9 @@
   box-sizing: border-box;
   padding: 5px 0;
   z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .select-wrap .select-list .select-list__item {
   -webkit-box-sizing: border-box;
@@ -1139,6 +1150,7 @@ input[type="text"] {
   outline: none;
   text-transform: uppercase;
   background: #7e3f98;
+  color: #d6cbcb;
   font-size: 14px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2853,8 +2865,8 @@ input[type="text"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #463e3e;
-  border: 2px solid #2f2a2a;
+  background: #2f2a2a;
+  border: 2px solid #d6cbcb;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -3685,7 +3697,6 @@ input[type="text"] {
   position: fixed;
   bottom: 0;
   z-index: 10000000;
-  background: #d6cbcb;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -3694,15 +3705,28 @@ input[type="text"] {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  background: #d1d6d9;
+  background: #f5f5f5;
+  color: #626262;
 }
 .keyboard-plugin button {
   float: none;
   min-width: 40px !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  height: 80% !important;
+  padding: 0 16px;
+  color: #626262;
 }
 .keyboard-plugin button.toggled {
-  background: #7e3f98;
-  color: #fff;
+  background: #626262;
+  color: #f5f5f5;
+}
+@media only screen and (max-width: 380px) {
+  .keyboard-plugin button {
+    padding: 0 10px;
+  }
 }
 .help-wrap {
   position: absolute;
@@ -3838,7 +3862,7 @@ input[type="text"] {
   flex: 1;
 }
 .group.border {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #2f2a2a;
 }
 .md-view {
   overflow: auto !important;
@@ -4088,7 +4112,7 @@ input[type="text"] {
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #d6cbcb;
 }
 .markdown-body h1 .anchor {
   line-height: 1;
@@ -4097,7 +4121,7 @@ input[type="text"] {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #d6cbcb;
 }
 .markdown-body h2 .anchor {
   line-height: 1;
@@ -5248,7 +5272,11 @@ input[type="password"] {
   font-size: 10px;
   border: 0;
   outline: none;
-  transition: all 0.5s ease;
+  -webkit-transition: all all ease;
+  -moz-transition: all all ease;
+  -o-transition: all all ease;
+  -ms-transition: all all ease;
+  transition: all all ease;
   text-transform: uppercase;
 }
 .button.copy {

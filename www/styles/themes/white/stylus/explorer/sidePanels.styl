@@ -1,0 +1,116 @@
+/* SIDE PANELS STYL */
+
+.left-side-panel,
+.right-side-panel
+	box-shadow(shadowLvl5)
+	
+	.usermenu-header
+		background-color: color5
+		color: color4
+
+
+/* RIGHT SLIDER ======================= */
+.right-side-panel
+	
+	.filemenu-header
+		background: color5
+		box-sizing()
+		padding: 16px
+
+		.file-title
+			color: color7
+			font-size: 18px
+			ellipsis()
+
+		.file-path
+			color: color4a5
+			font-size: 12px
+			word-wrap: break-word
+
+
+
+
+
+/* Left and Right Sidebar navigation ======================= */
+.simple-menu
+	background-color: color3
+	overflow-y: auto
+	
+	/* row */
+	.menu-item-wrapp
+		height: 48px
+		flexbox()
+		align-items: center
+		
+		span
+			color: color4
+			font-size: fontSize1
+			flexbox()
+			align-items: center
+				
+
+
+
+/* BOTTOM SLIDER ======================= */
+.bottom-slidebar
+	background: color3
+	box-shadow(shadowLvl4top)
+	box-sizing()
+
+
+	/* Row */
+	.file-row
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+		height: 56px !important
+		border-bottom: 1px solid rowBorder
+		box-sizing()
+		
+
+		.filetype,
+		.info
+			display: block
+			width: 48px !important
+			height: 48px !important
+
+		/* Bottom Slidebar Icons are heandled in icons.styl */
+
+
+		.tab-title
+			flexbox()
+			align-items: center
+			width: calc(100% - 96px) !important
+			ellipsis()
+			box-sizing()
+			padding-left: 16px
+
+			
+		.info
+			background: url('img/explorer/info.png') center no-repeat
+			background-size: 28px
+		
+
+
+
+/* Bottom Sidebar navigation */
+.bottom-slidebar
+	.simple-menu
+		height: calc(100% - 56px) !important
+
+		/* Overwrite for close icon TABS/Bottom slidebar */
+		.close.menu-item-wrapp
+			background: none !important
+
+	.simple-menu2
+		height: 100% !important
+
+
+
+/* Bottom Sidebar - Project menu navigation */
+.bottom-slidebar.project-menu
+	.simple-menu
+		height: 100% !important
+
+
+

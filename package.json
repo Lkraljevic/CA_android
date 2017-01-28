@@ -4,7 +4,9 @@
   "description": "Codeanywhere Mobile Beta",
   "main": "index.js",
   "scripts": {
-    "stylus": "stylus -w www/styles/themes/monokai/stylus/main.styl -o www/styles/themes/monokai/main.css",
+    "stylus-mono": "stylus -w www/styles/themes/monokai/stylus/main.styl -o www/styles/themes/monokai/main.css",
+    "stylus-dark": "stylus -w www/styles/themes/dark/stylus/main.styl -o www/styles/themes/dark/main.css",
+    "stylus-white": "stylus -w www/styles/themes/white/stylus/main.styl -o www/styles/themes/white/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

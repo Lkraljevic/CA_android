@@ -942,7 +942,7 @@ img {
   flex-flow: row nowrap;
   align-items: center;
   height: 56px !important;
-  border-bottom: 1px solid #2f2a2a;
+  border-bottom: 1px solid #232323;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3862,7 +3862,7 @@ input[type="text"] {
   flex: 1;
 }
 .group.border {
-  border-bottom: 1px solid #2f2a2a;
+  border-bottom: 1px solid #232323;
 }
 .md-view {
   overflow: auto !important;

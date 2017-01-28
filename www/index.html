@@ -65,6 +65,15 @@
       setTimeout(()=>{
         document.querySelector('.loading-logo-wrap').classList.add('fade-in');
       },0);
+
+      setTimeout(()=>{
+        document.querySelector('.loading-logo-wrap').classList.add('fade-out');
+        document.querySelector('.loading-logo-wrap').classList.remove('fade-in');
+        setTimeout(()=>{
+          document.querySelector('.loading-ring-wrap').classList.add('fade-in');
+          document.querySelector('.loading-ring-wrap').classList.remove('fade-out');
+          },800);
+      },1500);
   </script>
   <!-- /Loading Screen Wrap -->
 

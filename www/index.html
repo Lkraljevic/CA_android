@@ -42,25 +42,30 @@
 <body>
 
   <!-- Loading Screen Wrap -->
-<div class="loading-screen-wrap">
+  <div class="loading-screen-wrap">
 
-    <div class="loading-logo-wrap">
-        <div class="loading-logo">
-            <img src="img/calogo.png" alt="Codeanywhere">
-        </div>
-    </div>
+      <div class="loading-logo-wrap">
+          <div class="loading-logo">
+              <img src="img/calogo.png" alt="Codeanywhere">
+          </div>
+      </div>
 
-    <div class="loading-ring-wrap">
-        <div class="loading-ring">
-            <div class="loading-ring-loader">
-                <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2.5" stroke-miterlimit="10"></circle>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-</div>
+      <div class="loading-ring-wrap">
+          <div class="loading-ring">
+              <div class="loading-ring-loader">
+                  <svg class="circular" viewBox="25 25 50 50">
+                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2.5" stroke-miterlimit="10"></circle>
+                  </svg>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+      document.querySelector('.loading-ring-wrap').classList.add('fade-out');
+      setTimeout(()=>{
+        document.querySelector('.loading-logo-wrap').classList.add('fade-in');
+      },800);
+  </script>
   <!-- /Loading Screen Wrap -->
 
 </body>

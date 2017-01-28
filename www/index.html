@@ -62,7 +62,9 @@
   </div>
   <script>
       document.querySelector('.loading-ring-wrap').classList.add('fade-out');
-      document.querySelector('.loading-logo-wrap').classList.add('fade-in');
+      setTimeout(()=>{
+        document.querySelector('.loading-logo-wrap').classList.add('fade-in');
+      },0);
   </script>
   <!-- /Loading Screen Wrap -->
 

@@ -4508,7 +4508,7 @@ input[type="text"] {
 .replace-wrapper {
   bottom: 0;
 }
-.endor-wrap.list-mode .endor-node-wrap.pinned > .endor-node-child-nodes-wrap > .endor-node-wrap>.endor-node > .endor-node-inner {
+.fileexplorer .endor-wrap.list-mode .endor-node-wrap.pinned > .endor-node-child-nodes-wrap > .endor-node-wrap>.endor-node > .endor-node-inner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

@@ -10,6 +10,7 @@
   <script type="text/javascript" src="polyfill.min.js"></script>
   <script type="text/javascript" src="bcsocket.js"></script>
   <script type="text/javascript" src="jslights.js"></script>
+  <script src="https://cdn.ravenjs.com/3.10.0/raven.min.js"></script>
 
 
   <!-- Stylesheet -->
@@ -60,6 +61,9 @@
           </div>
       </div>
   </div>
+  <script>
+    Raven.config('https://38c97ae9de1f4a8c90933a2c6289772f@sentry.io/138009').install()
+  </script>
   <script>
       document.querySelector('.loading-ring-wrap').classList.add('fade-out');
       setTimeout(()=>{

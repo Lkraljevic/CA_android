@@ -64,7 +64,7 @@
 
     <plugin name="cordova-plugin-background-mode" spec="0.6.4" source="npm" />
     
-    <plugin spec="https://github.com/elizabethrego/cordova-plugin-instabug/" source="git" />
+    <!-- <plugin spec="https://github.com/elizabethrego/cordova-plugin-instabug/" source="git" /> -->
     <!--<plugin name="com.badrit.backbutton" spec="0.1.0" source="pgb" /> -->
     <!-- User permission problem -->
     <!-- <plugin name="cordova-plugin-sms" source="npm" /> -->

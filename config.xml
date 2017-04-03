@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.codeanywhere.beta"
-        version   = "0.2">
+        version   = "0.4">
 
     <name>Codeanywhere</name>
 
@@ -23,6 +23,7 @@
     <preference name="DisallowOverscroll"         value="true" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-minSdkVersion"      value="14" />
+    <preference name="android-targetSdkVersion"      value="23" />
 
     <preference name="AndroidLaunchMode"      value="standard" />
     <preference name="BackgroundColor" value="#222"/>
@@ -53,7 +54,7 @@
     <!-- <plugin name="cordova-plugin-globalization"       source="npm" spec="~1.0.3" /> -->
     <plugin name="cordova-plugin-inappbrowser"        source="npm" spec="~1.3.0" />
     <!-- <plugin name="cordova-plugin-media"               source="npm" spec="~2.2.0" /> -->
-    <!-- <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" /> -->
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <!-- <plugin name="cordova-plugin-splashscreen"        source="npm" spec="~3.2.1" /> -->
     <!-- <plugin name="cordova-plugin-statusbar"           source="npm" spec="~2.1.2" /> -->
     <!--<plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.0" /> -->
@@ -63,6 +64,11 @@
     <plugin name="ionic-plugin-keyboard"/>
 
     <plugin name="cordova-plugin-background-mode" spec="0.6.4" source="npm" />
+    
+    <!-- <plugin spec="https://github.com/elizabethrego/cordova-plugin-instabug/" source="git" /> -->
+    <!-- <plugin spec="https://github.com/polychrom/cordova-android-accountmanager.git" source="git" /> -->
+    <plugin name="cordova-plugin-googleplus" source="npm" />
+    
     <!--<plugin name="com.badrit.backbutton" spec="0.1.0" source="pgb" /> -->
     <!-- User permission problem -->
     <!-- <plugin name="cordova-plugin-sms" source="npm" /> -->

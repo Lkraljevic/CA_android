@@ -419,8 +419,6 @@ button {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
-  font-size: 14px;
 }
 img {
   border: none;
@@ -1599,6 +1597,9 @@ input[type="text"] {
   padding: 0 16px;
   text-transform: uppercase;
   font-size: 12px;
+}
+.text-btn.pink {
+  color: #bca1cc;
 }
 .case .icon {
   background: url("img/explorer/match-case.png") no-repeat center;
@@ -4429,6 +4430,29 @@ input[type="text"] {
   position: relative;
   border-color: #4078c0;
 }
+.alert-bot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 16px;
+  z-index: 1010;
+  background: #463e3e;
+}
+.alert-bot .alert-bot__message {
+  color: #fff;
+}
 .left-panel.main-slidebar {
   background: #3a3333;
 }
@@ -5302,4 +5326,6 @@ table,
 p,
 input {
   color: #d6cbcb;
+  font-family: 'Roboto';
+  font-size: 14px;
 }

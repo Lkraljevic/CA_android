@@ -5320,11 +5320,7 @@ input[type="password"] {
   color: #fff;
 }
 html,
-body,
-div,
-table,
-p,
-input {
+body {
   color: #d6cbcb;
   font-family: 'Roboto';
   font-size: 14px;

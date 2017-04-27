@@ -1381,6 +1381,9 @@ input[type="text"] {
   box-sizing: border-box;
   border: none;
   outline: none;
+  color: #d6cbcb;
+  font-size: 16px;
+  font-weight: normal;
 }
 .goto-wrapper .goto-data-list:empty {
   display: none;
@@ -4903,6 +4906,8 @@ input[type="password"] {
   background: transparent;
   outline: none;
   border: none;
+  color: #d6cbcb;
+  font-size: 16px;
 }
 .wizard-wrap {
   position: absolute;
@@ -5221,6 +5226,62 @@ input[type="password"] {
 }
 .wizard-wrap.sftp.public .wiz-bot {
   height: calc(100% - 112px);
+}
+.wizard-wrap.digital-ocean.step2 .wiz-bot {
+  height: calc(100% - 248px);
+}
+.wizard-wrap.digital-ocean.step3 .wiz-row-list:first-child {
+  margin-bottom: 8px;
+}
+.wizard-wrap.digital-ocean.step3 .wiz-row-list:nth-child(2) {
+  overflow: auto;
+  height: calc(100% - 210px);
+}
+.wizard-wrap.digital-ocean .connection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 16px;
+/* Top message */
+/* Icon and text */
+}
+.wizard-wrap.digital-ocean .connection .connection__msg {
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.wizard-wrap.digital-ocean .connection .connection__account {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.wizard-wrap.digital-ocean .connection .connection__account .connection__account--icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wizard-wrap.digital-ocean .connection .connection__account .connection__account--txt {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
 }
 .wizard-wrap.create .wiz-bot .wiz-row {
   border-bottom: none;

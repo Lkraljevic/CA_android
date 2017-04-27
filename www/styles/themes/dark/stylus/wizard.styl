@@ -16,6 +16,9 @@ input[type="password"]
 	background: transparent
 	outline: none
 	border: none
+	color: color4
+	font-size: 16px
+	font-weight: normal
 
 
 /* WIZARD ======================================== */
@@ -274,6 +277,56 @@ input[type="password"]
 /* WIZARD SFTP/SSH *PUBLIC KEY* - scroll ======================================== */
 .wizard-wrap.sftp.public .wiz-bot
 	height: calc(100% - 112px)
+
+
+
+
+/* WIZARD DIGITAL OCEAN step2 -scroll ======================================== */
+.wizard-wrap.digital-ocean.step2 .wiz-bot
+	height: calc(100% - 248px)
+
+/* WIZARD DIGITAL OCEAN step3 -scroll ======================================== */
+.wizard-wrap.digital-ocean.step3
+	.wiz-row-list:first-child
+		margin-bottom: 8px
+
+	.wiz-row-list:nth-child(2)
+		overflow: auto
+		height: calc(100% - 210px)
+
+
+/* WIZARD DIGITAL OCEAN ======================================== */
+.wizard-wrap.digital-ocean .connection
+	flexbox()
+	flex-flow: column nowrap
+	box-sizing()
+	padding: 25px 16px
+
+
+	/* Top message */
+	.connection__msg
+		font-size: 14px
+		box-sizing()
+		margin-bottom: 20px
+
+		
+	/* Icon and text */
+	.connection__account
+		flexbox()
+		flex-flow: column nowrap
+		align-items: center
+
+		.connection__account--icon
+			width: 50px
+			height: 50px
+			flexbox()
+			justify-content: center
+			align-items: center
+		
+		.connection__account--txt
+			text-transform: uppercase
+			text-align: center
+			font-size: 14px
 
 
 

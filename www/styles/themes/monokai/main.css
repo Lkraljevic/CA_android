@@ -5138,6 +5138,7 @@ input[type="password"] {
   font-size: 14px;
 }
 .wizard-wrap .checkbox-bar,
+.wizard-wrap .checkbox-bar-list,
 .wizard-wrap .publickey-bar {
   position: relative;
   display: -webkit-box;
@@ -5155,6 +5156,7 @@ input[type="password"] {
 /* Public Key link */
 }
 .wizard-wrap .checkbox-bar .checkbox-bar__ckbox,
+.wizard-wrap .checkbox-bar-list .checkbox-bar__ckbox,
 .wizard-wrap .publickey-bar .checkbox-bar__ckbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5168,18 +5170,23 @@ input[type="password"] {
   padding: 0 10px 0 16px;
 }
 .wizard-wrap .checkbox-bar .checkbox-bar__label,
+.wizard-wrap .checkbox-bar-list .checkbox-bar__label,
 .wizard-wrap .publickey-bar .checkbox-bar__label {
   font-size: 12px;
 }
 .wizard-wrap .checkbox-bar .publickey-bar__link,
+.wizard-wrap .checkbox-bar-list .publickey-bar__link,
 .wizard-wrap .publickey-bar .publickey-bar__link,
 .wizard-wrap .checkbox-bar .public-key-link,
+.wizard-wrap .checkbox-bar-list .public-key-link,
 .wizard-wrap .publickey-bar .public-key-link {
   width: 100%;
 }
 .wizard-wrap .checkbox-bar .publickey-bar__link a,
+.wizard-wrap .checkbox-bar-list .publickey-bar__link a,
 .wizard-wrap .publickey-bar .publickey-bar__link a,
 .wizard-wrap .checkbox-bar .public-key-link a,
+.wizard-wrap .checkbox-bar-list .public-key-link a,
 .wizard-wrap .publickey-bar .public-key-link a {
   color: #fff;
   font-size: 12px;
@@ -5189,6 +5196,21 @@ input[type="password"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.wizard-wrap .checkbox-bar-list {
+  width: 100%;
+  height: 80px;
+  flex-flow: row wrap;
+  position: relative;
+}
+.wizard-wrap .checkbox-bar-list .checkobx-bar-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;
 }
 .wizard-wrap.container .wiz-row .mui-input,
 .wizard-wrap.github .wiz-row .mui-input {

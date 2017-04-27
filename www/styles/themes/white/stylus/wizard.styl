@@ -201,6 +201,7 @@ input[type="password"]
 /* WIZARD CHECKBOX BOTTOM ========== */
 /* WIZARD PUBLIC KEY BOTTOM ========== */
 .wizard-wrap .checkbox-bar,
+.wizard-wrap .checkbox-bar-list,
 .wizard-wrap .publickey-bar
 	position: relative
 	flexbox()
@@ -232,6 +233,21 @@ input[type="password"]
 			margin-left: 10px
 			padding: 10px 16px
 			box-sizing()
+
+
+
+.wizard-wrap .checkbox-bar-list
+	width: 100%
+	height: 80px
+	flex-flow: row wrap
+	position: relative
+
+	.checkobx-bar-list__item
+		flexbox()
+		flex-flow: row nowrap
+		width: 50%
+
+
 
 
 

@@ -53,7 +53,7 @@
     <!-- <plugin name="cordova-plugin-googleplus" spec="5.1.1" /> -->
 
     <plugin name="cordova-plugin-googleplus" source="npm">
-      <variable name="REVERSED_CLIENT_ID" value="782362600627-en5c7dd9l1h573mj8qua8a42dlqj24vc.apps.googleusercontent.com" />
+      <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.782362600627-ot666qdtkql61skceqs5uk266f3qjdms" />
     </plugin>
 
     <!-- Define app icon and splashscreen for each platform. -->

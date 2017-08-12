@@ -51,6 +51,8 @@
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="ionic-plugin-keyboard" spec="2.2.1" />
     <!-- <plugin name="cordova-plugin-googleplus" spec="5.1.1" /> -->
+    
+    <plugin spec="https://github.com/VersoSolutions/CordovaClipboard" source="git" />
 
     <plugin name="cordova-plugin-googleplus" source="npm">
       <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.944619633743-ript798ns6dpjpn0uvjgqi9ucs8c2vml" />

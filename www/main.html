@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+  <meta name="description" content="A complete toolset for enterprise, web, and mobile development. Enabling you to edit, collaborate and run your projects from any device.">
+  <script type="text/javascript" src="loader.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="polyfill.min.js"></script>
+  <script type="text/javascript" src="bcsocket.js"></script>
+  <script type="text/javascript" src="jslights.js"></script>
+  <!--<script src="https://cdn.ravenjs.com/3.10.0/raven.min.js"></script> -->
+
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles/themes/monokai/main.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=latin-ext" rel="stylesheet">
+
+  <!-- Font-awsome -->
+  <!--<link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+
+
+  <script type="text/javascript">
+  jsLights.monitor = true;
+  setTimeout(function() {
+    window.baseUrl = window.baseUrl || '';
+    window.scriptVer = window.scriptVer || '';
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = baseUrl + 'ca.min.js?v=' + scriptVer;
+    head.appendChild(script);
+  }, 0);
+  </script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+</head>
+
+<body>
+
+  <!-- Loading Screen Wrap -->
+  <div class="loading-screen-wrap">
+
+      <div class="loading-logo-wrap">
+          <div class="loading-logo">
+              <img src="img/calogo.png" alt="Codeanywhere">
+          </div>
+      </div>
+
+      <div class="loading-ring-wrap">
+          <div class="loading-ring">
+              <div class="loading-ring-loader">
+                  <svg class="circular" viewBox="25 25 50 50">
+                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2.5" stroke-miterlimit="10"></circle>
+                  </svg>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+    //Raven.config('https://38c97ae9de1f4a8c90933a2c6289772f@sentry.io/138009').install();
+  </script>
+  <script>
+      document.querySelector('.loading-ring-wrap').classList.add('fade-out');
+
+      setTimeout(function(){
+        document.querySelector('.loading-logo-wrap').classList.add('fade-in');
+      },0);
+
+      setTimeout(function(){
+        document.querySelector('.loading-logo-wrap').classList.add('fade-out');
+        document.querySelector('.loading-logo-wrap').classList.remove('fade-in');
+        setTimeout(function(){
+          document.querySelector('.loading-ring-wrap').classList.add('fade-in');
+          document.querySelector('.loading-ring-wrap').classList.remove('fade-out');
+          },800);
+      },1500);
+  </script>
+  <!-- /Loading Screen Wrap -->
+  
+
+</body>
+
+</html>

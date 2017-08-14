@@ -30,10 +30,10 @@
 
 
     // Ripple Effect =====================
-    button
+    /* button
         position: relative
         overflow: hidden
-
+    
         display: block
         width: 30px !important
         min-width: initial !important
@@ -45,7 +45,7 @@
         background: transparent
         float: none
         padding: 0
-
+    
         &:after
             content: ''
             position: absolute
@@ -58,7 +58,7 @@
             border-radius: 100%
             transform: scale(1, 1) translate(-50%)
             transform-origin: 50% 50%
-
+    
     @keyframes ripple {
         0% {
             transform: scale(0, 0);
@@ -73,11 +73,11 @@
             transform: scale(40, 40);
         }
     }
-
+    
     button:focus:not(:active)::after
         animation: ripple 1s ease-out
-
-
+    
+     */
 
 
 
@@ -97,9 +97,9 @@
             svg
                 width: 20px
 
-        &:nth-child(2).toggle,
-        &:nth-child(3).toggle,
-        &:nth-child(4).toggle
+        &:nth-child(2).toggled,
+        &:nth-child(3).toggled,
+        &:nth-child(4).toggled
             background-color: #CDCDCD
 
         svg

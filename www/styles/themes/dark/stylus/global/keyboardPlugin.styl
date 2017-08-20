@@ -107,3 +107,67 @@
             height: 16px
 
 
+
+
+
+    .keyboard-item.special
+
+        &.pressed .pressed-wrap
+            display: flex !important
+
+        svg
+            width: 40px
+            height: 40px
+
+        .pressed-wrap
+            display: none
+            background: url(../images/btn-press.svg)
+            background-size: 118px 200px
+            width: 118px
+            height: 200px
+            position: absolute
+            margin-top: -75px
+
+            &.pressed
+                display: flex
+                flexbox()
+
+
+            .pressed-item
+                position: absolute
+                font-size: 26px
+                font-weight: 900
+                color: #757575
+                font-family: Arial, Helvetica, sans-serif
+                transition(.2s)
+                width: 30px
+                height: 30px
+                flexbox()
+                justify-content: center
+                align-items: center
+
+                &:hover,
+                &.selected
+                    color: colorWhite
+                    font-size: 30px
+                    text-shadow: 0 0 10px colorBlack
+
+                &:nth-child(1)
+                    top: 10px
+                    left: 10px
+
+                &:nth-child(2)
+                    top: 10px
+                    right: 10px
+
+                &:nth-child(3)
+                    top: 46px
+                    left: 46px
+
+                &:nth-child(4)
+                    bottom: 90px
+                    left: 10px
+
+                &:nth-child(5)
+                    bottom: 90px
+                    right: 10px

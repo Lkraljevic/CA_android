@@ -1,0 +1,95 @@
+/* TABS STYL */
+
+
+/* Header Tabs is handled in "fileExplorer.styl" */
+
+
+
+/* Tabs - List of items ======================= */
+
+.tabslist
+	background: color3
+	overflow: auto !important
+
+.tabslist .body-list-wrap
+	min-height: 10px
+	height: initial
+	background: color3
+	box-shadow(shadowLvl4)
+	padding: 10px 0
+	box-sizing()
+	
+	
+	.tabs-list-title
+		height: 48px
+		padding: 0 16px
+		box-sizing()
+		flexbox()
+		align-items: center
+		font-size: fontSize1
+		color: color4a5
+		
+	/* Tab Row */
+	.tab
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+		height: 58px
+
+		.left-tab-icon,
+		.menu-tab,
+		.close-tab
+			display: block
+			width: 48px !important
+			height: 48px !important
+			
+		.left-tab-icon
+			background-size: 24px
+			
+		.menu-tab
+			background: url('img/explorer/dots-vertical.png') center no-repeat
+			background-size: 24px
+		
+		.close-tab
+			background: url('img/close.png') center no-repeat
+			background-size: 24px
+
+
+
+		/* Tab Middle section */
+		.middle-tab
+			width: calc(100% - 96px) !important
+			height: 100%
+			overflow: hidden
+			flexbox()
+			flex-flow: column nowrap
+			justify-content: center
+			box-sizing()
+			padding-left: 16px
+			
+
+			.middle-tab-top .tab-title,
+			.middle-tab-bottom
+				ellipsis()
+				display: block
+
+			.middle-tab-top
+				font-size: fontSize2
+				margin-bottom: 4px
+				
+				.tab-title
+					font-size: fontSize2
+				
+			.middle-tab-bottom
+				font-size: fontSize03
+				color: color4a5
+
+
+
+
+
+
+
+
+
+

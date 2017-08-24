@@ -1,0 +1,167 @@
+.CodeMirror {
+  color: #ededed;
+  background: #1d1f21;
+  font-family: 'Inconsolata', mono, monospace;
+  font-size: 14px;
+  line-height: 130%;
+}
+.CodeMirror .CodeMirror-matchingtag {
+  //background: rgba(255,150,0,0.15);
+  background: #292C2F;
+}
+.CodeMirror .CodeMirror-linenumber {
+  color: #646464;
+}
+.CodeMirror .cm-tab:not(:first-of-type) {
+  background: url("img/ig.png") left repeat-y;
+  opacity: 0.1;
+}
+.CodeMirror .CodeMirror-activeline .CodeMirror-linenumber {
+  background-color: #292C2F;
+}
+.CodeMirror .CodeMirror-activeline-background {
+  background: none;
+}
+.CodeMirror .CodeMirror-foldgutter-open {
+  color: #4f4f4f;
+}
+.CodeMirror .CodeMirror-foldgutter-folded {
+  color: #4f4f4f;
+}
+.CodeMirror .CodeMirror-selected {
+  //background-color: #292C2F;
+  background-color: #303337;
+}
+.CodeMirror .CodeMirror-gutters {
+  background-color: #1d1f21;
+  border-right: 0;
+}
+.CodeMirror .CodeMirror-cursor {
+  border-left: 1px solid #fff;
+}
+.CodeMirror .cm-meta {
+  color: #52b1fe;
+}
+.CodeMirror .cm-keyword {
+  color: #96cbfe;
+}
+.CodeMirror .cm-atom {
+  color: #65bd8a;
+}
+.CodeMirror .cm-number {
+  color: #ff73fd;
+}
+.CodeMirror .cm-def {
+  color: #ffd2a7;
+}
+.CodeMirror .cm-variable {
+  color: #66d8ef;
+}
+.CodeMirror .cm-variable-2 {
+  color: #c5c8c0;
+}
+.CodeMirror .cm-variable-3 {
+  color: #fff;
+}
+.CodeMirror .cm-property {
+  color: #ededed;
+}
+.CodeMirror .cm-operator {
+  color: #ededed;
+}
+.CodeMirror .cm-comment {
+  color: #75715e;
+}
+.CodeMirror .cm-string {
+  color: #a8ff60;
+}
+.CodeMirror .cm-string-2 {
+  color: #dad085;
+}
+.CodeMirror .cm-error {
+  //color: #f00;
+  color: #e16386;
+}
+.CodeMirror .cm-qualifier {
+  color: #555;
+}
+.CodeMirror .cm-builtin {
+  color: #fff;
+}
+.CodeMirror .cm-bracket {
+  color: #ededed;
+}
+.CodeMirror .CodeMirror-matchingbracket {
+  color: #4f0;
+  background-color: #32332b;
+}
+.CodeMirror .CodeMirror-nonmatchingbracket {
+  //color: #f00;
+  color: #e16386;
+  background-color: #777;
+}
+.CodeMirror .cm-tag {
+  color: #96cbfe;
+}
+.CodeMirror .cm-attribute {
+  color: #c6c5fe;
+}
+.CodeMirror .cm-link {
+  color: #219;
+}
+.CodeMirror .cm-matchhighlight {
+  border-bottom: 1px dotted #fff;
+}
+.CodeMirror .cm-searchhighlight {
+  border-bottom: 1px dotted #fff;
+}
+.CodeMirror .cm-searching {
+  background: transparent;
+  border-bottom: 1px solid #ffe792;
+}
+.CodeMirror .CodeMirror-foldmarker {
+  color: #fff;
+  text-shadow: none;
+}
+.region-center .CodeMirror.mode-css .cm-property {
+  color: #ededed;
+}
+.region-center .CodeMirror.mode-css .cm-builtin {
+  color: #52b1fe;
+}
+.region-center .CodeMirror.mode-css .cm-qualifier {
+  color: #52b1fe;
+}
+.region-center .CodeMirror.mode-css .cm-variable,
+.region-center .CodeMirror.mode-css .cm-variable-2,
+.region-center .CodeMirror.mode-css .cm-variable-3,
+.region-center .CodeMirror.mode-css .cm-string,
+.region-center .CodeMirror.mode-css .cm-string-2 {
+  color: #dad085;
+}
+
+
+
+.revision-panel .expaned .revisionDiff .CodeMirror-merge-gap .CodeMirror-merge-r-connect {
+  fill: #161719 !important;
+}
+.revision-panel .expaned .revisionDiff .CodeMirror-merge .CodeMirror-merge-r-chunk {
+  background-color: #161719 !important;
+}
+.revision-panel .expaned .revisionDiff .CodeMirror-merge .CodeMirror-merge-r-chunk-start {
+  border-top: 1px solid #161719 !important;
+}
+.revision-panel .expaned .revisionDiff .CodeMirror-merge .CodeMirror-merge-r-chunk-end {
+  border-bottom: 1px solid #161719 !important;
+}
+.revision-panel .expaned .revisionDiff .CodeMirror-merge .CodeMirror-merge-collapsed-widget {
+  color: #646464 !important;
+  background: transparent !important;
+}
+
+
+
+
+
+
+

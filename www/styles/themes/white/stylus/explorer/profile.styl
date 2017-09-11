@@ -39,6 +39,7 @@ input[type="text"]
 		overflow: hidden
 		box-sizing()
 		padding: 0 16px
+		text-align: center
 
 		.profile-row__desc
 			flexbox()
@@ -47,6 +48,81 @@ input[type="text"]
 			align-items: flex-start
 			min-height: 56px
 			flex: 1
+
+
+
+
+
+
+
+/* PIE Percentage ========== */
+.profile-wrap .profile-top.percentage-0
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-1
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-234deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-2
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-198deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-3
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-162deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-4
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-126deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-5
+	.profile-pie-left
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-6
+	.profile-pie-left
+		background: linear-gradient(126deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-7
+	.profile-pie-left
+		background: linear-gradient(162deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-8
+	.profile-pie-left
+		background: linear-gradient(198deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-9
+	.profile-pie-left
+		background: linear-gradient(234deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+.profile-wrap .profile-top.percentage-10
+	.profile-pie-left
+		background: linear-gradient(270deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	.profile-pie-right
+		background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(-90deg, #7f3f98 50%, transparent 50%)
+
+
 
 
 /* PROFILE TOP ========== */
@@ -59,6 +135,7 @@ input[type="text"]
 	box-shadow(shadowLvl2)
 	box-sizing()
 	padding: 20px 0
+	align-items: center
 
 
 	/* PROFILE IMAGE BLOCK */
@@ -72,7 +149,10 @@ input[type="text"]
 		font-weight: 400
 		box-sizing()
 		border-radius: 100%
-		background: color4
+		background: color000
+		margin: 0 auto
+		position: relative
+		z-index: 100
 		
 		.profile-image__center
 			flexbox()
@@ -89,6 +169,35 @@ input[type="text"]
 				color: color9
 				font-size: 9px
 				text-transform: uppercase
+
+
+
+	/* PROFILE PIE */
+	.profile-pie-left,
+	.profile-pie-right
+		flexbox()
+		justify-content: center
+		align-items: center
+		width: 110px
+		height: 110px
+		box-sizing()
+		border-radius: 100%
+		background: color5
+		margin-top: 10px
+		position: absolute
+		left: 50%
+		top: 5px
+		margin-left: -55px
+
+	.profile-pie-left
+		z-index: 1
+		background: linear-gradient(90deg, #222 50%, transparent 50%),linear-gradient(-270deg, #7f3f98 50%, #222 50%)
+	  
+	.profile-pie-right
+		z-index: 2
+		background: linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(-270deg, #7f3f98 50%, transparent 50%)
+
+
 
 
 	/* Profile Details Block */
@@ -109,7 +218,7 @@ input[type="text"]
 		.profile-details__email
 			text-transform: lowercase
 
-	
+
 
 	/* PROFILE DASHBOARD BLOCK */
 	/* Button */
@@ -125,10 +234,11 @@ input[type="text"]
 		outline: none
 		text-transform: uppercase
 		background: color6
-		color: #d6cbcb
+		color: color5
 		font-size: 14px
 		box-sizing()
 		padding: 0 16px
+		margin: 0 auto
 	
 	
 	.profile-steps
@@ -160,12 +270,83 @@ input[type="text"]
 	/* PROFILE UPGARDE BLOCK */
 	.upgrade-wrap
 		border-top: 1px solid color3
+		width: 100%
+
+
+
+
+		/* Percentage */ 
+		.upgrade-row.percentage-1 
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #6cc781 10%, #222 10%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #6cc781
+		.upgrade-row.percentage-2
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #6cc781 20%, #222 20%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #6cc781
+		.upgrade-row.percentage-3
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #6cc781 30%, #222 30%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #6cc781
+		.upgrade-row.percentage-4
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #6cc781 40%, #222 40%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #6cc781
+		.upgrade-row.percentage-5
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #ffe600 50%, #222 50%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #ecd501
+		.upgrade-row.percentage-6
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #ffe600 60%, #222 60%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #ecd501
+		.upgrade-row.percentage-7
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #ffe600 70%, #222 70%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #ecd501
+		.upgrade-row.percentage-8
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #ffe600 80%, #222 80%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #ecd501
+		.upgrade-row.percentage-9
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #e53934 90%, #222 90%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #e53934
+		.upgrade-row.percentage-10
+			.upgrade-row__top .upgrade-row__top--bar
+				background: linear-gradient(90deg, #e53934 100%, #222 0%)
+			.upgrade-row__bot .upgrade-row__bot--left
+				color: #e53934
+
+
 
 		.upgrade-row
 			flexbox()
 			flex-flow: column nowrap
 			width: 100%
 			margin-top: 20px
+
+			/* Subscription */
+			.subscription
+				flexbox()
+				flex-flow: column nowrap
+				text-align: center
+				color: color10
+				font-size: 12px
+
+				span
+					color: color6
+					font-size: 14px
+					margin-left: 5px
 
 			/* Top */
 			.upgrade-row__top
@@ -174,7 +355,11 @@ input[type="text"]
 				.upgrade-row__top--bar
 					width: 100%
 					height: 5px
-					background: color11
+					background: color12
+
+					span
+						display: block
+						height: 100%
 
 			/* Bot */
 			.upgrade-row__bot
@@ -185,13 +370,12 @@ input[type="text"]
 				align-items: center
 				font-size: 12px
 
-				.upgrade-row__bot--left.yellow
+				/*.upgrade-row__bot--left.yellow
 					color: lightYellow
 				.upgrade-row__bot--left.red
 					color: lightRed
-
 				.upgrade-row__bot--right
-					color: color10
+					color: color10*/
 		
 		.upgrade-message
 			margin: 20px 0 12px 0
@@ -216,20 +400,6 @@ input[type="text"]
 		background: color3
 		box-sizing()
 
-
-
-
-/* Added by Luka#2 */
-.upgrade-row__top--bar span
-	display: block
-	height: 100%
-
-.upgrade-row__top--bar .yellow-bar
-	background: lightYellow 
-
-
-.upgrade-row__top--bar .red-bar
-	background: lightRed
 
 
 

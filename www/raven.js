@@ -1,0 +1,1 @@
+Raven.config('https://f952f484c9a74ba1b31d75780da50bd8@sentry.io/138009', {release: '6.1.1'}).install();

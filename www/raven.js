@@ -1,4 +1,4 @@
-Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'test'}).install()
+Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
 
 /*
 const dsn = 'https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408';

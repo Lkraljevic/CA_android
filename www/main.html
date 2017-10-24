@@ -24,14 +24,14 @@
 
 
   <script type="text/javascript">
-  //jsLights.monitor = true;
+  jsLights.monitor = true;
   setTimeout(function() {
     window.baseUrl = window.baseUrl || '';
     window.scriptVer = window.scriptVer || '';
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = baseUrl + 'ca.min.js?v=' + scriptVer;
+    script.src = baseUrl + 'ca.min.js';
     
     head.appendChild(script);
   }, 0);

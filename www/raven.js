@@ -1,5 +1,14 @@
-Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
+//Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
+Raven.config('https://286150eb924940e19840ec357d4e82ae@sentry.io/234842', {release: '6.1.2'}).install();
 
+jsLights.after('CA.core.user',()=>{
+  CA.core.user.on('login', () => {
+    Raven.setUserContext({
+      email: CA.core.user.email,
+      id: CA.core.user.user_id
+})
+  });
+});
 /*
 const dsn = 'https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408';
 Raven.config(dsn, {

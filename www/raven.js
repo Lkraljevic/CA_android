@@ -16,13 +16,13 @@ cookieMaster.setCookieValue('http://port-3000.dashboard-template-luka.codeanyapp
     function() {
         console.log('A cookie has been set');
 
-      window.inappRef = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no');
+      window.inappRef = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no;clearcache=yes');
         
     },
     function(error) {
         alert('Error setting cookie: '+error);
     });
-  
+
 }
 
   

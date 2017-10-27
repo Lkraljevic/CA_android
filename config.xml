@@ -58,7 +58,7 @@
       <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.944619633743-ript798ns6dpjpn0uvjgqi9ucs8c2vml" />
     </plugin>
 
-    <plugin name="cordova-plugin-cookiemaster" source="npm">
+    <plugin name="cordova-plugin-cookiemaster" source="npm" />
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon-3.png" />
     <platform name="android">

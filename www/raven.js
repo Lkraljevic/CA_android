@@ -9,6 +9,25 @@ jsLights.after('CA.core.user',()=>{
 })
   });
 });
+
+
+
+jsLights.after('CA.core.user',()=>{
+  x = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no');
+  function executeScriptCallBack(params) {
+    console.log(params);
+  }
+  x.executeScript({ code: "document.cookie = 'xtest=666';" }, executeScriptCallBack);
+});
+
+
+
+
+
+
+
+
+
 /*
 const dsn = 'https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408';
 Raven.config(dsn, {

@@ -10,16 +10,22 @@ jsLights.after('CA.core.user',()=>{
   });
 });
 
+document.addEventListener('deviceready', onDeviceReady, false);
+function onDeviceReady() {
+cookieMaster.setCookieValue('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html', 'Kita', 'OdBilla',
+    function() {
+        console.log('A cookie has been set');
 
+      window.inappRef = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no');
+        
+    },
+    function(error) {
+        alert('Error setting cookie: '+error);
+    });
+  
+}
 
-jsLights.after('CA.core.user',()=>{
-  x = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no');
-  function executeScriptCallBack(params) {
-    console.log(params);
-  }
-  x.executeScript({ code: "document.cookie = 'xtest=666';" }, executeScriptCallBack);
-});
-
+  
 
 
 

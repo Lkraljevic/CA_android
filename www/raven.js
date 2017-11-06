@@ -1,6 +1,7 @@
 //Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
 Raven.config('https://286150eb924940e19840ec357d4e82ae@sentry.io/234842', {release: '6.1.2'}).install();
 
+/*
 jsLights.after('CA.core.user',()=>{
   CA.core.user.on('login', () => {
     Raven.setUserContext({
@@ -9,7 +10,8 @@ jsLights.after('CA.core.user',()=>{
 })
   });
 });
-
+*/
+/*
 document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
 cookieMaster.setCookieValue('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html', 'Kita', 'OdBilla',
@@ -26,7 +28,7 @@ cookieMaster.setCookieValue('http://port-3000.dashboard-template-luka.codeanyapp
 }
 
   
-
+*/
 
 
 

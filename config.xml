@@ -22,7 +22,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="true" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-minSdkVersion"      value="21" /> <!-- Android 5.0 -->
+    <preference name="android-minSdkVersion"      value="16" /> <!-- Android 5.0 -->
     <preference name="android-targetSdkVersion"      value="23" />
 
     <preference name="AndroidLaunchMode"      value="standard" />

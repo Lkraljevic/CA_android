@@ -69,14 +69,14 @@
   <script>
       document.querySelector('.loading-ring-wrap').classList.add('fade-out');
 
-      setTimeout(function(){
+      setTimeout(()=>{
         document.querySelector('.loading-logo-wrap').classList.add('fade-in');
       },0);
 
-      setTimeout(function(){
+      setTimeout(()=>{
         document.querySelector('.loading-logo-wrap').classList.add('fade-out');
         document.querySelector('.loading-logo-wrap').classList.remove('fade-in');
-        setTimeout(function(){
+        setTimeout(()=>{
           document.querySelector('.loading-ring-wrap').classList.add('fade-in');
           document.querySelector('.loading-ring-wrap').classList.remove('fade-out');
           },800);

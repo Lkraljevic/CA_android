@@ -57,6 +57,8 @@
   </plugin>
 
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
+  <plugin name="cordova-plugin-cookieemperor" source="npm" />
+  
   <!-- Define app icon and splashscreen for each platform. -->
   <icon src="icon-3.png" />
   <platform name="android">

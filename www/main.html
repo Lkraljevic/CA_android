@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
   <meta name="description" content="A complete toolset for enterprise, web, and mobile development. Enabling you to edit, collaborate and run your projects from any device.">
-  <script type="text/javascript" src="loader.js"></script>
+  <!-- <script type="text/javascript" src="loader.js"></script> -->
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="polyfill.min.js"></script>
   <script type="text/javascript" src="bcsocket.js"></script>
@@ -31,14 +31,14 @@
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = baseUrl + 'ca.min.js';
+    script.src = baseUrl + 'bundle.min.js';
     
     head.appendChild(script);
   }, 0);
   </script>
 
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+  <!--<link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">-->
 </head>
 
 <body>
@@ -69,7 +69,7 @@
   <script>
       document.querySelector('.loading-ring-wrap').classList.add('fade-out');
 
-      setTimeout(()=>{
+      setTimeout(function(){
         document.querySelector('.loading-logo-wrap').classList.add('fade-in');
       },0);
 

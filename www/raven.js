@@ -1,4 +1,40 @@
-Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
+//Raven.config('https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408',{release: 'THEONE'}).install()
+Raven.config('https://286150eb924940e19840ec357d4e82ae@sentry.io/234842', {release: '6.1.4'}).install();
+
+/*
+jsLights.after('CA.core.user',()=>{
+  CA.core.user.on('login', () => {
+    Raven.setUserContext({
+      email: CA.core.user.email,
+      id: CA.core.user.user_id
+})
+  });
+});
+*/
+/*
+document.addEventListener('deviceready', onDeviceReady, false);
+function onDeviceReady() {
+cookieMaster.setCookieValue('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html', 'Kita', 'OdBilla',
+    function() {
+        console.log('A cookie has been set');
+
+      window.inappRef = cordova.InAppBrowser.open('http://port-3000.dashboard-template-luka.codeanyapp.com/html/template/test.html','_blank', 'location=no,hardwareback=no;clearcache=yes');
+        
+    },
+    function(error) {
+        alert('Error setting cookie: '+error);
+    });
+
+}
+
+  
+*/
+
+
+
+
+
+
 
 /*
 const dsn = 'https://55d103f204fe4cea9dafa879b44dcc53@sentry.io/234408';

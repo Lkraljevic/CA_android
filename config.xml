@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.1.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.1.5">
 
   <name>Codeanywhere</name>
 
@@ -19,9 +19,9 @@
   <!-- Customize your app and platform with the preference element. -->
   <preference name="DisallowOverscroll" value="true" />
   <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-  <preference name="android-minSdkVersion" value="16" />
+  <preference name="android-minSdkVersion" value="21" />
   <!-- Android 5.0 -->
-  <preference name="android-targetSdkVersion" value="23" />
+  <preference name="android-targetSdkVersion" value="24" />
 
   <preference name="AndroidLaunchMode" value="standard" />
   <preference name="BackgroundColor" value="#222" />
@@ -152,10 +152,11 @@
     <allow-intent href="market:*" />
   </platform>
   
+    <!--
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>
+    </platform> -->
 
 
 </widget>

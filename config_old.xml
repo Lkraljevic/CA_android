@@ -58,9 +58,6 @@
 
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
-
-
-  <preference name="EnableViewportScale" value="true"/>
   
   <!-- Define app icon and splashscreen for each platform. -->
   <icon src="icon-3.png" />

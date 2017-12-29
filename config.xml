@@ -29,6 +29,16 @@
 
   <preference name="SplashScreen" value="screen" />
 
+
+
+<!-- iOS -->
+
+
+  <preference name="EnableViewportScale" value="true"/>
+  <preference name="SuppressesLongPressGesture" value="true" />
+  <preference name="Suppresses3DTouchGesture" value="true" />
+
+
   <!-- <preference AndroidLaunchMode="singleTask" /> -->
 
 
@@ -63,9 +73,6 @@
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
 
-
-  <preference name="EnableViewportScale" value="true"/>
-  <preference name="KeyboardShrinksView" value="true" />
   
   <!-- Define app icon and splashscreen for each platform. -->
   <icon src="icon-3.png" />

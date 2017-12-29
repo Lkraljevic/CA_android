@@ -65,6 +65,7 @@
 
 
   <preference name="EnableViewportScale" value="true"/>
+  <preference name="KeyboardShrinksView" value="true" />
   
   <!-- Define app icon and splashscreen for each platform. -->
   <icon src="icon-3.png" />

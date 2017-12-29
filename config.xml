@@ -35,8 +35,8 @@
 
 
   <preference name="EnableViewportScale" value="true"/>
-  <preference name="SuppressesLongPressGesture" value="true" />
-  <preference name="Suppresses3DTouchGesture" value="true" />
+  <!-- <preference name="SuppressesLongPressGesture" value="true" />
+  <preference name="Suppresses3DTouchGesture" value="true" /> -->
 
 
   <!-- <preference AndroidLaunchMode="singleTask" /> -->

@@ -111,8 +111,7 @@
 
   <platform name="ios">
     <icon src="res/icons/ios/96x96.png" width="76" height="76" />
-        <icon src="res/ios/96x96.png2x.png" width="152" height="152" />
-    
+    <icon src="res/icons/ios/96x962x.png" width="152" height="152" />
   </platform>
 
   

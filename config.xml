@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.1.6">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.0.0">
 
   <name>Codeanywhere</name>
 
@@ -145,7 +145,8 @@
         <icon src="res/icons/ios/icon-83.5@2x.png" width="167" height="167" />
 
 
-
+          <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+          <!--
          <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
           <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
           <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
@@ -155,6 +156,7 @@
           <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
           <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
           <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
+        -->
     </platform>
 
   

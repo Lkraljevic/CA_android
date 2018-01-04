@@ -159,7 +159,7 @@
           <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
         -->
     </platform>
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="10000" />
 
   
     

@@ -46,12 +46,12 @@
 
   <!-- Loading Screen Wrap -->
   <div class="loading-screen-wrap">
-
+    <!--
       <div class="loading-logo-wrap">
           <div class="loading-logo">
               <img src="img/calogo.png" alt="Codeanywhere">
           </div>
-      </div>
+      </div> -->
 
       <div class="loading-ring-wrap">
           <div class="loading-ring">
@@ -68,6 +68,8 @@
   </script>
   <!--<script src="./raven.js"></script>  -->
   <script>
+      document.querySelector('.loading-logo-wrap').classList.add('fade-in');
+      /*
       document.querySelector('.loading-ring-wrap').classList.add('fade-out');
 
       setTimeout(function(){
@@ -82,6 +84,7 @@
           document.querySelector('.loading-ring-wrap').classList.remove('fade-out');
           },800);
       },1500);
+      */
   </script>
   <!-- /Loading Screen Wrap -->
   

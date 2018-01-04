@@ -168,11 +168,9 @@
         <splash src="res/screen/ios/Default@3x~universal~anycom.png" />
         <splash src="res/screen/ios/Default@3x~universal~comany.png" />
       -->
-        
-
-
-
     </platform>
+    <preference name="SplashScreenDelay" value="0"/>
+    <preference name="FadeSplashScreenDuration" value="0"/>
 
     
 

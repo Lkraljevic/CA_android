@@ -12,6 +12,7 @@
   <script type="text/javascript" src="jslights.js"></script>
   <!--<script src="https://cdn.ravenjs.com/3.19.1/raven.min.js" crossorigin="anonymous"></script> -->
 
+  <script type="text/javascript" src="fs.js"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="styles/themes/monokai/main.css">
@@ -31,11 +32,20 @@
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = baseUrl + 'bundle.min.js';
-    //script.src = baseUrl + 'ca.min.js';
+    //script.src = baseUrl + 'bundle.min.js';
+    script.src = baseUrl + 'ca.min.js';
     
     head.appendChild(script);
   }, 0);
+  </script>
+
+  <script type="text/javascript">
+    
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
   </script>
 
   <!--<link rel="shortcut icon" href="/favicon.ico">

@@ -64,6 +64,9 @@
   <plugin spec="https://github.com/VersoSolutions/CordovaClipboard" source="git" />
   <plugin spec="https://github.com/apache/cordova-plugin-statusbar" source="git" />
 
+  <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#3a3333" />
+
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
 

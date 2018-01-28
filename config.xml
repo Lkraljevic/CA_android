@@ -57,11 +57,12 @@
   <plugin name="cordova-plugin-keyboard" spec="1.2.0" />
   <!-- <plugin name="ionic-plugin-keyboard" spec="2.2.1" /> -->
 
-  <plugin name="cordova-plugin-statusbar" spec="2.4.1" />
+  <!--<plugin name="cordova-plugin-statusbar" spec="2.4.1" /> -->
   <plugin name="cordova-plugin-splashscreen" spec="5.0.1" />
   
   
   <plugin spec="https://github.com/VersoSolutions/CordovaClipboard" source="git" />
+  <plugin spec="https://github.com/apache/cordova-plugin-statusbar" source="git" />
 
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />

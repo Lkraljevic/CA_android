@@ -70,11 +70,11 @@
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
 
-<!--  
+  
   <plugin name="cordova-plugin-googleplus" source="npm">
     <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.944619633743-ript798ns6dpjpn0uvjgqi9ucs8c2vml" />
   </plugin>
--->
+
 
   <!-- Define app icon and splashscreen for each platform. -->
   <platform name="android">

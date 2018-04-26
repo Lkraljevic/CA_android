@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.0.3">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.0.4">
 
   <name>Codeanywhere</name>
 
@@ -70,10 +70,10 @@
   <plugin name="cordova-plugin-cookiemaster" source="npm" />
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
 
-<!--   
+  
   <plugin name="cordova-plugin-googleplus" source="npm">
     <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.944619633743-ript798ns6dpjpn0uvjgqi9ucs8c2vml" />
-  </plugin> -->
+  </plugin>
 
 
   <!-- Define app icon and splashscreen for each platform. -->

@@ -21,7 +21,7 @@
   <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
   <preference name="android-minSdkVersion" value="21" />
   <!-- Android 5.0 -->
-  <preference name="android-targetSdkVersion" value="28" />
+  <preference name="android-targetSdkVersion" value="27" />
 
   <preference name="AndroidLaunchMode" value="standard" />
 

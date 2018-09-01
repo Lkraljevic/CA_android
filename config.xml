@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.0.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.codeanywhere.mobile" version="6.1.9">
 
   <name>Codeanywhere</name>
 
@@ -14,14 +14,14 @@
   </author>
 
   <!-- Define the main entry-point to the application -->
-  <content src="main.html" />
+  <content src="index.html" />
 
   <!-- Customize your app and platform with the preference element. -->
   <preference name="DisallowOverscroll" value="true" />
   <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
   <preference name="android-minSdkVersion" value="21" />
   <!-- Android 5.0 -->
-  <preference name="android-targetSdkVersion" value="24" />
+  <preference name="android-targetSdkVersion" value="27" />
 
   <preference name="AndroidLaunchMode" value="standard" />
 
@@ -54,8 +54,8 @@
   <plugin name="cordova-plugin-screen-orientation" spec="2.0.1" />
   <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   
-  <plugin name="cordova-plugin-keyboard" spec="1.2.0" />
-  <!-- <plugin name="ionic-plugin-keyboard" spec="2.2.1" /> -->
+  <!-- <plugin name="cordova-plugin-keyboard" spec="1.2.0" /> -->
+   <plugin name="ionic-plugin-keyboard" spec="2.2.1" /> 
 
   <!--<plugin name="cordova-plugin-statusbar" spec="2.4.1" /> -->
   <plugin name="cordova-plugin-splashscreen" spec="5.0.1" />
@@ -71,7 +71,7 @@
   <plugin name="cordova-plugin-cookieemperor" source="npm" />
 
   
-  <plugin name="cordova-plugin-googleplus" source="npm">
+  <plugin name="cordova-plugin-googleplus" source="npm" spec="5.2.1">
     <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.944619633743-ript798ns6dpjpn0uvjgqi9ucs8c2vml" />
   </plugin>
 
